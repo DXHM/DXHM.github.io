@@ -10,7 +10,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="渗透,"> 
-    <meta name="description" content="TALKING,暂不公开，敬请期待 👋"> 
+    <meta name="description" content="TALKING,基础概念JNDI的相关概念随着信息技术的发展，越来越多的企业开始采用分布式系统来管理和处理数据，这种系统能够提高计算效率、灵活性和可靠性，但同时也带来了资源分散和复杂度增加的问题。现代网络技术支持下,"> 
     <meta name="author" content="真のBLACK"> 
     <link rel="alternative" href="atom.xml" title="真のBLACK" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -21,15 +21,15 @@
     <meta name="twitter:creator" content="@yourtwitteridhere"/>
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:title" content="【高危】Log4j2漏洞分析&amp;复现 - 真のBLACK"/>
-    <meta name="twitter:description" content="TALKING,暂不公开，敬请期待 👋"/>
+    <meta name="twitter:description" content="TALKING,基础概念JNDI的相关概念随着信息技术的发展，越来越多的企业开始采用分布式系统来管理和处理数据，这种系统能够提高计算效率、灵活性和可靠性，但同时也带来了资源分散和复杂度增加的问题。现代网络技术支持下,"/>
     <meta property="og:image" content="https://bangdream.moe/img/ident.png"/>
-    <meta property="og:image:alt" content="TALKING,暂不公开，敬请期待 👋"/>
+    <meta property="og:image:alt" content="TALKING,基础概念JNDI的相关概念随着信息技术的发展，越来越多的企业开始采用分布式系统来管理和处理数据，这种系统能够提高计算效率、灵活性和可靠性，但同时也带来了资源分散和复杂度增加的问题。现代网络技术支持下,"/>
     <meta property="og:image:width" content="1200"/>
     <meta property="og:image:height" content="600"/>
     <meta property="og:site_name" content="真のBLACK"/>
     <meta property="og:type" content="object"/>
     <meta property="og:title" content="【高危】Log4j2漏洞分析&amp;复现 - 真のBLACK"/>
-    <meta property="og:description" content="TALKING,暂不公开，敬请期待 👋"/>
+    <meta property="og:description" content="TALKING,基础概念JNDI的相关概念随着信息技术的发展，越来越多的企业开始采用分布式系统来管理和处理数据，这种系统能够提高计算效率、灵活性和可靠性，但同时也带来了资源分散和复杂度增加的问题。现代网络技术支持下,"/>
     
 <link rel="stylesheet" href="/css/diaspora.css">
 
@@ -67,7 +67,50 @@
 
         </div>
         <div class="content markdown">
-            <h1 id="暂不公开，敬请期待-👋"><a href="#暂不公开，敬请期待-👋" class="headerlink" title="暂不公开，敬请期待 👋"></a>暂不公开，敬请期待 👋</h1>
+            <h2 id="基础概念"><a href="#基础概念" class="headerlink" title="基础概念"></a>基础概念</h2><h3 id="JNDI的相关概念"><a href="#JNDI的相关概念" class="headerlink" title="JNDI的相关概念"></a>JNDI的相关概念</h3><p>随着信息技术的发展，越来越多的企业开始采用分布式系统来管理和处理数据，这种系统能够提高计算效率、灵活性和可靠性，但同时也带来了资源分散和复杂度增加的问题。现代网络技术支持下，为满足大企业高效数据处理和科学决策需求，命名和目录服务是网络上资源协同合作的核心组成部分。它提供统一的存储容器和描述方法，包括资源名称、位置、访问方式、管理和安全信息，以方便在分布式环境下的协同和共享，从而实现高效数据处理和科学决策。</p>
+<p>目录服务可以实现透明地对信息资源访问，助力客户端快速查询和定位资源，无需关心具体位置。JNDI是JAVA平台的标准扩展，类似于索引中心，允许客户端通过名称发现和查找数据和对象。其使得应用程序能够通过统一的方式来访问不同类型的命名和目录服务，而具体实现与之无关。JNDI常用于动态加载数据库配置文件，避免对数据库代码进行修改。它通过存储数据库连接信息在命名和目录服务中实现解耦合，并简化了维护工作。</p>
+<p>JNDI的优势在于不仅提供统一访问接口，还实现屏蔽了不同命名和目录服务之间接口或协议等细节差异。JNNDI不仅能与多种不同类型命名和目录服务（如LDAP、DNS等）无缝集成，还使得各种它们间可相互作用，兼容跨多不同的命名空间进行混合名称，此外JNDI还可支撑目录存储和检索JAVA对象的方式来链接各类型的数据。下图为JNDI与目录服务器以及各接口的结构示意图：<br><img src="/img/log4j2/8.gif"></p>
+<h3 id="JAVA日志框架"><a href="#JAVA日志框架" class="headerlink" title="JAVA日志框架"></a>JAVA日志框架</h3><h4 id="SLF4J与Logback框架"><a href="#SLF4J与Logback框架" class="headerlink" title="SLF4J与Logback框架"></a>SLF4J与Logback框架</h4><p>SLF4J（Simple Logging Facade for Java，简单日志门面）是一个标准接口，用于存取日志。它提供了统一的日志打印接口，应用只需按照其提供的方法打印日志，具体的日志格式和打印方式由底层的日志框架实现。由此，程序可自适应转变框架，而无需对代码进行修改。类似于JDBC，SLF4J只是一个统一的接口，底层的日志框架提供具体的实现，而具体想要如何使用，则必须搭配其子系统，如Logback、Log4j、Log4j2等日志框架。Logback相比其他品类，它显得更加灵活和易于配置，因此它受到了广泛的采用。Logback的架构主要由三个类组成，分别是： Logger、Appender以及Layout。Logback的依赖则分为三个不同模块分别是：logback-core，logback-classic，logback-access。</p>
+<p>相比于Log4j的升级版日志框架，Log4j框架仅支持两种格式配置文件，一种是基于Java的特性文件，一种是基于XML格式（主要格式样式：键&#x3D;键值）。</p>
+<h4 id="Log4j框架"><a href="#Log4j框架" class="headerlink" title="Log4j框架"></a>Log4j框架</h4><p>Log4j是Apache软件基金会下的一个开源日志框架项目，可用于控制日志信息的传输目的地(如GUI组件、控制台、文件等)，通过定义单一的日志信息级别，开发人员和企业可以更细致地操控日志生成过程。Log4j的三个重要组件包括：输出源（Appenders）将格式化的日志消息发送到目标；日志记录器（Loggers）负责管理日志处理流程并将消息路由到适当的输出源；布局器（Layouts）则确定每条日志消息的格式。</p>
+<h4 id="Log4j2框架"><a href="#Log4j2框架" class="headerlink" title="Log4j2框架"></a>Log4j2框架</h4><p>Apache Log4j2是对Log4j日志框架的升级，较于Logback可谓是集大成之作，它修复了前架构中一些常见问题，并且比其前辈Log4j 1.X更为出色，一经面世则受到了广泛的追捧和大量的应用。Log4j2作为一种通用的日志记录工具，它可以支持基于上下文数据、标记、正则表达式和其他组件的过滤，它极强的场景兼容性使得很容易地可以融入和应用于各种场景，以帮助开发人员记录和跟踪应用程序运行时的信息.</p>
+<p>Log4j2是一个强大、灵活且高效的日志框架，在性能、功能和易用性方面都有所改进。虽然Log4j2是由Log4j升级而来，它们之间可谓是一脉相承，但是Log4j2相比于Log4j有了很多改进和新特性。例如，Log4j2支持lambda表达式、更多的日志方法、基于上下文数据、标记、正则表达式等组件的过滤器等。因此，将它们归为同一类型是合适的。而在配置方面，Log4j2对比其前身的Log4j也有所改进，它支持通过XML、JSON、YAML等多种格式的配置文件或者是通过编程方式进行配置，对开发者的十分友好且非常具有灵活性。此外，Log4j2还解决了一些Log4j中存在的问题，例如经典的死锁问题。</p>
+<p>像比于只有一个jar包<code>log4j-$&#123;version&#125;.jar</code>的Log4j。Log4j2主要分为2个jar包，其中一个是接口<code>log4j-api-$&#123;version&#125;.jar</code>，另一个则是具体实现的jar包<code>log4j-core-$&#123;version&#125;.jar</code>。</p>
+<h2 id="漏洞攻击思路整理及Log4j2依赖环境搭建"><a href="#漏洞攻击思路整理及Log4j2依赖环境搭建" class="headerlink" title="漏洞攻击思路整理及Log4j2依赖环境搭建"></a>漏洞攻击思路整理及Log4j2依赖环境搭建</h2><p>在日志框架Log4j2普遍的应用场景中，提供了丰富的功能为企业和项目提供了十分便利地管理应用程序日志的服务，它的强大、灵活且高效的特性使得其被广泛的采用，因此这对我们进行漏洞的复现提供非常多样化的操作思路。<br>以下将采取基于Java引入Log4j2相关依赖环境的方式，在代码中引入声明依赖于通过LDAP提供的URL代码库，以这种具有普适性且便于进行分析的项目场景，来进行模拟测试并复现Log4j2远程代码执行漏洞。<br>首先要在项目Maven中先引入Log4j2框架的两个核心依赖包，分别是log4j-api和log4j-core。具体操作方法是可以在Maven官方仓库中查找对应的依赖包，按照需要的版本号复制对应的引入代码，修改项目中的pom.xml代码并导入，这样就完成了初步的依赖环境的搭建，为了进行漏洞的复现，选择的版本号最好是低于2.15.0，如下图所示：<br><img src="/img/log4j2/0.png"></p>
+<p>依赖环境准备就绪后，编写一个使用Log4j2框架用于日志管理的简单项目用于测试，在Log4j2框架中提供了多种类型的日志管理，不同类型的方法也分别对应不同的级别。比如常用的error()方法和info()方法都可以用来记录日志信息，但它们记录日志信息时的输出等级略有不同。如用error()方法记录的日志信息属ERROR级别，表示系统发生错误；而使用info()方法记录的日志信息属于INFO级别，用于记录系统运行时的一般性信息，表示提供了一些信息。</p>
+<h2 id="进行对比非预期输入以检测Log4j2存在漏洞"><a href="#进行对比非预期输入以检测Log4j2存在漏洞" class="headerlink" title="进行对比非预期输入以检测Log4j2存在漏洞"></a>进行对比非预期输入以检测Log4j2存在漏洞</h2><p>当“核弹级”漏洞问世之后，大部分公开在网上的PoC都以error()和info()方法作为主要的日志注入点，而Log4j中有八个日志输出级别，这些对应的方法有哪些是可以作为攻击者的目标呢？这个问题在接下来的漏洞复现代码的分析过程中进行探究。<br>以下是用于测试的项目代码，主要以模拟采用Log4j2框架进行后端日志打印记录用户的输入，这里为了直观地看出输出内容，采用最为普遍使用地error()方法进行调用。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> org.apache.logging.log4j.LogManager;</span><br><span class="line"><span class="keyword">import</span> org.apache.logging.log4j.Logger;</span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">Logger</span> <span class="variable">logger</span> <span class="operator">=</span> LogManager.getLogger(Main.class);<span class="comment">//定义了一个log4j2的Logger对象</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.setProperty(<span class="string">&quot;com.sun.jndi.ldap.object.trustURLCodebase&quot;</span>, <span class="string">&quot;true&quot;</span>);</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">scanner</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);<span class="comment">//设置系统属性，让LDAP服务信任URL类型的类加载器</span></span><br><span class="line">        System.out.print(<span class="string">&quot;您好，请在此处输入你的用户名: &quot;</span>);</span><br><span class="line">        <span class="type">String</span> <span class="variable">username</span> <span class="operator">=</span> scanner.nextLine();<span class="comment">//读取输入</span></span><br><span class="line">        logger.error(<span class="string">&quot;您输入的用户名是： &quot;</span> + username);<span class="comment">//使用log4j2的error()方法记录日志信息</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这里可以很方便地引入Log4j2框架的服务，而声明了属性com.sun.jndi.ldap.object.trustURLCodebase值为 true，应用程序就可以使用JNDI来访问通过LDAP提供的远程对象时，可以信任外部的URL代码库中所提供的资源。这样的声明便给项目留下了后患无穷的安全隐患，因为恶意攻击者可以利用这个条件来执行远程代码，这部分代码可能是攻击者有意设计的恶意代码，而在服务的本地执行过程中不加以任何限制给予以信任，则可能造成严重的信息泄露或系统破坏等安全风险。<br>下图演示的是正常情况下的用户输入后Log4j2日志框架记录的结果：<br><img src="/img/log4j2/1.png"></p>
+<p>下图是模拟用户非预期输入后Log4j2日志框架记录的结果：<br><img src="/img/log4j2/2.png"></p>
+<p>根据对比可以很明显地看到当用户进行非预期输入时，Log4j2日志框架并不打印出输入的内容，而是将输入的内容作为指令在服务器端执行并返回了不应该在日志中出现的敏感信息。结果正是日志中离奇地输出了服务器的Java版本信息，说明了攻击者注入成功并执行，这个Log4j2框架的版本是存在安全漏洞的。</p>
+<h2 id="基于JNDI接口进行远程代码执行攻击"><a href="#基于JNDI接口进行远程代码执行攻击" class="headerlink" title="基于JNDI接口进行远程代码执行攻击"></a>基于JNDI接口进行远程代码执行攻击</h2><p>接下来再模拟攻击者基于JNDI接口采用搭建RMI（远程方法调用）协议的服务对漏洞进行利用，并通过漏洞触发服务端对攻击者在本地编写好的恶意代码进行远程代码执行以实现入侵、破坏、窃密等渗透行为。漏洞的简易测试环境搭建的攻击端目录结构大致如下所示：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">src</span><br><span class="line">└── main</span><br><span class="line">    ├── java</span><br><span class="line">    │   └── log4j2_attack</span><br><span class="line">    │       ├── app                // 应用程序包目录</span><br><span class="line">    │       │   └── SearchController.java     // 控制器类，处理 HTTP 请求</span><br><span class="line">    │       └── hacker             // 黑客攻击包目录</span><br><span class="line">    │           ├── HackService.java      // 用于创建、绑定一个RMI服务资源</span><br><span class="line">    │           └── HackText.java             // 用于黑客攻击的恶意代码</span><br><span class="line">    └── resources</span><br></pre></td></tr></table></figure>
+<p>根据目录就能明确漏洞测试攻击的思路，就可以进行HackService.java的代码编写，首先启用一个RMI服务并创建资源，服务就采用绑定在RMI的默认端口1099上即可，并且将一个命名为“attack”的资源绑定到这个服务上，这样就创建了一个RMI远程调用服务。<br>然后这个名为attack资源的资源则是调用攻击者提前编写好的HackText.java这个用于黑客攻击的恶意代码，这样就很容易的搭建起了一个简易的RMI服务并注册了一个名为“attack”的恶意代码资源，然后借由编写好的控制器SearchController.java这个类进行HTTP请求的处理，就可以进行对log4j2漏洞的利用对目标实现远程代码执行漏洞的注入。如下图所示：</p>
+<p><img src="/img/log4j2/3.png"></p>
+<p>根据我编写的攻击代码，成功地通过JNDI接口远程调用并执行了我放置在攻击端中编写的一个弹出Windows下的Msg消息框代码，证明了漏洞的存在并且成功被利用。示例中编写的恶意代码内容如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> log4j2_attack.hacker;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HackText</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">HackText</span><span class="params">()</span> <span class="keyword">throws</span> IOException &#123;</span><br><span class="line">            Runtime.getRuntime().exec(<span class="string">&quot;msg * 您好！Log4j2远程代码执行成功！&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>可以看到这只是一个简单的Msg命令执行的攻击测试，但是在实际应用场景中，漏洞恶意利用者可能必然不可能只是做一个如此简单的恶作剧，同这个“核弹级”漏洞，黑客可能能够进行更加具有社会危害性的攻击。根据能够进行任意命令的执行，攻击者则可以利用包括但不限于对目标机器下载或安装恶意软件，进行隐私或敏感数据的窃取，篡改数据等。而配合木马或者其他反向连接操作，黑客可以在服务端上建立一个TCP连接甚至进行后渗透攻击，通过连接执行任意命令将会更加得心应手，甚至可以进行进一步地提高权限以接管控制整个服务器系统。除此之外，加密勒索也是黑客们经常利用漏洞进行的操作，加密服务器上的数据随后要求赎金以解密，或者将进行泄密以威胁要求赎金。各种层出不穷的漏洞利用使得网络安全的防范需要引起所有人的重视，那么这种“核弹级”的高风险漏洞的破坏性和威胁性自然不言而喻。</p>
+<h2 id="源代码分析及漏洞溯源"><a href="#源代码分析及漏洞溯源" class="headerlink" title="源代码分析及漏洞溯源"></a>源代码分析及漏洞溯源</h2><p>总结一下前面所进行的漏洞测试项目，简单来说，就是只要打印的日志中包括IDAP或RMI协议的可执行内容形如：<code>$&#123;jndi:idap://payload&#125;</code>的代码，就有可能被触发远程代码执行。</p>
+<p>根据基于本地搭建的项目模拟环境的Log4j2漏洞测试，并且结合Log4j2文档的相关描述，我们可以得知，由于Log4j2开源日志框架默认支持解析IDAP和RMI协议，并且会通过名称从IDAP或RMI服务端获取到它对于的CLASS文件，并且通过使用ClassLoader在本地加载LDAP或RMI服务端返回来的CLASS类。这种特性就为攻击者提供了攻击途径，攻击者可以输入界面注入一个包含恶意内容的IDAP协议内容（或提供一个恶意的CLASS文件），该内容传递到服务器后端就会被log4j2通过反序列化在本地服务器端执行这段字节码，从而就能实现触发恶意代码并且加载执行，从而达到攻击的目的。</p>
+<p>经过分析相关配置文件中的代码，可以发现在Log4j2的依赖代码中，主要有两个方法可能会产生注入漏洞的发生，分别是：lookup和formatMessage。其中lookup方法主要是用来解析日志中的变量，而formatMessage方法用来格式化日志信息。</p>
+<p>通过在IDEA中下断点的方式进行调试单步执行我们前面用到的项目代码，通过跟踪代码执行过程并进行分析可以观察到，在两个方法中都会调用到MessagePatternConverter类中的pareseLookup方法，按照代码逻辑我们可以看到当config存在并且noLookups为false时，同时匹配到：${‘时，则会调用replace替换字符串。</p>
+<p>在Logger.class中当我们跟进filter()方法时发现，这里会先判断this.config.getFilter()是否为空，并且默认的config.Filter是为空的 ，所以会跳过这条if语句，进而进去后续判断level等级不为空且this.intLevel当大于或等于log等级的intLevel则会返回true。可以看到如下截图所示，当前我们项目中所使用的ERROR级别属于的intLevel值为200：</p>
+<p><img src="/img/log4j2/4.png"></p>
+<p>由此代码逻辑我们可以分析出，当上述值大于等于200时，即都可能存在触发Log4j2漏洞的安全风险。对应本文在前面所提到的问题，根据Log4j中八个日志输出级别，以ERROR级别为分界线，此级别以下的日志输出级别都可能存在漏洞被利用的风险，能够作为攻击者的目标和渗透点。</p>
+<p>经过不断一层层的翻找分析，我最终找到了位于Log4j框架依赖log4j-api-2.12.1.jar包下的目录org.apache.logging.log4j&#x2F;spi下的StandardLevel方法，此代码记录了八个日志输出的级别val值，如下图标记所示：（这里需要注意的是：val数值越大代表级别越低）</p>
+<p><img src="/img/log4j2/5.png"></p>
+<p>由源代码可以分析得出，这八个日志级别由低到高分别描述分别以下： </p>
+<ul>
+<li>OFF()：最高级，不记任何信息。</li>
+<li>FATAL()：较高级别，用来记录致命事件，即那些可能导致程序陷入致命的事件。</li>
+<li>ERROR()：用于记录错误事件信息（级别200，标识漏洞存在的分界线）。</li>
+<li>WARN()：警告事件，提醒开发人员或系统管理员注意可能的问题。</li>
+<li>INFO()：用于描述应用程序粗略的运行情况。</li>
+<li>DEBUG()：用于记录应用程序中细节层面的调试信息，以帮助开发人员进行调试。</li>
+<li>TRACE()：用于记录比DEBUG更具体的跟踪事件信息。</li>
+<li>ALL()：最低级别，即启用全部记录或自定义记录。</li>
+</ul>
+
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="true">
                 <source type="audio/mpeg" src="">
@@ -302,7 +345,7 @@
     </div>
     
         <div class="side">
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9A%82%E4%B8%8D%E5%85%AC%E5%BC%80%EF%BC%8C%E6%95%AC%E8%AF%B7%E6%9C%9F%E5%BE%85-%F0%9F%91%8B"><span class="toc-number">1.</span> <span class="toc-text">暂不公开，敬请期待 👋</span></a></li></ol>	
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5"><span class="toc-number">1.</span> <span class="toc-text">基础概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#JNDI%E7%9A%84%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5"><span class="toc-number">1.1.</span> <span class="toc-text">JNDI的相关概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JAVA%E6%97%A5%E5%BF%97%E6%A1%86%E6%9E%B6"><span class="toc-number">1.2.</span> <span class="toc-text">JAVA日志框架</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#SLF4J%E4%B8%8ELogback%E6%A1%86%E6%9E%B6"><span class="toc-number">1.2.1.</span> <span class="toc-text">SLF4J与Logback框架</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Log4j%E6%A1%86%E6%9E%B6"><span class="toc-number">1.2.2.</span> <span class="toc-text">Log4j框架</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Log4j2%E6%A1%86%E6%9E%B6"><span class="toc-number">1.2.3.</span> <span class="toc-text">Log4j2框架</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%BC%8F%E6%B4%9E%E6%94%BB%E5%87%BB%E6%80%9D%E8%B7%AF%E6%95%B4%E7%90%86%E5%8F%8ALog4j2%E4%BE%9D%E8%B5%96%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="toc-number">2.</span> <span class="toc-text">漏洞攻击思路整理及Log4j2依赖环境搭建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E8%A1%8C%E5%AF%B9%E6%AF%94%E9%9D%9E%E9%A2%84%E6%9C%9F%E8%BE%93%E5%85%A5%E4%BB%A5%E6%A3%80%E6%B5%8BLog4j2%E5%AD%98%E5%9C%A8%E6%BC%8F%E6%B4%9E"><span class="toc-number">3.</span> <span class="toc-text">进行对比非预期输入以检测Log4j2存在漏洞</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E4%BA%8EJNDI%E6%8E%A5%E5%8F%A3%E8%BF%9B%E8%A1%8C%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%94%BB%E5%87%BB"><span class="toc-number">4.</span> <span class="toc-text">基于JNDI接口进行远程代码执行攻击</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%BA%90%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%90%E5%8F%8A%E6%BC%8F%E6%B4%9E%E6%BA%AF%E6%BA%90"><span class="toc-number">5.</span> <span class="toc-text">源代码分析及漏洞溯源</span></a></li></ol>	
         </div>
     
 </div>

