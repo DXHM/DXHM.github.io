@@ -1,0 +1,751 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN,en,default" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>NET PROTOCOL LIST - 真のBLACK</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="渗透,"> 
+    <meta name="description" content="TALKING,常见协议汇总数据链路层一、广域网——PPP协议点对点协议（PPP，Point to Point Protocol）
+I. 帧格式
+
+标志字段（F）：首部和尾部各占1个字节，规定为0x7E，前后都加标,"> 
+    <meta name="author" content="真のBLACK"> 
+    <link rel="alternative" href="atom.xml" title="真のBLACK" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+    <meta name="twitter:image:src" content="https://bangdream.moe/img/ident.png"/>
+    <meta name="twitter:creator" content="@yourtwitteridhere"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="NET PROTOCOL LIST - 真のBLACK"/>
+    <meta name="twitter:description" content="TALKING,常见协议汇总数据链路层一、广域网——PPP协议点对点协议（PPP，Point to Point Protocol）
+I. 帧格式
+
+标志字段（F）：首部和尾部各占1个字节，规定为0x7E，前后都加标,"/>
+    <meta property="og:image" content="https://bangdream.moe/img/ident.png"/>
+    <meta property="og:image:alt" content="TALKING,常见协议汇总数据链路层一、广域网——PPP协议点对点协议（PPP，Point to Point Protocol）
+I. 帧格式
+
+标志字段（F）：首部和尾部各占1个字节，规定为0x7E，前后都加标,"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:site_name" content="真のBLACK"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="NET PROTOCOL LIST - 真のBLACK"/>
+    <meta property="og:description" content="TALKING,常见协议汇总数据链路层一、广域网——PPP协议点对点协议（PPP，Point to Point Protocol）
+I. 帧格式
+
+标志字段（F）：首部和尾部各占1个字节，规定为0x7E，前后都加标,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">真のBLACK</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="https://DXHM.github.io"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">NET PROTOCOL LIST</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">NET PROTOCOL LIST</h1>
+        <div class="stuff">
+            <span>十二月 14, 2023</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h1 id="常见协议汇总"><a href="#常见协议汇总" class="headerlink" title="常见协议汇总"></a>常见协议汇总</h1><h2 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a><strong>数据链路层</strong></h2><h2 id="一、广域网——PPP协议"><a href="#一、广域网——PPP协议" class="headerlink" title="一、广域网——PPP协议"></a><strong>一、广域网——PPP协议</strong></h2><p>点对点协议（PPP，Point to Point Protocol）</p>
+<h3 id="I-帧格式"><a href="#I-帧格式" class="headerlink" title="I. 帧格式"></a><strong>I. 帧格式</strong></h3><p><img src="/img/netprotocol/v2-316bc20dc2ac83c7c4d2b048ba88793b_b.jpg"></p>
+<ol>
+<li>标志字段（F）：首部和尾部各占1个字节，规定为0x7E，前后都加标志字段。</li>
+<li>地址字段（A）：占1个字节，规定为0xFF。</li>
+<li>控制字段（C）：占1个字节，规定为0x03。</li>
+<li>协议字段：占2个字节。当协议字段为0x0021时，PPP帧的信息字段就是IP数据报；若为0xC021，则信息字段是PPP链路控制数据；若为0x8021，则表示这是网络控制数据。</li>
+<li>信息部分：占0～1500B。PPP是点对点的，并不是总线型，无须采用CSMA&#x2F;CD协议，自然就没有最短帧。当数据部分出现和标志位一样的比特组合时，就需要采用一些措施来实现透明传输。</li>
+<li>帧检验序列（FCS）:占2个字节，即循环冗余码检验中的冗余码。检验区间包括地址字段、控制字段、协议字段和信息字段。</li>
+</ol>
+<h3 id="II-特点"><a href="#II-特点" class="headerlink" title="II. 特点"></a><strong>II. 特点</strong></h3><ol>
+<li><strong><u>PPP协议是一个面向字节的协议。</u></strong></li>
+<li><u><b>PPP协议是点对点协议，支持一对一通信。</b></u></li>
+<li>PPP协议不需要的功能包括纠错（PPP只负责检错）、流量控制、序号、多点线路、半双工或单工。</li>
+<li><u><b>PPP协议只支持全双工链路。</b></u></li>
+<li>当PPP协议用在同步传输链路时，协议规定采用硬件来完成比特填充。当PPP协议用在异步传输时，就使用一种特殊的字符填充法。</li>
+</ol>
+<h2 id="二、随机访问介质访问控制协议——A-OHA协议"><a href="#二、随机访问介质访问控制协议——A-OHA协议" class="headerlink" title="二、随机访问介质访问控制协议——A-OHA协议"></a><strong>二、随机访问介质访问控制协议——A-OHA协议</strong></h2><p>A-OHA协议基本思想：当网络中的任何一个结点需要发送数据时，可以不进行任何检测就发送数据。如果在一段时间内没有收到确认，该结点就认为传输过程中发生了冲突。发生冲突的结点需要等待一段随机时间后再发送数据，直至发送成功。</p>
+<h3 id="I-纯A-OHA协议"><a href="#I-纯A-OHA协议" class="headerlink" title="I. 纯A-OHA协议"></a><strong>I. 纯A-OHA协议</strong></h3><ul>
+<li>不监听信道，不按时间槽发送，发生冲突则随机重发。</li>
+</ul>
+<p><img src="/img/netprotocol/v2-d21367b7a418c8249217b5e44780c0b6_b.jpg"></p>
+<h3 id="II-时隙A-OHA协议"><a href="#II-时隙A-OHA协议" class="headerlink" title="II. 时隙A-OHA协议"></a><strong>II. 时隙A-OHA协议</strong></h3><ul>
+<li>不监听信道，按时间槽发送，发生冲突则随机重发</li>
+</ul>
+<h2 id="三、随机访问介质访问控制协议——CSMA协议"><a href="#三、随机访问介质访问控制协议——CSMA协议" class="headerlink" title="三、随机访问介质访问控制协议——CSMA协议"></a><strong>三、随机访问介质访问控制协议——CSMA协议</strong></h2><ul>
+<li>载波侦听多路访问（CSMA）协议中，每个结点发送数据之前都使用载波侦听技术来判定通信信道是否空闲。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>1-坚持型</th>
+<th>非坚持型</th>
+<th>p-坚持型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>信道空闲时</td>
+<td>立即发送数据</td>
+<td>立即发送数据</td>
+<td>以概率p发送数据 以概率（1-p）不发送数据</td>
+</tr>
+<tr>
+<td>信道忙时</td>
+<td>持续监听信道</td>
+<td>等待随机时间再监听</td>
+<td>等待随机时间再监听</td>
+</tr>
+</tbody></table>
+<h2 id="四、随机访问介质访问控制协议——CSMA-x2F-CD协议"><a href="#四、随机访问介质访问控制协议——CSMA-x2F-CD协议" class="headerlink" title="四、随机访问介质访问控制协议——CSMA&#x2F;CD协议"></a><strong>四、随机访问介质访问控制协议——CSMA&#x2F;CD协议</strong></h2><ul>
+<li>概括为“**<u>先听后发，边听边发，冲突停发，随机重发**</u>”。</li>
+</ul>
+<ol>
+<li>先听后发：每个站在发送数据之前要先检测一下总线上是否有其他计算机在发送数据。</li>
+<li>边听边发：因为存在信号的传播延迟，当某个站监听到总线是空闲时，可能总线并非真正空闲。A向B发出的信息，要经过一定的时间后才能传送到B。在发送的过程需要监听是否有碰撞。</li>
+<li>冲突检测与停发：由于信号的传播时延的影响，冲突的检测有一个临界窗口，<u>最先发送数据帧的站，在发送数据帧后至多经过时间两倍的端到端往返时延就可知道发送的数据帧是否遭受了碰撞。只有经过争用期这段时间还没有检测到碰撞，才能肯定这次发送不会发生碰撞。以太网的端到端往返时延2τ称为争用期，或碰撞窗口。</u></li>
+<li>随机重发：发生碰撞的站在停止发送数据后，要推迟（退避）一个随机时间才能再发送数据。基本退避时间取为争用期 2τ。从整数集合[0，1，…，2k-1]中随机地取出一个数，记为r。重传所需的时延就是r倍的基本退避时间。参数 k 按公式计算：k &#x3D; min(重传次数，10)</li>
+</ol>
+<ul>
+<li>当k＜10时，参数k等于重传次数。**<u>当重传达16次仍不能成功时即丢弃该帧，并向高层报告。**</u></li>
+</ul>
+<h2 id="五、随机访问介质访问控制协议——CSMA-x2F-CA协议"><a href="#五、随机访问介质访问控制协议——CSMA-x2F-CA协议" class="headerlink" title="五、随机访问介质访问控制协议——CSMA&#x2F;CA协议"></a><strong>五、随机访问介质访问控制协议——CSMA&#x2F;CA协议</strong></h2><ul>
+<li>即载波侦听多路访问／冲突避免。发送数据前，先检测信道状态，若信道空闲，再等待一段时间后，再次检测信道是否空闲，如果还是空闲，那么立刻发送数据，否则，随机等待一定时间后，再次发送检测。</li>
+<li>发送真实数据前，<u>先向目标端发送请求传送报文（RTS），等接收到目标端响应报文（CTS），发送端才开始传送真正的数据。</u></li>
+<li>CSMA&#x2F;CA采用带确认的发送机制，如果发送方收到了接收方对其发送数据的 ACK 确认，就表明接受方收到了发送方发送的数据。但是若发送方在规定时间内没有收到确认帧 ACK，就必须重传此帧，直到收到确认为止，或者经过若干次的重传失败后放弃发送。</li>
+</ul>
+<h3 id="CSMA-x2F-CD与CSMA-x2F-CA"><a href="#CSMA-x2F-CD与CSMA-x2F-CA" class="headerlink" title="CSMA&#x2F;CD与CSMA&#x2F;CA"></a><strong>CSMA&#x2F;CD与CSMA&#x2F;CA</strong></h3><ol>
+<li><u><b>两者的传输介质不同</b></u>，CSMA&#x2F;CD用于总线式以太网（802.3）；而CSMA&#x2F;CA用于无线局域网（802.11）</li>
+<li><u>检测方式不同</u>，CSMA&#x2F;CD通过电缆中电压的变化来检测，当数据发生碰撞时，电缆中的电压就会随着发生变化；而CSMA&#x2F;CA采用能量检测(ED)、载波检测(CS)和能量载波混合检测三种检测信道空闲的方式。</li>
+<li>CSMA&#x2F;CD：带有冲突检测的载波监听多路访问，**<u>可以检测冲突，但无法“避免”</u><strong>；CSMA&#x2F;CA：带有冲突避免的载波监听多路访问，发送包的同时不能检测到信道上有无冲突，只能</strong><u>尽量“避免”</u>**</li>
+</ol>
+<h2 id="六、令牌传递协议"><a href="#六、令牌传递协议" class="headerlink" title="六、令牌传递协议"></a><strong>六、令牌传递协议</strong></h2><ul>
+<li>在令牌环网中，结点通过环接口连接成物理环形。令牌是一种特殊的MAC控制帧，帧中有一位标志令牌忙或闲。令牌总是沿着物理环<u>单向</u>逐站传送，传送顺序与结点在环中排列顺序相同。</li>
+<li>当网络空闲时，环路中只有令牌在网络中循环传递。</li>
+<li>令牌传递到有数据要发送的结点处，该结点就修改令牌中的一个标志位，然后在令牌中附加自已需要传输的数据，这样就将令牌改换成了一个数据帧，源结点将这个数据帧发送出去。</li>
+<li>数据帧沿着环路传递，接收到的结点一边转发数据，一边查看帧的目的地址。如果目的地址和自己的地址相同，接收结点就复制该数据帧以便进行下一步处理。</li>
+<li>数据帧沿着环路传输，直到到达该帧的源结点，源结点接收到自己发出去的数据帧便不再转发。同时，该源结点可以通过校验返回的数据帧，以查看数据传输过程中是否有错，若有错，则重传该帧。</li>
+<li>源结点传送完数据以后，重新产生一个令牌，并将令牌传递给下一个站点，以交出发送数据帧的权限。</li>
+</ul>
+<h2 id="七、停止-等待协议"><a href="#七、停止-等待协议" class="headerlink" title="七、停止-等待协议"></a><strong>七、停止-等待协议</strong></h2><ul>
+<li><u><b>源站发送单个帧后必须等待确认，在目的站的回答到达源站之前，源站不能发送其他的数据帧，收到确认后再发送下一个帧。</b></u></li>
+<li>从窗口机制看，停止-等待协议相当于发送窗口和接收窗口大小均为1的滑动窗口协议。</li>
+<li>源站配备了计时器，在一个帧发送之后，源站等待确认，如果计时器到时仍未收到确认，则再次发送相同的帧，如此重复，直到该数据帧准确到达为止。</li>
+</ul>
+<h2 id="八、后退N帧协议"><a href="#八、后退N帧协议" class="headerlink" title="八、后退N帧协议"></a><strong>八、后退N帧协议</strong></h2><ul>
+<li>若采用n个比特对帧进行编号，其**<u>发送窗口尺寸Wr必须满足1&lt;Wr＜2的n-1次方，接收窗口尺寸为1。</u>**</li>
+<li>若发送窗口尺寸大于2n-1，会造成接收方无法分辨新、旧数据帧的问题，接收窗口尺寸为1，接收方只能按序来接收数据帧。</li>
+<li>基本原理：发送方可以连续发送若干个数据帧。如果某个帧出错了，接收方只能简单地丢弃该帧及其所有的后续帧，**<u>发送方超时后需重发该出错帧及其后续的所有帧。</u>**</li>
+<li><u><b>后退N帧协议支持累计确认，且接收方一般采用累计确认的方式</b></u>，即接收方对按序到达的最后一个分组发送确认。</li>
+</ul>
+<h2 id="九、选择重传协议"><a href="#九、选择重传协议" class="headerlink" title="九、选择重传协议"></a><strong>九、选择重传协议</strong></h2><ul>
+<li>它的接收窗口尺寸和发送窗口尺寸都大于1，发送方可连续发送多个帧，接收方对数据帧逐一确认。若采用 n 个比特对帧进行编号，**<u>发送窗口的最大尺寸应该不超过序列号范围，即1≤W≤2的n-1次方</u>**。当发送窗口取最大值时，Wr&#x3D;Wt&#x3D;2的n-1次方，可达到最大效率。</li>
+<li>基本思想：若一帧出错，其后续帧先存入接收方的缓冲区中，同时要求发送方重传出错帧，一旦收到重传帧后，就和原先存在缓冲区的其余帧一起按正确的顺序送至主机。**<u>选择重传协议避免了重复传输那些已经正确到达接收方的数据帧</u>**，提高了信道利用率，但增加了缓冲空间。</li>
+<li><strong><u>选择重传协议不支持累计确认。</u></strong></li>
+</ul>
+<hr>
+<h2 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a><strong>网络层</strong></h2><h2 id="一、地址解析协议——ARP协议"><a href="#一、地址解析协议——ARP协议" class="headerlink" title="一、地址解析协议——ARP协议"></a><strong>一、地址解析协议——ARP协议</strong></h2><p>注：ARP协议在TCP&#x2F;IP模型中属于网络层，在OSI模型中属于链路层。</p>
+<ul>
+<li><u><b>地址解析协议ARP解决同一个局域网上的主机或路由器的IP地址和硬件地址的映射问题。</b></u>它是工作在网络层的一个自动进行的协议。</li>
+<li>使用过程：主机自动运行ARP，找主机B的硬件地址。ARP进程在本局域网上**<u>广播发送一个目的MAC地址为FF-FF-FF-FF-FF-FF的ARP请求分组。</u><strong>在本局域网上的所有主机上运行的ARP进程都收到此ARP请求分组。如果主机B的IP地址与ARP请求分组中要查询的IP地址一致，就收下这个ARP请求分组，并向主机A发送</strong><u>单播ARP响应分组</u>**，同时在这个ARP响应分组中写入自己的硬件地址。</li>
+<li>如果所要找的主机和源主机不在同一个局域网上，那么就要通过 ARP 找到一个位于本局域网上的某个路由器的硬件地址，然后把分组发送给这个路由器，让这个路由器把分组转发给下一个网络。剩下的工作就由下一个网络来做。</li>
+<li>逆地址解析协议 RARP 的作用是使只知道自己硬件地址的主机能够通过RARP协议找出其IP地址。</li>
+</ul>
+<h2 id="二、动态主机配置协议——DHCP协议"><a href="#二、动态主机配置协议——DHCP协议" class="headerlink" title="二、动态主机配置协议——DHCP协议"></a><strong>二、动态主机配置协议——DHCP协议</strong></h2><ul>
+<li>动态主机配置协议DHCP是应用层协议，使客户&#x2F;服务器方式，客户端和服务端通过广播方式进行交互，基于UDP。</li>
+<li>DHCP提供即插即用联网的机制，主机可以从服务器动态获取IP地址、子网掩码、默认网DNS服务器名称与IP地址，允许地址重用，支持移动用户加入网各，支持在用地址续租。</li>
+</ul>
+<ol>
+<li>主机广播DHCP发现报文，试图找到网络中的DHCP服务器，服务器获得一个IP地址。</li>
+<li>DHCP服务器广播DHCP提供报文，服务器拟分配给主机一个IP地址及相关配置，先到先得。</li>
+<li>主机广播DHCP请求报文，主机向服务器请求提供IP地址。</li>
+<li>DHCP服务器广播DHCP确认报文，正式将IP地址分配给主机。</li>
+</ol>
+<h2 id="三、网际控制报文协议——ICMP协议"><a href="#三、网际控制报文协议——ICMP协议" class="headerlink" title="三、网际控制报文协议——ICMP协议"></a><strong>三、网际控制报文协议——ICMP协议</strong></h2><ul>
+<li>ICMP 允许主机或路由器报告差错情况和提供有关异常情况的报告。</li>
+<li>ICMP是 IP 层的协议。ICMP 报文作为 IP 层数据报的数据，加上数据报的首部，组成IP数据报发送出去。</li>
+</ul>
+<h3 id="ICMP差错报告报文类型"><a href="#ICMP差错报告报文类型" class="headerlink" title="ICMP差错报告报文类型"></a><strong>ICMP差错报告报文类型</strong></h3><ol>
+<li><strong>终点不可达。</strong>当路由器或主机不能交付数据报时就向源点发送终点不可达报文。</li>
+<li><strong>时间超过。</strong>当路由器收到生存时间为0的数据报时，除丢弃该数据报外，还要向源点发送时间超过报文。当终点在预先规定的时间内不能收到一个数据报的全部数据报片时，就把已收到的数据报片都丢弃，并向源点发送时间超过报文。</li>
+<li><strong>参数问题。</strong>当路由器或目的主机收到的数据报的首部中有的字段的值不正确时就丢弃该数据报，并向源点发送参数问题报文。</li>
+<li><strong>改变路由（重定向）。</strong>路由器把改变路由报文发送给主机，让主机知道下次应将数据分组发送给哪个路径。</li>
+</ol>
+<h3 id="ICMP-询问报文类型"><a href="#ICMP-询问报文类型" class="headerlink" title="ICMP 询问报文类型"></a><strong>ICMP 询问报文类型</strong></h3><ol>
+<li><strong>回送请求和回答。</strong>ICMP回送请求报文是由主机或路由器向一个特定的目的主机发出的询问。收到此报文的主机必须给源主机或路由器发送ICMP回送回答报文。</li>
+<li><strong>时间戳请求和回答。</strong>ICMP时间戳请求报文是请某台主机或路由器回答当前的日期和时间。</li>
+</ol>
+<h3 id="不应发送ICMP差错报告报文的情况"><a href="#不应发送ICMP差错报告报文的情况" class="headerlink" title="不应发送ICMP差错报告报文的情况"></a><strong>不应发送ICMP差错报告报文的情况</strong></h3><ol>
+<li><u><b>对 ICMP 差错报告报文，不再发送 ICMP 差错报告报文。</b></u></li>
+<li>对第一个分片的数据报片的所有后续数据报片，都不发送 ICMP 差错报告报文。</li>
+<li>对具有多播地址的数据报，都不发送 ICMP 差错报告报文。</li>
+</ol>
+<h2 id="四、网际组管理协议——IGMP协议"><a href="#四、网际组管理协议——IGMP协议" class="headerlink" title="四、网际组管理协议——IGMP协议"></a><strong>四、网际组管理协议——IGMP协议</strong></h2><ul>
+<li>使路由器知道组播成员的信息。让其知道连接在本地局域网上的多播路由器知道本局网上是否有主机参加或推出了某个多播组。</li>
+<li>IGMP 的使用范围是本地，并非在因特网范围内对所有多播组成员进行管理的协议。IGMP不知道IP多播组包含的成员数，也不知道这些成员都分布在哪些网络上。IGMP 协议是让连接在本地局域网上的多播路由器知道本局域网上是否有主机（严格讲，是主机上的某个进程）参加或退出了某个多播组。IGMP使用 IP 数据报传递其报文（即 IGMP 报文加上 IP 首部构成 IP 数据报），但它也向IP 提供服务。IGMP的工作流程如下。第一阶段：&#x3D;&#x3D;当某个主机加入新的多播组时，该主机应向多播组的多播地址发送IGMP报文，声明自己要成为该组的成员。本地的多播路由器收到 IGMP 报文后，将组成员关系转发给因特网上的其他多播路由器。&#x3D;&#x3D;</li>
+<li>第二阶段：因为组成员关系是动态的，因此&#x3D;&#x3D;本地多播路由器要周期性地探询本地局域网上的主机，以便知道这些主机是否还继续是组成员&#x3D;&#x3D;。&#x3D;&#x3D;只要某个组有一个主机响应，那么多播路由器就认为这个组是活跃的。&#x3D;&#x3D;</li>
+</ul>
+<h2 id="五、路由协议——内部网关协议RIP"><a href="#五、路由协议——内部网关协议RIP" class="headerlink" title="五、路由协议——内部网关协议RIP"></a><strong>五、路由协议——内部网关协议RIP</strong></h2><ul>
+<li>RIP是一种基于距离向量的分布式路由选择协议。</li>
+<li>RIP要求网络中的每一个路由器都要维护从自己到其他每一个目的网络的距离记录。RIP协议将“距离”定义如下：<u><b>路由器到直接连接的网络的距离定义为1</b></u>。路由器到非直接连接的网络的距离定义为所经过的路由器数加 1。</li>
+<li>RIP认为好的路由就是它通过的路由器的数目少，即“距离短”。<u><b>RIP允许一条路径最多只能包含15个路由器。“距离”等于16时即相当于不可达。</b></u>RIP只适用于小型互联网。</li>
+<li>RIP 协议让一个自治系统中的所有路由器都和自己的相邻路由器定期交换路由信息，并不断更新其路由表，使得从每一个路由器到每一个目的网络的路由都是最短的（即跳数最少）</li>
+<li><u><b>RIP是应用层协议，使用 UDP 协议。</b></u></li>
+<li>RIP协议首部开销是 20B。</li>
+<li><strong><u>好消息传播得快，而坏消息传播得慢：网络出故障时的传播时间往往需要较长的时间才能实现收敛。</u></strong></li>
+</ul>
+<h2 id="六、路由协议——内部网关协议OSPF"><a href="#六、路由协议——内部网关协议OSPF" class="headerlink" title="六、路由协议——内部网关协议OSPF"></a><strong>六、路由协议——内部网关协议OSPF</strong></h2><ul>
+<li>OSPF 协议是分布式路由选择协议。特点：每一个路由器都要不断地和其他一些路由器交换路由信息。三个要点，即和哪些路由器交换信息，交换什么信息，在什么时候交换信息。</li>
+<li><strong><u>OSPF用IP数据报传送。</u></strong></li>
+<li>OSPF对不同的链路可根据IP分组的不同服务类型而设置成不同的代价。</li>
+<li>如果到同一个目的网络有多条相同代价的路径，则可负载平衡。</li>
+<li>所有在OSPF路由器之间交换的分组都具有鉴别的功能。</li>
+<li>OSPF 规定每隔一段时间，要刷新一次数据库中的链路状态。</li>
+<li>一个路由器的链路状态只涉及到与相邻路由器的连通状态，与整个互联网的规模并无直接关系。</li>
+</ul>
+<h2 id="七、路由协议——外部网关协议BGP"><a href="#七、路由协议——外部网关协议BGP" class="headerlink" title="七、路由协议——外部网关协议BGP"></a><strong>七、路由协议——外部网关协议BGP</strong></h2><ul>
+<li>BGP 协议交换路由信息的结点数量级是自治系统个数的量级。</li>
+<li>要在许多自治系统之间寻找一条较好的路径，就是要寻找正确的 BGP 发言人（或边界路由器），而在每一个自治系统中 BGP 发言人（或边界路由器）的数目是很少的。这样就使得自治系统之间的路由选择不致过分复杂。</li>
+<li>&#x3D;&#x3D;BGP 支持无分类域间路由选择 CIDR&#x3D;&#x3D;，因此 BGP 的路由表也就应当包括目的网络前缀、下一跳路由器，以及到达该目的网络所要经过的自治系统序列。</li>
+<li>如果一个 BGP 发言人收到了其他 BGP 发言人发来的路径通知，它就要检查一下本自治系统是否在此通知的路径中。如果在这条路径中，就不能采用这条路径（因为会兜圈子）。</li>
+<li>在 BGP 刚刚运行时，BGP 的邻站是交换整个的 BGP 路由表。但以后只需要在发生变化时更新有变化的部分。这样做对节省网络带宽和减少路由器的处理开销方面都有好处。</li>
+</ul>
+<h2 id="八、网络地址转换——NAT协议"><a href="#八、网络地址转换——NAT协议" class="headerlink" title="八、网络地址转换——NAT协议"></a><strong>八、网络地址转换——NAT协议</strong></h2><ul>
+<li>指通过将专用网络（内部网络）地址转换为公用地址，对外隐藏内部管理的IP地址。它使得整个专用网只需要一个全球IP地址就可以与因特网连通。</li>
+<li><strong><u>私有IP地址是在局域网中使用的 IP 地址，在互联网上不使用。</u></strong></li>
+<li>专用网本地IP地址是可重用的，节省了IP地址的消耗。它隐藏了内部网络结构，降低了内部网络受到攻击的风险。</li>
+<li>大量内部主机只使用少量的合法的外部地址，就可以使用NAT把内部地址转换为外部地址。</li>
+<li>普通路由器在转发IP数据报时，不改变其源IP地址和目的IP地址。而**<u>NAT路由器在转发IP数据报时，一定要更换其IP地址。</u>**</li>
+<li>**<u>普通路由器只工作在网络层，而NAT路由器工作在网络层和传输层</u>**。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>私有地址范围</th>
+<th>网络数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A</td>
+<td>10.0.0.0~10.255.255.255</td>
+<td>1</td>
+</tr>
+<tr>
+<td>B</td>
+<td>172.16.0.0~172.31.255.255</td>
+<td>16</td>
+</tr>
+<tr>
+<td>C</td>
+<td>192.168.0.0~192.168.255.255</td>
+<td>256</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a><strong>传输层</strong></h2><h2 id="一、UDP数据报"><a href="#一、UDP数据报" class="headerlink" title="一、UDP数据报"></a><strong>一、UDP数据报</strong></h2><h3 id="UDP数据报特点"><a href="#UDP数据报特点" class="headerlink" title="UDP数据报特点"></a><strong>UDP数据报特点</strong></h3><ol>
+<li>UDP 只在 IP 的数据报服务之上增加了很少的功能，即端口的功能和差错检测的功能。UDP用户数据报只能提供不可靠的交付，UDP是无连接的，即发送数据之前不需要建立连接。</li>
+<li>UDP 使用尽最大努力交付，即不保证可靠交付，同时也不使用拥塞控制。</li>
+<li>UDP 支持一对一、一对多、多对一和多对多的交互通信。</li>
+<li>UDP 的首部只有 8 个字节，相比于 TCP 的 20 字节，具有较小的首部开销。</li>
+<li>UDP 是面向报文的。发送方 UDP 对应用程序交付下来的报文，在添加首部后就向下交付到 IP 层。UDP 对应用层交付下来的报文，既不合并也不拆分，而是保留这些报文的边界。应用层交给 UDP 的报文，UDP 照样发送，即一次发送一个报文。接收方UDP 对IP 层交上来的UDP用户数据报，在去除首部后就原封不动地交付上层的应用进程，一次交付一个完整的报文。因此，应用程序必须选择大小合适的报文。当报文大于最大报文长度时，计算机网络将直接丢弃过大报文。</li>
+</ol>
+<h3 id="UDP数据报格式"><a href="#UDP数据报格式" class="headerlink" title="UDP数据报格式"></a><strong>UDP数据报格式</strong></h3><ul>
+<li>UDP数据报包含两个部分：UDP首部和用户数据，整个UDP数据报作为IP数据报的数据部分封装在IP数据报中。UDP首部有8个字节，由4个字段组</li>
+</ul>
+<ol>
+<li>源端口：源端口号。在需要对方回信时选用，不需要时可用全0。</li>
+<li>目的端口：目的端口号，这在终点交付报文时需要用到。</li>
+</ol>
+<ul>
+<li><p>复用：当传输层从IP层收到UDP数据报时，就根据首部中的目的端口，把UDP数据报通过相应的端口上交给应用进程。</p>
+</li>
+<li><p>分用：同时UDP根据不同应用进程的端口把应用进程的数据封装成不同的 UDP，之后交给 IP 层进行转发。</p>
+</li>
+</ul>
+<ol>
+<li>长度：UDP数据报的长度（包括首部和数据），其最小值是8（仅有首部）。</li>
+<li>校验和：检测UDP数据报在传输中是否有错。如果有错，就直接丢弃报文，UDP不提供纠错功能。</li>
+</ol>
+<h3 id="UDP校验"><a href="#UDP校验" class="headerlink" title="UDP校验"></a><strong>UDP校验</strong></h3><ul>
+<li>计算校验和时，要在UDP数据报之前增加伪首部。伪首部并不是UDP真正的首部，它既不向下传送也不向上递交，而仅仅是为了计算校验和。</li>
+<li>包含伪首部的校验方式既校验了UDP数据报首部，又对IP数据报的源IP地址和目的IP地址进行了检验。</li>
+<li>UDP仅仅提供检错功能，当校验出数据有错误时，不提供纠错功能，一般选择直接丢弃数据，同时发送ICMP差错报告提示发送方数据有错。</li>
+</ul>
+<h2 id="二、TCP协议"><a href="#二、TCP协议" class="headerlink" title="二、TCP协议"></a><strong>二、TCP协议</strong></h2><h3 id="TCP-的特点"><a href="#TCP-的特点" class="headerlink" title="TCP 的特点"></a><strong>TCP 的特点</strong></h3><ul>
+<li>TCP 是&#x3D;&#x3D;在不可靠的 IP 层之上实现的可靠的数据传输协议&#x3D;&#x3D;，它能够解决传输的可靠、有序、丢失和重复等问题，该协议的特点有以下几点。</li>
+</ul>
+<ol>
+<li>TCP 是面向连接的传输层协议。</li>
+<li>每一条 TCP 连接只能有两个端点（socket），每一条 TCP 连接是点对点的。</li>
+<li>TCP 提供可靠交付的服务，保证传送的数据无差错、不丢失、不重复且有序发送。</li>
+<li>TCP 提供全双工通信。</li>
+<li>面向字节流。TCP 协议对 TCP 数据段中的每一个字节进行编号，通过编号从而保证数据的可靠传输。TCP 编号是面向字节编号，而不是面向数据段编号。</li>
+</ol>
+<ul>
+<li>TCP 连接是虚连接而不是真正的物理连接。</li>
+<li>TCP 对应用进程一次把多长的报文发送到 TCP 的缓存中是不关心的。</li>
+<li>TCP 根据对方给出的窗口值和当前网络拥塞的程度来决定一个报文段应包含多少个字节（UDP发送的报文长度是应用进程给出的）。</li>
+<li>TCP 可把超长的数据块划分为短一些的再传送。TCP 也可等待积累有足够多的字节后再构成报文段发送出去。</li>
+</ul>
+<h3 id="TCP报文段"><a href="#TCP报文段" class="headerlink" title="TCP报文段"></a><strong>TCP报文段</strong></h3><ul>
+<li>TCP 传送的数据单元称为报文段。一个 TCP 报文段分为 TCP 首部和TCP 数据两部分，整个TCP段作为 IP 数据报的数据部分封装在 IP 数据报中，&#x3D;&#x3D;其首部的前20 字节是固定的&#x3D;&#x3D;。TCP报文段的首部最短为 20 字节，&#x3D;&#x3D;后而有 4N 字节是根据需要而增加的选项，通常长度为4 字节的整数倍&#x3D;&#x3D;。</li>
+</ul>
+<p><img src="/img/netprotocol/v2-c7e6caae8ad0ec8b0ed63b0b7b91b38c_b.jpg"></p>
+<ol>
+<li>源端口和目的端口字段各占2个字节，端口是传输层与应用层的服务接口，传输层的复用和分用功能都要通过端口才能实现。</li>
+<li>序号字段占4个字节。TCP是面向字节流的（TCP传送时是按照一个一个字节来传送的），TCP连接中传送的数据流中的每一个字节都要编上一个序号。序号字段的值指的是本报文段所发送的数据的第一个字节的序号。</li>
+<li>确认号字段占4个字节，是期望收到对方的下一个报文段的数据的第一个字节的序号。若确认号为N，则表明1～N-1的所有数据都己正确收到。</li>
+<li>数据偏移（即首部长度）占4位，这里不是IP数据报分片的那个数据偏移，而是表示首部长度，它指出TCP报文段的数据起始处距离TCP报文段的起始处有多远。“数据偏移”的单位是32位（以4字节为计算单位）。当此字段的值为15时，达到TCP首部的最大长度字节。</li>
+<li>保留字段占6位，保留为今后使用，但目前应置为0，该字段可以忽略不计。</li>
+<li>紧急位URG。当URG&#x3D;1时，表明紧急指针字段有效，它告诉系统此报文段中有紧急数据，应尽快传送（相当于高优先级的数据）。但是URG需要和紧急指针配套使用，数据从第一个字节到紧急指针所指字节就是紧急数据。</li>
+<li>确认位ACK。只有当ACK&#x3D;1时确认号字段才有效。当ACK&#x3D;0时，确认号无效。TCP规定，在连接建立后，所有传送的报文段都必须把ACK置1。</li>
+<li>推送位PSH（Push）。TCP收到PSH&#x3D;1的报文段，就尽快地交付接收应用进程，而不再等整个缓存都填满后再向上交付。</li>
+<li>复位位RST（Reset）。当RST&#x3D;1时，表明TCP连接中出现严重差错，必须释放连接，然后再重新建立传输连接。</li>
+<li>同步位SYN。SYN&#x3D;1表示这是一个连接请求或连接接收报文。当SYN&#x3D;1，ACK&#x3D;0时，表明这是一个连接请求报文，对方若同意建立连接，则在响应报文中使用SYN&#x3D;1，ACK&#x3D;1，即SYN&#x3D;1表示这是一个连接请求或连接接收报文。</li>
+<li>终止位FIN（Finish）用来释放一个连接。FIN-2表明此报文段的发送方的数据已发送完毕，并要求释放传输连接。</li>
+<li>窗口字段占2字节。它规定现在允许对方发送的数据量，接收方的数据缓存空间是有限的，故用窗口值作为接收方让发送方设置其发送窗口的依据，单位为字节。</li>
+<li>校验和占2字节。校验和字段校验的范围包括首部和数据两部分。在计算校验和时，与UDP一样，要在TCP报文段的前面加上12字节的伪首部（只需将UDP伪首部的第4个字段，即协议字段的17改成6，其他的和UDP 一样）。</li>
+<li>紧急指针字段占16位，指出在本报文段中紧急数据共有多少个字节（紧急数据放在本报文段数据的最前面）。</li>
+<li>选项字段长度可变。TCP最初只规定了一种选项，即最大报文段长度（MSS）。</li>
+<li>填充字段是为了使整个首部长度是4字节的整数倍。</li>
+</ol>
+<h3 id="TCP建立连接"><a href="#TCP建立连接" class="headerlink" title="TCP建立连接"></a><strong>TCP建立连接</strong></h3><ul>
+<li>TCP 是面向连接的协议，每一个 TCP 连接都有三个阶段：建立连接、数据传送和释放连接。</li>
+<li>TCP连接的建立都是采用客户服务器方式。主动发起连接请求的应用进程叫做客户机（client），被动等待连接的应用进程叫做服务器（server）。</li>
+</ul>
+<ol>
+<li>要使每一方能够确知对方的存在。</li>
+<li>要允许双方协商一些参数（如最大报文段长度、最大窗口大小、服务质量等）。</li>
+<li>能够对传输实体资源（如缓存大小、连接表中的项目等）进行分配。</li>
+</ol>
+<h3 id="释放-TCP-连接"><a href="#释放-TCP-连接" class="headerlink" title="释放 TCP 连接"></a><strong>释放 TCP 连接</strong></h3><p>数据传输结束后，参与 TCP 连接的两个进程中的任何一个都能终止该连接，释放TCP连接的过程通常称为“四次握手”。</p>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a><strong>其他</strong></h3><p>TCP还支持可靠传输、流量控制、拥塞控制，在此不详细介绍。</p>
+<hr>
+<h2 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a><strong>应用层</strong></h2><h2 id="一、文件传输协议——FTP"><a href="#一、文件传输协议——FTP" class="headerlink" title="一、文件传输协议——FTP"></a><strong>一、文件传输协议——FTP</strong></h2><ul>
+<li>因特网使用得最广泛文件传输协议，它屏蔽了各计算机系统的细节，适合于在异构网络中任意计算机之间传送文件。</li>
+</ul>
+<h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a><strong>特点</strong></h3><ul>
+<li>FTP提供交互式访问，允许客户指明文件的类型与格式，并允许文件具有存取权限。</li>
+<li>FTP屏蔽了各计算机系统的细节，适合在异构网络中的任意计算机之间传送文件。</li>
+<li>**<u>FTP使用客户-服务器方式</u>**。一个FTP服务器进程可同时为多个客户进程提供服务。FTP的服务器进程由两大部分组成：一个主进程，负责接收新的请求；另外有若干个从属进程，每个从属进程负责为一个客户进行FTP服务。</li>
+<li>**<u>FTP基于TCP的协议</u>**。</li>
+</ul>
+<h3 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a><strong>工作流程</strong></h3><ol>
+<li>服务器端打开熟知端口（端口号为21），使客户进程能够连接上。</li>
+<li>等待客户进程发出连接请求。</li>
+<li>启动从属进程来处理客户进程发来的请求。从属进程对客户进程的请求处理完毕后即终止，但从属进程在运行期间根据需要还可能创建其他一些子进程。</li>
+<li>回到等待状态，继续接收其他客户进程发来的请求。主进程与从属进程是并发执行的。</li>
+</ol>
+<h3 id="控制连接与数据连接"><a href="#控制连接与数据连接" class="headerlink" title="控制连接与数据连接"></a><strong>控制连接与数据连接</strong></h3><ul>
+<li>FTP 在工作过程中使用两个连接，一个是数据连接，一个是控制连接。<u><b>控制连接在整个会话期间一直保持打开</b></u>，FTP客户发出的传送请求通过控制连接发送给服务器端的控制进程，但控制连接不用来传送文件。<u><b>传送文件的是数据连接</b></u>。服务器端的控制进程在接收到FTP客户发送来的文件传输请求后就创建“数据传送进程”和“数据连接”，用来连接客户端和服务器端的数据传送进程。数据传送进程实际完成文件的传送，在传送完毕后关闭“数据传送连接”并结束运行。</li>
+<li><strong><u>控制连接：端口号21；数据连接：端口号20</u></strong></li>
+</ul>
+<h2 id="二、简单文件传输协议——TFTP"><a href="#二、简单文件传输协议——TFTP" class="headerlink" title="二、简单文件传输协议——TFTP"></a><strong>二、简单文件传输协议——TFTP</strong></h2><ul>
+<li>&#x3D;&#x3D;TFTP基于UDP协议进行文件传输&#x3D;&#x3D;。与FTP协议不同的是，TFTP传输文件时&#x3D;&#x3D;不需要用户进行登录。它只能从文件服务器上下载或上传文件，不能列出目录&#x3D;&#x3D;。</li>
+<li>TFTP只支持文件传输而不支持交互。</li>
+<li>用来在客户机与服务器之间进行简单文件传输的协议，提供不复杂、开销不大的文件传输服务。</li>
+</ul>
+<h2 id="三、超文本传输协议——HTTP"><a href="#三、超文本传输协议——HTTP" class="headerlink" title="三、超文本传输协议——HTTP"></a><strong>三、超文本传输协议——HTTP</strong></h2><ul>
+<li>规定了在浏览器和服务器之间的请求和响应式格式与规则，是万维网上能够可靠交换文本、声音、图像等各种多媒体文件的重要基础。</li>
+</ul>
+<h3 id="HTTP分为非持久连接和持久连接"><a href="#HTTP分为非持久连接和持久连接" class="headerlink" title="HTTP分为非持久连接和持久连接"></a><strong>HTTP分为非持久连接和持久连接</strong></h3><ul>
+<li><p><strong>非持久连接</strong>，对于每个网页元素对象的传输都需要单独建立一个TCP连接，完成后立即断开连接，下次再次进行传输时，需要重新建立连接。</p>
+</li>
+<li><p><strong>持久连接</strong>，发送相应的对象不需要重新建立TCP连接。同一个客户（浏览器）和该服务器可以继续在这条连接上传送后续的HTTP 请求报文和响应报文。标识字符为Connection。</p>
+</li>
+<li><p><strong>非流水线方式</strong>：客户在收到前一个响应后才能发出下一个请求。比非持续连接的两倍RTT的开销节省了建立TCP连接所需的一个RTT时间，服务器在发送完一个对象后，TCP连接就处于空闲状态。</p>
+</li>
+<li><p><strong>流水线方式：</strong>客户在收到HTTP的响应报文之前就能够接着发送新的请求报文。一个接一个的请求报文到达服务器后，服务器就可连续发回响应报文。使用流水线方式时，客户访问所有的对象只需花费一个RTT时间。</p>
+</li>
+<li><p>如果采用**<u>非持续连接</u><strong>，假设需要传输N个对象，请求-返回时间是RTT，且第三次TCP握手信号携带HTTP请求信号，那么传输N个对象所需的时间是2×N×RTT，建立TCP连接需要一个RTT，传输对象需要一个RTT。如果采用</strong><u>持续连接</u><strong>的</strong><u>非流水线方式</u>**，同样需要传输N个对象，请求-返回时间是RTT，且第三次TCP握手信号携带HTTP请求信号，那么所需要的是时间是（N+1）×PTT，其中建立TCP连接需要一个RTT，传输N个对象需要N个RTT。</p>
+</li>
+</ul>
+<h2 id="四、简单邮件传输协议——SMTP"><a href="#四、简单邮件传输协议——SMTP" class="headerlink" title="四、简单邮件传输协议——SMTP"></a><strong>四、简单邮件传输协议——SMTP</strong></h2><ul>
+<li>一种提供可靠且有效的电子邮件传输的协议。</li>
+<li>**<u>SMTP使用的是TCP连接，端口号为25</u>**。</li>
+<li>连接建立后，SMTP服务器若有能力接收邮件，发出220 Service ready，否则发送421 Service not avai-ab-e，然后SMTP客户向服务器发送H-EEO命令，并附上发送方的主机名。</li>
+<li><u><b>SMTP不能传送可执行文件或者其他二进制对象</b></u>。</li>
+<li><u><b>SMTP仅限于传送&#x3D;&#x3D;7位ASCII码&#x3D;&#x3D;</b></u>，不能传送其他非英语国家的文字。</li>
+<li>SMTP服务器会拒绝超过一定长度的邮件。</li>
+</ul>
+<h2 id="五、MIME"><a href="#五、MIME" class="headerlink" title="五、MIME"></a><strong>五、MIME</strong></h2><ul>
+<li>多用途网际邮件扩充，因SMTP&#x3D;&#x3D;只能传送一定长度的ASCII码邮件&#x3D;&#x3D;，许多其他非英语国家的文字就无法传送，由此提出了多用途网络邮件扩充。</li>
+<li>MIME并未改动SMTP或取代它，继续使用目前的格式，但增加了邮件主体的结构，并定义了传送非ASCII码的编码规则。</li>
+</ul>
+<h2 id="六、邮局协议——POP3"><a href="#六、邮局协议——POP3" class="headerlink" title="六、邮局协议——POP3"></a><strong>六、邮局协议——POP3</strong></h2><ul>
+<li>简单但功能有限的&#x3D;&#x3D;邮件读取协议&#x3D;&#x3D;。</li>
+<li>**<u>使用TCP传输。</u>**端口号为110。</li>
+<li><u><b>发送方发送邮件和发送方邮件服务器发送邮件都是使用的 SMTP，只有接收邮件才使用POP3协议。</b></u></li>
+</ul>
+<h2 id="七、因特网报文存取协议——IMAP"><a href="#七、因特网报文存取协议——IMAP" class="headerlink" title="七、因特网报文存取协议——IMAP"></a><strong>七、因特网报文存取协议——IMAP</strong></h2><ul>
+<li>IMAP按客户-服务器方式工作，用户可以在不同的地方使用不同的计算机处理邮件。</li>
+<li>IMAP&#x3D;&#x3D;允许收件人只读取邮件中的某一个部分&#x3D;&#x3D;</li>
+</ul>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="true">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title="0" data-url="https://link.hhtjim.com/163/1885536903.mp3"></li>
+                        
+                    
+                        
+                            <li title="1" data-url="https://link.hhtjim.com/163/1844681125.mp3"></li>
+                        
+                    
+                        
+                            <li title="2" data-url="https://link.hhtjim.com/163/1917044199.mp3"></li>
+                        
+                    
+                        
+                            <li title="3" data-url="https://link.hhtjim.com/163/34218762.mp3"></li>
+                        
+                    
+                        
+                            <li title="4" data-url="https://link.hhtjim.com/163/1927728096.mp3"></li>
+                        
+                    
+                        
+                            <li title="5" data-url="https://link.hhtjim.com/163/1454998244.mp3"></li>
+                        
+                    
+                        
+                            <li title="6" data-url="https://link.hhtjim.com/163/1805304382.mp3"></li>
+                        
+                    
+                        
+                            <li title="7" data-url="https://link.hhtjim.com/163/556203085.mp3"></li>
+                        
+                    
+                        
+                            <li title="8" data-url="https://link.hhtjim.com/163/515647696.mp3"></li>
+                        
+                    
+                        
+                            <li title="9" data-url="https://link.hhtjim.com/163/1917044199.mp3"></li>
+                        
+                    
+                        
+                            <li title="10" data-url="https://link.hhtjim.com/163/1912226948.mp3"></li>
+                        
+                    
+                        
+                            <li title="11" data-url="https://link.hhtjim.com/163/1807581976.mp3"></li>
+                        
+                    
+                        
+                            <li title="12" data-url="https://link.hhtjim.com/163/1807581976.mp3"></li>
+                        
+                    
+                        
+                            <li title="13" data-url="https://link.hhtjim.com/163/1895164923.mp3"></li>
+                        
+                    
+                        
+                            <li title="14" data-url="https://link.hhtjim.com/163/1858118347.mp3"></li>
+                        
+                    
+                        
+                            <li title="15" data-url="https://link.hhtjim.com/163/1320990503.mp3"></li>
+                        
+                    
+                        
+                            <li title="16" data-url="https://link.hhtjim.com/163/1816323939.mp3"></li>
+                        
+                    
+                        
+                            <li title="17" data-url="https://link.hhtjim.com/163/1865566215.mp3"></li>
+                        
+                    
+                        
+                            <li title="18" data-url="https://link.hhtjim.com/163/1501450521.mp3"></li>
+                        
+                    
+                        
+                            <li title="19" data-url="https://link.hhtjim.com/163/1805428732.mp3"></li>
+                        
+                    
+                        
+                            <li title="20" data-url="https://link.hhtjim.com/163/486195958.mp3"></li>
+                        
+                    
+                        
+                            <li title="21" data-url="https://link.hhtjim.com/163/1498788913.mp3"></li>
+                        
+                    
+                        
+                            <li title="22" data-url="https://link.hhtjim.com/163/1383023012.mp3"></li>
+                        
+                    
+                        
+                            <li title="23" data-url="https://link.hhtjim.com/163/1367333218.mp3"></li>
+                        
+                    
+                        
+                            <li title="24" data-url="https://link.hhtjim.com/163/1864872333.mp3"></li>
+                        
+                    
+                        
+                            <li title="25" data-url="https://link.hhtjim.com/163/443292353.mp3"></li>
+                        
+                    
+                        
+                            <li title="26" data-url="https://link.hhtjim.com/163/1803880020.mp3"></li>
+                        
+                    
+                        
+                            <li title="27" data-url="https://link.hhtjim.com/163/1841788961.mp3"></li>
+                        
+                    
+                        
+                            <li title="28" data-url="https://link.hhtjim.com/163/1841482769.mp3"></li>
+                        
+                    
+                        
+                            <li title="29" data-url="https://link.hhtjim.com/163/1472273576.mp3"></li>
+                        
+                    
+                        
+                            <li title="30" data-url="https://link.hhtjim.com/163/1860652524.mp3"></li>
+                        
+                    
+                        
+                            <li title="31" data-url="https://link.hhtjim.com/163/1914467361.mp3"></li>
+                        
+                    
+                        
+                            <li title="32" data-url="https://link.hhtjim.com/163/2034742057.mp3"></li>
+                        
+                    
+                        
+                            <li title="33" data-url="https://link.hhtjim.com/163/2036803051.mp3"></li>
+                        
+                    
+                        
+                            <li title="34" data-url="https://link.hhtjim.com/163/2029837208.mp3"></li>
+                        
+                    
+                        
+                            <li title="35" data-url="https://link.hhtjim.com/163/1370901751.mp3"></li>
+                        
+                    
+                        
+                            <li title="36" data-url="https://link.hhtjim.com/163/1328645802.mp3"></li>
+                        
+                    
+                        
+                            <li title="37" data-url="https://link.hhtjim.com/163/1985010157.mp3"></li>
+                        
+                    
+                        
+                            <li title="38" data-url="https://link.hhtjim.com/163/1859603833.mp3"></li>
+                        
+                    
+                        
+                            <li title="39" data-url="https://link.hhtjim.com/163/2029837208.mp3"></li>
+                        
+                    
+                        
+                            <li title="40" data-url="https://link.hhtjim.com/163/550136114.mp3"></li>
+                        
+                    
+                        
+                            <li title="41" data-url="https://link.hhtjim.com/163/1299948320.mp3"></li>
+                        
+                    
+                        
+                            <li title="42" data-url="https://link.hhtjim.com/163/2005258767.mp3"></li>
+                        
+                    
+                        
+                            <li title="43" data-url="https://link.hhtjim.com/163/1482494784.mp3"></li>
+                        
+                    
+                        
+                            <li title="44" data-url="https://link.hhtjim.com/163/2085770783.mp3"></li>
+                        
+                    
+                        
+                            <li title="45" data-url="https://link.hhtjim.com/163/1946779257.mp3"></li>
+                        
+                    
+                        
+                            <li title="46" data-url="https://link.hhtjim.com/163/1965555401.mp3"></li>
+                        
+                    
+                        
+                            <li title="47" data-url="https://link.hhtjim.com/163/2042365638.mp3"></li>
+                        
+                    
+                        
+                            <li title="48" data-url="https://link.hhtjim.com/163/2081888997.mp3"></li>
+                        
+                    
+                        
+                            <li title="49" data-url="https://link.hhtjim.com/163/2081888997.mp3"></li>
+                        
+                    
+                        
+                            <li title="50" data-url="https://link.hhtjim.com/163/2062137437.mp3"></li>
+                        
+                    
+                        
+                            <li title="51" data-url="https://link.hhtjim.com/163/1299948320.mp3"></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="true"
+        data-ae="true"
+        data-ci="1ba887259d3c06430ee3"
+        data-cs="0a6cd21e1f2ab2e742f162eb12d4ae640dcfc57f"
+        data-r="dxhm.github.io"
+        data-o="DXHM"
+        data-a="DXHM"
+        data-d="true"
+    >查看评论</div>
+
+
+    </div>
+    
+        <div class="side">
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E5%8D%8F%E8%AE%AE%E6%B1%87%E6%80%BB"><span class="toc-number">1.</span> <span class="toc-text">常见协议汇总</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82"><span class="toc-number">1.1.</span> <span class="toc-text">数据链路层</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%B9%BF%E5%9F%9F%E7%BD%91%E2%80%94%E2%80%94PPP%E5%8D%8F%E8%AE%AE"><span class="toc-number">1.2.</span> <span class="toc-text">一、广域网——PPP协议</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#I-%E5%B8%A7%E6%A0%BC%E5%BC%8F"><span class="toc-number">1.2.1.</span> <span class="toc-text">I. 帧格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#II-%E7%89%B9%E7%82%B9"><span class="toc-number">1.2.2.</span> <span class="toc-text">II. 特点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E9%9A%8F%E6%9C%BA%E8%AE%BF%E9%97%AE%E4%BB%8B%E8%B4%A8%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE%E2%80%94%E2%80%94A-OHA%E5%8D%8F%E8%AE%AE"><span class="toc-number">1.3.</span> <span class="toc-text">二、随机访问介质访问控制协议——A-OHA协议</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#I-%E7%BA%AFA-OHA%E5%8D%8F%E8%AE%AE"><span class="toc-number">1.3.1.</span> <span class="toc-text">I. 纯A-OHA协议</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#II-%E6%97%B6%E9%9A%99A-OHA%E5%8D%8F%E8%AE%AE"><span class="toc-number">1.3.2.</span> <span class="toc-text">II. 时隙A-OHA协议</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E9%9A%8F%E6%9C%BA%E8%AE%BF%E9%97%AE%E4%BB%8B%E8%B4%A8%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE%E2%80%94%E2%80%94CSMA%E5%8D%8F%E8%AE%AE"><span class="toc-number">1.4.</span> <span class="toc-text">三、随机访问介质访问控制协议——CSMA协议</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E9%9A%8F%E6%9C%BA%E8%AE%BF%E9%97%AE%E4%BB%8B%E8%B4%A8%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE%E2%80%94%E2%80%94CSMA-x2F-CD%E5%8D%8F%E8%AE%AE"><span class="toc-number">1.5.</span> <span class="toc-text">四、随机访问介质访问控制协议——CSMA&#x2F;CD协议</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E9%9A%8F%E6%9C%BA%E8%AE%BF%E9%97%AE%E4%BB%8B%E8%B4%A8%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE%E2%80%94%E2%80%94CSMA-x2F-CA%E5%8D%8F%E8%AE%AE"><span class="toc-number">1.6.</span> <span class="toc-text">五、随机访问介质访问控制协议——CSMA&#x2F;CA协议</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CSMA-x2F-CD%E4%B8%8ECSMA-x2F-CA"><span class="toc-number">1.6.1.</span> <span class="toc-text">CSMA&#x2F;CD与CSMA&#x2F;CA</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E4%BB%A4%E7%89%8C%E4%BC%A0%E9%80%92%E5%8D%8F%E8%AE%AE"><span class="toc-number">1.7.</span> <span class="toc-text">六、令牌传递协议</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E5%81%9C%E6%AD%A2-%E7%AD%89%E5%BE%85%E5%8D%8F%E8%AE%AE"><span class="toc-number">1.8.</span> <span class="toc-text">七、停止-等待协议</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AB%E3%80%81%E5%90%8E%E9%80%80N%E5%B8%A7%E5%8D%8F%E8%AE%AE"><span class="toc-number">1.9.</span> <span class="toc-text">八、后退N帧协议</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B9%9D%E3%80%81%E9%80%89%E6%8B%A9%E9%87%8D%E4%BC%A0%E5%8D%8F%E8%AE%AE"><span class="toc-number">1.10.</span> <span class="toc-text">九、选择重传协议</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E5%B1%82"><span class="toc-number">1.11.</span> <span class="toc-text">网络层</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%9C%B0%E5%9D%80%E8%A7%A3%E6%9E%90%E5%8D%8F%E8%AE%AE%E2%80%94%E2%80%94ARP%E5%8D%8F%E8%AE%AE"><span class="toc-number">1.12.</span> <span class="toc-text">一、地址解析协议——ARP协议</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%8A%A8%E6%80%81%E4%B8%BB%E6%9C%BA%E9%85%8D%E7%BD%AE%E5%8D%8F%E8%AE%AE%E2%80%94%E2%80%94DHCP%E5%8D%8F%E8%AE%AE"><span class="toc-number">1.13.</span> <span class="toc-text">二、动态主机配置协议——DHCP协议</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E7%BD%91%E9%99%85%E6%8E%A7%E5%88%B6%E6%8A%A5%E6%96%87%E5%8D%8F%E8%AE%AE%E2%80%94%E2%80%94ICMP%E5%8D%8F%E8%AE%AE"><span class="toc-number">1.14.</span> <span class="toc-text">三、网际控制报文协议——ICMP协议</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ICMP%E5%B7%AE%E9%94%99%E6%8A%A5%E5%91%8A%E6%8A%A5%E6%96%87%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.14.1.</span> <span class="toc-text">ICMP差错报告报文类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ICMP-%E8%AF%A2%E9%97%AE%E6%8A%A5%E6%96%87%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.14.2.</span> <span class="toc-text">ICMP 询问报文类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8D%E5%BA%94%E5%8F%91%E9%80%81ICMP%E5%B7%AE%E9%94%99%E6%8A%A5%E5%91%8A%E6%8A%A5%E6%96%87%E7%9A%84%E6%83%85%E5%86%B5"><span class="toc-number">1.14.3.</span> <span class="toc-text">不应发送ICMP差错报告报文的情况</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E7%BD%91%E9%99%85%E7%BB%84%E7%AE%A1%E7%90%86%E5%8D%8F%E8%AE%AE%E2%80%94%E2%80%94IGMP%E5%8D%8F%E8%AE%AE"><span class="toc-number">1.15.</span> <span class="toc-text">四、网际组管理协议——IGMP协议</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E8%B7%AF%E7%94%B1%E5%8D%8F%E8%AE%AE%E2%80%94%E2%80%94%E5%86%85%E9%83%A8%E7%BD%91%E5%85%B3%E5%8D%8F%E8%AE%AERIP"><span class="toc-number">1.16.</span> <span class="toc-text">五、路由协议——内部网关协议RIP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E8%B7%AF%E7%94%B1%E5%8D%8F%E8%AE%AE%E2%80%94%E2%80%94%E5%86%85%E9%83%A8%E7%BD%91%E5%85%B3%E5%8D%8F%E8%AE%AEOSPF"><span class="toc-number">1.17.</span> <span class="toc-text">六、路由协议——内部网关协议OSPF</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E8%B7%AF%E7%94%B1%E5%8D%8F%E8%AE%AE%E2%80%94%E2%80%94%E5%A4%96%E9%83%A8%E7%BD%91%E5%85%B3%E5%8D%8F%E8%AE%AEBGP"><span class="toc-number">1.18.</span> <span class="toc-text">七、路由协议——外部网关协议BGP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AB%E3%80%81%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2%E2%80%94%E2%80%94NAT%E5%8D%8F%E8%AE%AE"><span class="toc-number">1.19.</span> <span class="toc-text">八、网络地址转换——NAT协议</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%A0%E8%BE%93%E5%B1%82"><span class="toc-number">1.20.</span> <span class="toc-text">传输层</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81UDP%E6%95%B0%E6%8D%AE%E6%8A%A5"><span class="toc-number">1.21.</span> <span class="toc-text">一、UDP数据报</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#UDP%E6%95%B0%E6%8D%AE%E6%8A%A5%E7%89%B9%E7%82%B9"><span class="toc-number">1.21.1.</span> <span class="toc-text">UDP数据报特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#UDP%E6%95%B0%E6%8D%AE%E6%8A%A5%E6%A0%BC%E5%BC%8F"><span class="toc-number">1.21.2.</span> <span class="toc-text">UDP数据报格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#UDP%E6%A0%A1%E9%AA%8C"><span class="toc-number">1.21.3.</span> <span class="toc-text">UDP校验</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81TCP%E5%8D%8F%E8%AE%AE"><span class="toc-number">1.22.</span> <span class="toc-text">二、TCP协议</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#TCP-%E7%9A%84%E7%89%B9%E7%82%B9"><span class="toc-number">1.22.1.</span> <span class="toc-text">TCP 的特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TCP%E6%8A%A5%E6%96%87%E6%AE%B5"><span class="toc-number">1.22.2.</span> <span class="toc-text">TCP报文段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TCP%E5%BB%BA%E7%AB%8B%E8%BF%9E%E6%8E%A5"><span class="toc-number">1.22.3.</span> <span class="toc-text">TCP建立连接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8A%E6%94%BE-TCP-%E8%BF%9E%E6%8E%A5"><span class="toc-number">1.22.4.</span> <span class="toc-text">释放 TCP 连接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-number">1.22.5.</span> <span class="toc-text">其他</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BA%94%E7%94%A8%E5%B1%82"><span class="toc-number">1.23.</span> <span class="toc-text">应用层</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE%E2%80%94%E2%80%94FTP"><span class="toc-number">1.24.</span> <span class="toc-text">一、文件传输协议——FTP</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E7%82%B9"><span class="toc-number">1.24.1.</span> <span class="toc-text">特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B"><span class="toc-number">1.24.2.</span> <span class="toc-text">工作流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E8%BF%9E%E6%8E%A5%E4%B8%8E%E6%95%B0%E6%8D%AE%E8%BF%9E%E6%8E%A5"><span class="toc-number">1.24.3.</span> <span class="toc-text">控制连接与数据连接</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E7%AE%80%E5%8D%95%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE%E2%80%94%E2%80%94TFTP"><span class="toc-number">1.25.</span> <span class="toc-text">二、简单文件传输协议——TFTP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE%E2%80%94%E2%80%94HTTP"><span class="toc-number">1.26.</span> <span class="toc-text">三、超文本传输协议——HTTP</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#HTTP%E5%88%86%E4%B8%BA%E9%9D%9E%E6%8C%81%E4%B9%85%E8%BF%9E%E6%8E%A5%E5%92%8C%E6%8C%81%E4%B9%85%E8%BF%9E%E6%8E%A5"><span class="toc-number">1.26.1.</span> <span class="toc-text">HTTP分为非持久连接和持久连接</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E7%AE%80%E5%8D%95%E9%82%AE%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE%E2%80%94%E2%80%94SMTP"><span class="toc-number">1.27.</span> <span class="toc-text">四、简单邮件传输协议——SMTP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81MIME"><span class="toc-number">1.28.</span> <span class="toc-text">五、MIME</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E9%82%AE%E5%B1%80%E5%8D%8F%E8%AE%AE%E2%80%94%E2%80%94POP3"><span class="toc-number">1.29.</span> <span class="toc-text">六、邮局协议——POP3</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E5%9B%A0%E7%89%B9%E7%BD%91%E6%8A%A5%E6%96%87%E5%AD%98%E5%8F%96%E5%8D%8F%E8%AE%AE%E2%80%94%E2%80%94IMAP"><span class="toc-number">1.30.</span> <span class="toc-text">七、因特网报文存取协议——IMAP</span></a></li></ol></li></ol>	
+        </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
+        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno",skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']},
+        TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" } },
+        messageStyle: "none"
+    });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+
+</html>
